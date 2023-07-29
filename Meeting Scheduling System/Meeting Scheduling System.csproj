@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model Trusted\" />
-    <Folder Include="Controller UnTrusted\" />
-    <Folder Include="Controller Trusted\" />
+    <Folder Include="ModelTrusted\" />
+    <Folder Include="ControllerUnTrusted\" />
+    <Folder Include="ControllerTrusted\" />
   </ItemGroup>
 
 </Project>

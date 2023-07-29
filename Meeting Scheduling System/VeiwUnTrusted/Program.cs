@@ -1,4 +1,7 @@
-namespace Meeting_Scheduling_System
+using Meeting_Scheduling_System.Veiw_UnTrusted;
+using System;
+using System.Windows.Forms;
+namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
     internal static class Program
     {
@@ -11,7 +14,7 @@ namespace Meeting_Scheduling_System
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }

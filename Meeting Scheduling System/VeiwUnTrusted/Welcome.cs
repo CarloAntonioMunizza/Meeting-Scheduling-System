@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Meeting_Scheduling_System.Veiw_UnTrusted
 {
-    public partial class Login : Form
+    public partial class Welcome : Form
     {
-        public Login()
+        public Welcome()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonLogIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
