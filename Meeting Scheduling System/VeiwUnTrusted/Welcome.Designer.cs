@@ -33,16 +33,17 @@
             ButtonSignUp = new Button();
             LabelLogIn = new Label();
             LabelSignUp = new Label();
+            ButtonQuit = new Button();
             SuspendLayout();
             // 
             // LabelWelcome
             // 
             LabelWelcome.AutoSize = true;
-            LabelWelcome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LabelWelcome.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             LabelWelcome.Location = new Point(163, 73);
             LabelWelcome.Margin = new Padding(4, 0, 4, 0);
             LabelWelcome.Name = "LabelWelcome";
-            LabelWelcome.Size = new Size(504, 28);
+            LabelWelcome.Size = new Size(548, 28);
             LabelWelcome.TabIndex = 0;
             LabelWelcome.Text = "Welcome to PennStateSoft's Meeting Scheduling System";
             LabelWelcome.Click += label1_Click;
@@ -89,18 +90,29 @@
             LabelSignUp.TabIndex = 4;
             LabelSignUp.Text = "If you do not have an account yet:";
             // 
+            // ButtonQuit
+            // 
+            ButtonQuit.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            ButtonQuit.Location = new Point(12, 462);
+            ButtonQuit.Name = "ButtonQuit";
+            ButtonQuit.Size = new Size(94, 29);
+            ButtonQuit.TabIndex = 5;
+            ButtonQuit.Text = "Quit";
+            ButtonQuit.UseVisualStyleBackColor = true;
+            // 
             // Welcome
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(815, 503);
+            Controls.Add(ButtonQuit);
             Controls.Add(LabelSignUp);
             Controls.Add(LabelLogIn);
             Controls.Add(ButtonSignUp);
             Controls.Add(ButtonLogIn);
             Controls.Add(LabelWelcome);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Welcome";
             Text = "Welcome";
             ResumeLayout(false);
@@ -114,5 +126,6 @@
         private Button ButtonSignUp;
         private Label LabelLogIn;
         private Label LabelSignUp;
+        private Button ButtonQuit;
     }
 }
