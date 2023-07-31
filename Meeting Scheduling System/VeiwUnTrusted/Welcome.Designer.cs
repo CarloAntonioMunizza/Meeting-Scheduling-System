@@ -28,83 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            LabelWelcome = new Label();
-            ButtonLogIn = new Button();
-            ButtonSignUp = new Button();
-            LabelLogIn = new Label();
-            LabelSignUp = new Label();
-            SuspendLayout();
+            this.LabelWelcome = new System.Windows.Forms.Label();
+            this.ButtonLogIn = new System.Windows.Forms.Button();
+            this.ButtonSignUp = new System.Windows.Forms.Button();
+            this.LabelLogIn = new System.Windows.Forms.Label();
+            this.LabelSignUp = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // LabelWelcome
             // 
-            LabelWelcome.AutoSize = true;
-            LabelWelcome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelWelcome.Location = new Point(163, 73);
-            LabelWelcome.Margin = new Padding(4, 0, 4, 0);
-            LabelWelcome.Name = "LabelWelcome";
-            LabelWelcome.Size = new Size(504, 28);
-            LabelWelcome.TabIndex = 0;
-            LabelWelcome.Text = "Welcome to PennStateSoft's Meeting Scheduling System";
-            LabelWelcome.Click += label1_Click;
+            this.LabelWelcome.AutoSize = true;
+            this.LabelWelcome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelWelcome.Location = new System.Drawing.Point(163, 73);
+            this.LabelWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabelWelcome.Name = "LabelWelcome";
+            this.LabelWelcome.Size = new System.Drawing.Size(1022, 54);
+            this.LabelWelcome.TabIndex = 0;
+            this.LabelWelcome.Text = "Welcome to PennStateSoft\'s Meeting Scheduling System";
             // 
             // ButtonLogIn
             // 
-            ButtonLogIn.Font = new Font("Segoe UI Light", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonLogIn.Location = new Point(377, 223);
-            ButtonLogIn.Name = "ButtonLogIn";
-            ButtonLogIn.Size = new Size(94, 35);
-            ButtonLogIn.TabIndex = 1;
-            ButtonLogIn.Text = "Login";
-            ButtonLogIn.UseVisualStyleBackColor = true;
-            ButtonLogIn.Click += ButtonLogIn_Click;
+            this.ButtonLogIn.Font = new System.Drawing.Font("Segoe UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonLogIn.Location = new System.Drawing.Point(690, 266);
+            this.ButtonLogIn.Name = "ButtonLogIn";
+            this.ButtonLogIn.Size = new System.Drawing.Size(161, 58);
+            this.ButtonLogIn.TabIndex = 1;
+            this.ButtonLogIn.Text = "Login";
+            this.ButtonLogIn.UseVisualStyleBackColor = true;
             // 
             // ButtonSignUp
             // 
-            ButtonSignUp.Font = new Font("Segoe UI Light", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonSignUp.Location = new Point(377, 351);
-            ButtonSignUp.Name = "ButtonSignUp";
-            ButtonSignUp.Size = new Size(94, 35);
-            ButtonSignUp.TabIndex = 2;
-            ButtonSignUp.Text = "Sign Up";
-            ButtonSignUp.UseVisualStyleBackColor = true;
+            this.ButtonSignUp.Font = new System.Drawing.Font("Segoe UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonSignUp.Location = new System.Drawing.Point(718, 394);
+            this.ButtonSignUp.Name = "ButtonSignUp";
+            this.ButtonSignUp.Size = new System.Drawing.Size(133, 55);
+            this.ButtonSignUp.TabIndex = 2;
+            this.ButtonSignUp.Text = "Sign Up";
+            this.ButtonSignUp.UseVisualStyleBackColor = true;
             // 
             // LabelLogIn
             // 
-            LabelLogIn.AutoSize = true;
-            LabelLogIn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelLogIn.Location = new Point(123, 229);
-            LabelLogIn.Name = "LabelLogIn";
-            LabelLogIn.Size = new Size(248, 23);
-            LabelLogIn.TabIndex = 3;
-            LabelLogIn.Text = "If you already have an account:";
-            LabelLogIn.Click += label1_Click_1;
+            this.LabelLogIn.AutoSize = true;
+            this.LabelLogIn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelLogIn.Location = new System.Drawing.Point(172, 270);
+            this.LabelLogIn.Name = "LabelLogIn";
+            this.LabelLogIn.Size = new System.Drawing.Size(480, 46);
+            this.LabelLogIn.TabIndex = 3;
+            this.LabelLogIn.Text = "If you already have an account:";
             // 
             // LabelSignUp
             // 
-            LabelSignUp.AutoSize = true;
-            LabelSignUp.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelSignUp.Location = new Point(99, 357);
-            LabelSignUp.Name = "LabelSignUp";
-            LabelSignUp.Size = new Size(272, 23);
-            LabelSignUp.TabIndex = 4;
-            LabelSignUp.Text = "If you do not have an account yet:";
+            this.LabelSignUp.AutoSize = true;
+            this.LabelSignUp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelSignUp.Location = new System.Drawing.Point(172, 394);
+            this.LabelSignUp.Name = "LabelSignUp";
+            this.LabelSignUp.Size = new System.Drawing.Size(527, 46);
+            this.LabelSignUp.TabIndex = 4;
+            this.LabelSignUp.Text = "If you do not have an account yet:";
             // 
             // Welcome
             // 
-            AutoScaleDimensions = new SizeF(12F, 28F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(815, 503);
-            Controls.Add(LabelSignUp);
-            Controls.Add(LabelLogIn);
-            Controls.Add(ButtonSignUp);
-            Controls.Add(ButtonLogIn);
-            Controls.Add(LabelWelcome);
-            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
-            Name = "Welcome";
-            Text = "Welcome";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 54F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1373, 773);
+            this.Controls.Add(this.LabelSignUp);
+            this.Controls.Add(this.LabelLogIn);
+            this.Controls.Add(this.ButtonSignUp);
+            this.Controls.Add(this.ButtonLogIn);
+            this.Controls.Add(this.LabelWelcome);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Welcome";
+            this.Text = "Welcome";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

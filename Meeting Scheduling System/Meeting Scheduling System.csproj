@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ModelTrusted\" />
     <Folder Include="ControllerUnTrusted\" />
     <Folder Include="ControllerTrusted\" />
   </ItemGroup>
