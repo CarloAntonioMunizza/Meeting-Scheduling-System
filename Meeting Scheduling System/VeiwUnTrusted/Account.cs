@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    public partial class Welcome : Form
+    public partial class Account : Form
     {
-        public Welcome()
+        public Account()
         {
             InitializeComponent();
         }
