@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Meeting_Scheduling_System.ModelTrusted
 {
-    internal interface Interface1
+    internal interface Admin 
     {
+        //Marker interface to signify an admin account
     }
 }

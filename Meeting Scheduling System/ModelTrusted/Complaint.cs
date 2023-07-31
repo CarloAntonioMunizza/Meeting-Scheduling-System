@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace Meeting_Scheduling_System.ModelTrusted
 {
-    internal class Class1
+    internal class Complaint
     {
+        //define vars
+        private string message;
+        private Account sender;
+        private bool isReviewed;
+
+        //constructor
+        public Complaint(string message, Account sender, bool isReviewed)
+        {
+            this.message = message;
+            this.sender = sender;
+            this.isReviewed = isReviewed;
+        }
+        //setters / getters
+        public string Message { get => message; set => message = value; }
+        public bool IsReviewed { get => isReviewed; set => isReviewed = value; }
+        internal Account Sender { get => sender; set => sender = value; }
     }
 }
