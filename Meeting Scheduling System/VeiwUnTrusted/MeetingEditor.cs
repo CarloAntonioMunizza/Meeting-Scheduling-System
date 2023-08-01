@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    public partial class Account : Form
+    public partial class MeetingEditor : Form
     {
-        public Account()
+        public MeetingEditor()
         {
             InitializeComponent();
-        }
-
-        private void LableTitle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
