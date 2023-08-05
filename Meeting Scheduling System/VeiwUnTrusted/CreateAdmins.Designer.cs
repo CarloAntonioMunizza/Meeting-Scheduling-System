@@ -1,6 +1,6 @@
 ﻿namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    partial class Account
+    partial class CreateAdmins
     {
         /// <summary>
         /// Required designer variable.
@@ -28,70 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonEditInfo = new Button();
-            ButtonAddPayment = new Button();
+            LabelTitle = new Label();
+            checkedListBox1 = new CheckedListBox();
             ButtonBack = new Button();
-            LableTitle = new Label();
+            ButtonSubmit = new Button();
             SuspendLayout();
             // 
-            // ButtonEditInfo
+            // LabelTitle
             // 
-            ButtonEditInfo.Location = new Point(324, 106);
-            ButtonEditInfo.Name = "ButtonEditInfo";
-            ButtonEditInfo.Size = new Size(146, 72);
-            ButtonEditInfo.TabIndex = 0;
-            ButtonEditInfo.Text = "Edit Info";
-            ButtonEditInfo.UseVisualStyleBackColor = true;
+            LabelTitle.AutoSize = true;
+            LabelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LabelTitle.Location = new Point(213, 27);
+            LabelTitle.Name = "LabelTitle";
+            LabelTitle.Size = new Size(387, 28);
+            LabelTitle.TabIndex = 0;
+            LabelTitle.Text = "Select a user to give admin permissions";
             // 
-            // ButtonAddPayment
+            // checkedListBox1
             // 
-            ButtonAddPayment.Location = new Point(324, 229);
-            ButtonAddPayment.Name = "ButtonAddPayment";
-            ButtonAddPayment.Size = new Size(146, 73);
-            ButtonAddPayment.TabIndex = 1;
-            ButtonAddPayment.Text = "Add Payment";
-            ButtonAddPayment.UseVisualStyleBackColor = true;
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Location = new Point(319, 125);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(150, 114);
+            checkedListBox1.TabIndex = 1;
             // 
             // ButtonBack
             // 
             ButtonBack.Location = new Point(12, 409);
             ButtonBack.Name = "ButtonBack";
             ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 3;
+            ButtonBack.TabIndex = 2;
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
             // 
-            // LableTitle
+            // ButtonSubmit
             // 
-            LableTitle.AutoSize = true;
-            LableTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LableTitle.Location = new Point(314, 30);
-            LableTitle.Name = "LableTitle";
-            LableTitle.Size = new Size(170, 28);
-            LableTitle.TabIndex = 5;
-            LableTitle.Text = "Account Options";
-            LableTitle.Click += LableTitle_Click;
+            ButtonSubmit.Location = new Point(694, 409);
+            ButtonSubmit.Name = "ButtonSubmit";
+            ButtonSubmit.Size = new Size(94, 29);
+            ButtonSubmit.TabIndex = 3;
+            ButtonSubmit.Text = "Submit";
+            ButtonSubmit.UseVisualStyleBackColor = true;
             // 
-            // Account
+            // CreateAdmins
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(LableTitle);
+            Controls.Add(ButtonSubmit);
             Controls.Add(ButtonBack);
-            Controls.Add(ButtonAddPayment);
-            Controls.Add(ButtonEditInfo);
-            Name = "Account";
-            Text = "Account";
+            Controls.Add(checkedListBox1);
+            Controls.Add(LabelTitle);
+            Name = "CreateAdmins";
+            Text = "CreateAdmins";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button ButtonEditInfo;
-        private Button ButtonAddPayment;
+        private Label LabelTitle;
+        private CheckedListBox checkedListBox1;
         private Button ButtonBack;
-        private Label LableTitle;
+        private Button ButtonSubmit;
     }
 }

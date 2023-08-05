@@ -21,5 +21,15 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
         {
 
         }
+
+        private void MaskedPasswordConfirmField_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,8 +31,6 @@
             FirstNameField = new TextBox();
             LastNameField = new TextBox();
             EmailField = new TextBox();
-            PasswordField = new TextBox();
-            ConfirmPasswordField = new TextBox();
             SQField = new TextBox();
             labelTitle = new Label();
             LabelFirstName = new Label();
@@ -48,6 +46,8 @@
             label1 = new Label();
             ButtonSubmit = new Button();
             ButtonBack = new Button();
+            MaskedPasswordField = new MaskedTextBox();
+            MaskedPasswordConfirmField = new MaskedTextBox();
             SuspendLayout();
             // 
             // FirstNameField
@@ -71,20 +71,6 @@
             EmailField.Size = new Size(135, 27);
             EmailField.TabIndex = 2;
             EmailField.Text = "xyz1234@pss.com";
-            // 
-            // PasswordField
-            // 
-            PasswordField.Location = new Point(366, 179);
-            PasswordField.Name = "PasswordField";
-            PasswordField.Size = new Size(125, 27);
-            PasswordField.TabIndex = 3;
-            // 
-            // ConfirmPasswordField
-            // 
-            ConfirmPasswordField.Location = new Point(366, 281);
-            ConfirmPasswordField.Name = "ConfirmPasswordField";
-            ConfirmPasswordField.Size = new Size(125, 27);
-            ConfirmPasswordField.TabIndex = 4;
             // 
             // SQField
             // 
@@ -224,11 +210,28 @@
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
             // 
+            // MaskedPasswordField
+            // 
+            MaskedPasswordField.Location = new Point(366, 182);
+            MaskedPasswordField.Name = "MaskedPasswordField";
+            MaskedPasswordField.Size = new Size(125, 27);
+            MaskedPasswordField.TabIndex = 20;
+            // 
+            // MaskedPasswordConfirmField
+            // 
+            MaskedPasswordConfirmField.Location = new Point(366, 281);
+            MaskedPasswordConfirmField.Name = "MaskedPasswordConfirmField";
+            MaskedPasswordConfirmField.Size = new Size(125, 27);
+            MaskedPasswordConfirmField.TabIndex = 21;
+            MaskedPasswordConfirmField.MaskInputRejected += MaskedPasswordConfirmField_MaskInputRejected;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(797, 499);
+            Controls.Add(MaskedPasswordConfirmField);
+            Controls.Add(MaskedPasswordField);
             Controls.Add(ButtonBack);
             Controls.Add(ButtonSubmit);
             Controls.Add(label1);
@@ -244,13 +247,12 @@
             Controls.Add(LabelFirstName);
             Controls.Add(labelTitle);
             Controls.Add(SQField);
-            Controls.Add(ConfirmPasswordField);
-            Controls.Add(PasswordField);
             Controls.Add(EmailField);
             Controls.Add(LastNameField);
             Controls.Add(FirstNameField);
             Name = "SignUp";
             Text = "SignUp";
+            Load += SignUp_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,8 +262,6 @@
         private TextBox FirstNameField;
         private TextBox LastNameField;
         private TextBox EmailField;
-        private TextBox PasswordField;
-        private TextBox ConfirmPasswordField;
         private TextBox SQField;
         private Label labelTitle;
         private Label LabelFirstName;
@@ -277,5 +277,7 @@
         private Label label1;
         private Button ButtonSubmit;
         private Button ButtonBack;
+        private MaskedTextBox MaskedPasswordField;
+        private MaskedTextBox MaskedPasswordConfirmField;
     }
 }

@@ -28,12 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AdminOptions";
+            ButtonBack = new Button();
+            ButtonEditRooms = new Button();
+            ButtonBilling = new Button();
+            ButtonDisplay = new Button();
+            ButtonCreateAdmin = new Button();
+            SuspendLayout();
+            // 
+            // ButtonBack
+            // 
+            ButtonBack.Location = new Point(12, 409);
+            ButtonBack.Name = "ButtonBack";
+            ButtonBack.Size = new Size(94, 29);
+            ButtonBack.TabIndex = 0;
+            ButtonBack.Text = "Back";
+            ButtonBack.UseVisualStyleBackColor = true;
+            // 
+            // ButtonEditRooms
+            // 
+            ButtonEditRooms.Location = new Point(75, 124);
+            ButtonEditRooms.Name = "ButtonEditRooms";
+            ButtonEditRooms.Size = new Size(117, 54);
+            ButtonEditRooms.TabIndex = 1;
+            ButtonEditRooms.Text = "Edit Rooms";
+            ButtonEditRooms.UseVisualStyleBackColor = true;
+            // 
+            // ButtonBilling
+            // 
+            ButtonBilling.Location = new Point(240, 124);
+            ButtonBilling.Name = "ButtonBilling";
+            ButtonBilling.Size = new Size(117, 54);
+            ButtonBilling.TabIndex = 2;
+            ButtonBilling.Text = "Update Billing Info";
+            ButtonBilling.UseVisualStyleBackColor = true;
+            // 
+            // ButtonDisplay
+            // 
+            ButtonDisplay.Location = new Point(410, 124);
+            ButtonDisplay.Name = "ButtonDisplay";
+            ButtonDisplay.Size = new Size(117, 54);
+            ButtonDisplay.TabIndex = 3;
+            ButtonDisplay.Text = "Display Meetings";
+            ButtonDisplay.UseVisualStyleBackColor = true;
+            // 
+            // ButtonCreateAdmin
+            // 
+            ButtonCreateAdmin.Location = new Point(574, 124);
+            ButtonCreateAdmin.Name = "ButtonCreateAdmin";
+            ButtonCreateAdmin.Size = new Size(117, 54);
+            ButtonCreateAdmin.TabIndex = 4;
+            ButtonCreateAdmin.Text = "Create Admins";
+            ButtonCreateAdmin.UseVisualStyleBackColor = true;
+            // 
+            // AdminOptions
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(ButtonCreateAdmin);
+            Controls.Add(ButtonDisplay);
+            Controls.Add(ButtonBilling);
+            Controls.Add(ButtonEditRooms);
+            Controls.Add(ButtonBack);
+            Name = "AdminOptions";
+            Text = "AdminOptions";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button ButtonBack;
+        private Button ButtonEditRooms;
+        private Button ButtonBilling;
+        private Button ButtonDisplay;
+        private Button ButtonCreateAdmin;
     }
 }

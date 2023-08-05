@@ -31,12 +31,12 @@
             EmailField = new TextBox();
             LabelBuisness = new Label();
             LabelPassword = new Label();
-            PasswordField = new TextBox();
             SQField = new TextBox();
             LabelSQ = new Label();
             LabelLoginTitle = new Label();
             ButtonSubmit = new Button();
             ButtonBack = new Button();
+            MaskedPasswordField = new MaskedTextBox();
             SuspendLayout();
             // 
             // EmailField
@@ -65,13 +65,6 @@
             LabelPassword.Size = new Size(73, 20);
             LabelPassword.TabIndex = 2;
             LabelPassword.Text = "Password:";
-            // 
-            // PasswordField
-            // 
-            PasswordField.Location = new Point(382, 261);
-            PasswordField.Name = "PasswordField";
-            PasswordField.Size = new Size(125, 27);
-            PasswordField.TabIndex = 3;
             // 
             // SQField
             // 
@@ -117,17 +110,24 @@
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
             // 
+            // MaskedPasswordField
+            // 
+            MaskedPasswordField.Location = new Point(382, 265);
+            MaskedPasswordField.Name = "MaskedPasswordField";
+            MaskedPasswordField.Size = new Size(125, 27);
+            MaskedPasswordField.TabIndex = 9;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(838, 498);
+            Controls.Add(MaskedPasswordField);
             Controls.Add(ButtonBack);
             Controls.Add(ButtonSubmit);
             Controls.Add(LabelLoginTitle);
             Controls.Add(LabelSQ);
             Controls.Add(SQField);
-            Controls.Add(PasswordField);
             Controls.Add(LabelPassword);
             Controls.Add(LabelBuisness);
             Controls.Add(EmailField);
@@ -142,11 +142,11 @@
         private TextBox EmailField;
         private Label LabelBuisness;
         private Label LabelPassword;
-        private TextBox PasswordField;
         private TextBox SQField;
         private Label LabelSQ;
         private Label LabelLoginTitle;
         private Button ButtonSubmit;
         private Button ButtonBack;
+        private MaskedTextBox MaskedPasswordField;
     }
 }
