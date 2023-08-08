@@ -38,6 +38,12 @@
             // 
             // ButtonLogin
             // 
+            ButtonLogin.Location = new Point(353, 152);
+            ButtonLogin.Name = "ButtonLogin";
+            ButtonLogin.Size = new Size(94, 29);
+            ButtonLogin.TabIndex = 0;
+            ButtonLogin.Text = "Login";
+            ButtonLogin.UseVisualStyleBackColor = true;
             this.ButtonLogin.Location = new System.Drawing.Point(750, 303);
             this.ButtonLogin.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonLogin.Name = "ButtonLogin";
@@ -49,6 +55,12 @@
             // 
             // ButtonSignUp
             // 
+            ButtonSignUp.Location = new Point(353, 247);
+            ButtonSignUp.Name = "ButtonSignUp";
+            ButtonSignUp.Size = new Size(94, 29);
+            ButtonSignUp.TabIndex = 1;
+            ButtonSignUp.Text = "SignUp";
+            ButtonSignUp.UseVisualStyleBackColor = true;
             this.ButtonSignUp.Location = new System.Drawing.Point(750, 496);
             this.ButtonSignUp.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonSignUp.Name = "ButtonSignUp";
@@ -91,6 +103,13 @@
             // 
             // ButtonQuit
             // 
+            ButtonQuit.Location = new Point(12, 409);
+            ButtonQuit.Name = "ButtonQuit";
+            ButtonQuit.Size = new Size(94, 29);
+            ButtonQuit.TabIndex = 5;
+            ButtonQuit.Text = "Quit";
+            ButtonQuit.UseVisualStyleBackColor = true;
+            ButtonQuit.Click += ButtonQuit_Click;
             this.ButtonQuit.Location = new System.Drawing.Point(26, 838);
             this.ButtonQuit.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonQuit.Name = "ButtonQuit";

@@ -83,6 +83,13 @@
             // 
             // ButtonLogout
             // 
+            ButtonLogout.Location = new Point(352, 409);
+            ButtonLogout.Name = "ButtonLogout";
+            ButtonLogout.Size = new Size(94, 29);
+            ButtonLogout.TabIndex = 4;
+            ButtonLogout.Text = "Log Out";
+            ButtonLogout.UseVisualStyleBackColor = true;
+            ButtonLogout.Click += ButtonLogout_Click;
             this.ButtonLogout.Location = new System.Drawing.Point(748, 838);
             this.ButtonLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ButtonLogout.Name = "ButtonLogout";

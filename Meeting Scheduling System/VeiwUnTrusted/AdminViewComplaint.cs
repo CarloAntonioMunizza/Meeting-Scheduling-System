@@ -16,5 +16,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             InitializeComponent();
         }
+
+        private void SubjectDetailsField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
