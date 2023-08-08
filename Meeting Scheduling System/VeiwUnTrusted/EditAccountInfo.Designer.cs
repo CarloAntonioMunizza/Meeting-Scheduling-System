@@ -34,10 +34,10 @@
             LabelLastName = new Label();
             LabelPassword = new Label();
             LabelSQ = new Label();
-            FirstNameField = new TextBox();
-            LastNameField = new TextBox();
-            PasswordField = new TextBox();
-            SQField = new TextBox();
+            MaskedFirstNameField = new MaskedTextBox();
+            MaskedLastNameField = new MaskedTextBox();
+            MaskedSQField = new MaskedTextBox();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // ButtonBack
@@ -63,7 +63,7 @@
             // LabelFirstName
             // 
             LabelFirstName.AutoSize = true;
-            LabelFirstName.Location = new Point(233, 100);
+            LabelFirstName.Location = new Point(234, 103);
             LabelFirstName.Name = "LabelFirstName";
             LabelFirstName.Size = new Size(83, 20);
             LabelFirstName.TabIndex = 2;
@@ -81,7 +81,7 @@
             // LabelPassword
             // 
             LabelPassword.AutoSize = true;
-            LabelPassword.Location = new Point(243, 185);
+            LabelPassword.Location = new Point(243, 189);
             LabelPassword.Name = "LabelPassword";
             LabelPassword.Size = new Size(73, 20);
             LabelPassword.TabIndex = 4;
@@ -96,43 +96,47 @@
             LabelSQ.TabIndex = 5;
             LabelSQ.Text = "Security Question, Whats your favouite color:";
             // 
-            // FirstNameField
+            // MaskedFirstNameField
             // 
-            FirstNameField.Location = new Point(322, 97);
-            FirstNameField.Name = "FirstNameField";
-            FirstNameField.Size = new Size(125, 27);
-            FirstNameField.TabIndex = 6;
+            MaskedFirstNameField.Location = new Point(322, 100);
+            MaskedFirstNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
+            MaskedFirstNameField.Name = "MaskedFirstNameField";
+            MaskedFirstNameField.Size = new Size(125, 27);
+            MaskedFirstNameField.TabIndex = 6;
             // 
-            // LastNameField
+            // MaskedLastNameField
             // 
-            LastNameField.Location = new Point(321, 137);
-            LastNameField.Name = "LastNameField";
-            LastNameField.Size = new Size(125, 27);
-            LastNameField.TabIndex = 7;
+            MaskedLastNameField.Location = new Point(322, 137);
+            MaskedLastNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
+            MaskedLastNameField.Name = "MaskedLastNameField";
+            MaskedLastNameField.Size = new Size(125, 27);
+            MaskedLastNameField.TabIndex = 7;
             // 
-            // PasswordField
+            // MaskedSQField
             // 
-            PasswordField.Location = new Point(322, 178);
-            PasswordField.Name = "PasswordField";
-            PasswordField.Size = new Size(125, 27);
-            PasswordField.TabIndex = 8;
+            MaskedSQField.Location = new Point(322, 238);
+            MaskedSQField.Mask = "LLLLLLLLLLLLLLL";
+            MaskedSQField.Name = "MaskedSQField";
+            MaskedSQField.Size = new Size(125, 27);
+            MaskedSQField.TabIndex = 9;
             // 
-            // SQField
+            // textBox1
             // 
-            SQField.Location = new Point(322, 238);
-            SQField.Name = "SQField";
-            SQField.Size = new Size(125, 27);
-            SQField.TabIndex = 9;
+            textBox1.Location = new Point(322, 186);
+            textBox1.Name = "textBox1";
+            textBox1.PasswordChar = '#';
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 10;
             // 
             // EditAccountInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(763, 450);
-            Controls.Add(SQField);
-            Controls.Add(PasswordField);
-            Controls.Add(LastNameField);
-            Controls.Add(FirstNameField);
+            Controls.Add(textBox1);
+            Controls.Add(MaskedSQField);
+            Controls.Add(MaskedLastNameField);
+            Controls.Add(MaskedFirstNameField);
             Controls.Add(LabelSQ);
             Controls.Add(LabelPassword);
             Controls.Add(LabelLastName);
@@ -153,9 +157,9 @@
         private Label LabelLastName;
         private Label LabelPassword;
         private Label LabelSQ;
-        private TextBox FirstNameField;
-        private TextBox LastNameField;
-        private TextBox PasswordField;
-        private TextBox SQField;
+        private MaskedTextBox MaskedFirstNameField;
+        private MaskedTextBox MaskedLastNameField;
+        private MaskedTextBox MaskedSQField;
+        private TextBox textBox1;
     }
 }

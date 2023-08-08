@@ -37,9 +37,9 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
         {
             InvalidCredentials.Visible = false;
 
-            string email = EmailField.Text;
-            string password = MaskedPasswordField.Text;
-            string sQ = SQField.Text;
+            string email = MaskedEmailField.Text;
+            string password = PasswordField.Text;
+            string sQ = MaskedSQField.Text;
 
             bool validLogin = AccountController.login(email, password, sQ);
             if (validLogin)

@@ -28,21 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            NewCardField = new TextBox();
             LabelNewCard = new Label();
             LabelNewCCV = new Label();
-            textBox1 = new TextBox();
             ButtonBack = new Button();
             ButtonSubmit = new Button();
             LabelTitle = new Label();
+            MaskedCardNumField = new MaskedTextBox();
+            MaskedCCVField = new MaskedTextBox();
             SuspendLayout();
-            // 
-            // NewCardField
-            // 
-            NewCardField.Location = new Point(341, 162);
-            NewCardField.Name = "NewCardField";
-            NewCardField.Size = new Size(125, 27);
-            NewCardField.TabIndex = 0;
             // 
             // LabelNewCard
             // 
@@ -61,13 +54,6 @@
             LabelNewCCV.Size = new Size(111, 20);
             LabelNewCCV.TabIndex = 2;
             LabelNewCCV.Text = "Enter New CCV:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(341, 242);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 3;
             // 
             // ButtonBack
             // 
@@ -98,18 +84,34 @@
             LabelTitle.TabIndex = 6;
             LabelTitle.Text = "Enter your New Card Information";
             // 
+            // MaskedCardNumField
+            // 
+            MaskedCardNumField.Location = new Point(341, 162);
+            MaskedCardNumField.Mask = "0000-0000-0000-0000";
+            MaskedCardNumField.Name = "MaskedCardNumField";
+            MaskedCardNumField.Size = new Size(145, 27);
+            MaskedCardNumField.TabIndex = 7;
+            // 
+            // MaskedCCVField
+            // 
+            MaskedCCVField.Location = new Point(341, 242);
+            MaskedCCVField.Mask = "000";
+            MaskedCCVField.Name = "MaskedCCVField";
+            MaskedCCVField.Size = new Size(50, 27);
+            MaskedCCVField.TabIndex = 8;
+            // 
             // EditPayment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(MaskedCCVField);
+            Controls.Add(MaskedCardNumField);
             Controls.Add(LabelTitle);
             Controls.Add(ButtonSubmit);
             Controls.Add(ButtonBack);
-            Controls.Add(textBox1);
             Controls.Add(LabelNewCCV);
             Controls.Add(LabelNewCard);
-            Controls.Add(NewCardField);
             Name = "EditPayment";
             Text = "EditPayment";
             ResumeLayout(false);
@@ -117,13 +119,12 @@
         }
 
         #endregion
-
-        private TextBox NewCardField;
         private Label LabelNewCard;
         private Label LabelNewCCV;
-        private TextBox textBox1;
         private Button ButtonBack;
         private Button ButtonSubmit;
         private Label LabelTitle;
+        private MaskedTextBox MaskedCardNumField;
+        private MaskedTextBox MaskedCCVField;
     }
 }

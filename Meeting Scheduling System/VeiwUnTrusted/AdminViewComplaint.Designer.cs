@@ -58,7 +58,7 @@
             // SubjectDetailsField
             // 
             SubjectDetailsField.BackColor = SystemColors.Window;
-            SubjectDetailsField.Location = new Point(267, 134);
+            SubjectDetailsField.Location = new Point(277, 134);
             SubjectDetailsField.Multiline = true;
             SubjectDetailsField.Name = "SubjectDetailsField";
             SubjectDetailsField.ReadOnly = true;

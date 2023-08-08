@@ -30,12 +30,12 @@
         {
             ButtonBack = new Button();
             LabelRoomNum = new Label();
-            textBox1 = new TextBox();
             CheckSpecialRoom = new CheckBox();
             CheckedList = new CheckedListBox();
             LabelRemoveRoom = new Label();
             LabelTitle = new Label();
             ButtonSubmit = new Button();
+            MaskedRoomNumField = new MaskedTextBox();
             SuspendLayout();
             // 
             // ButtonBack
@@ -56,13 +56,6 @@
             LabelRoomNum.Size = new Size(189, 20);
             LabelRoomNum.TabIndex = 1;
             LabelRoomNum.Text = "Enter room number to add:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(151, 180);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 2;
             // 
             // CheckSpecialRoom
             // 
@@ -110,17 +103,25 @@
             ButtonSubmit.Text = "Submit";
             ButtonSubmit.UseVisualStyleBackColor = true;
             // 
+            // MaskedRoomNumField
+            // 
+            MaskedRoomNumField.Location = new Point(172, 180);
+            MaskedRoomNumField.Mask = "000";
+            MaskedRoomNumField.Name = "MaskedRoomNumField";
+            MaskedRoomNumField.Size = new Size(44, 27);
+            MaskedRoomNumField.TabIndex = 8;
+            // 
             // AdminRoomEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(MaskedRoomNumField);
             Controls.Add(ButtonSubmit);
             Controls.Add(LabelTitle);
             Controls.Add(LabelRemoveRoom);
             Controls.Add(CheckedList);
             Controls.Add(CheckSpecialRoom);
-            Controls.Add(textBox1);
             Controls.Add(LabelRoomNum);
             Controls.Add(ButtonBack);
             Name = "AdminRoomEdit";
@@ -133,11 +134,11 @@
 
         private Button ButtonBack;
         private Label LabelRoomNum;
-        private TextBox textBox1;
         private CheckBox CheckSpecialRoom;
         private CheckedListBox CheckedList;
         private Label LabelRemoveRoom;
         private Label LabelTitle;
         private Button ButtonSubmit;
+        private MaskedTextBox MaskedRoomNumField;
     }
 }

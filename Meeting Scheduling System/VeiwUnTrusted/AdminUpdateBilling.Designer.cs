@@ -33,10 +33,10 @@
             LabelTitle = new Label();
             LabelUserSelect = new Label();
             EmailComboBox = new ComboBox();
-            CardNumberField = new TextBox();
             LabelCardNumber = new Label();
             LabelCCV = new Label();
-            CCVField = new TextBox();
+            MaskedCardNumField = new MaskedTextBox();
+            MaskedCCVField = new MaskedTextBox();
             SuspendLayout();
             // 
             // ButtonBack
@@ -86,13 +86,6 @@
             EmailComboBox.Size = new Size(151, 28);
             EmailComboBox.TabIndex = 5;
             // 
-            // CardNumberField
-            // 
-            CardNumberField.Location = new Point(307, 165);
-            CardNumberField.Name = "CardNumberField";
-            CardNumberField.Size = new Size(177, 27);
-            CardNumberField.TabIndex = 6;
-            // 
             // LabelCardNumber
             // 
             LabelCardNumber.AutoSize = true;
@@ -111,22 +104,31 @@
             LabelCCV.TabIndex = 8;
             LabelCCV.Text = "Change CCV:";
             // 
-            // CCVField
+            // MaskedCardNumField
             // 
-            CCVField.Location = new Point(609, 165);
-            CCVField.Name = "CCVField";
-            CCVField.Size = new Size(67, 27);
-            CCVField.TabIndex = 9;
+            MaskedCardNumField.Location = new Point(297, 166);
+            MaskedCardNumField.Mask = "0000-0000-0000-0000";
+            MaskedCardNumField.Name = "MaskedCardNumField";
+            MaskedCardNumField.Size = new Size(208, 27);
+            MaskedCardNumField.TabIndex = 9;
+            // 
+            // MaskedCCVField
+            // 
+            MaskedCCVField.Location = new Point(613, 165);
+            MaskedCCVField.Mask = "000";
+            MaskedCCVField.Name = "MaskedCCVField";
+            MaskedCCVField.Size = new Size(66, 27);
+            MaskedCCVField.TabIndex = 10;
             // 
             // AdminUpdateBilling
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(CCVField);
+            Controls.Add(MaskedCCVField);
+            Controls.Add(MaskedCardNumField);
             Controls.Add(LabelCCV);
             Controls.Add(LabelCardNumber);
-            Controls.Add(CardNumberField);
             Controls.Add(EmailComboBox);
             Controls.Add(LabelUserSelect);
             Controls.Add(LabelTitle);
@@ -145,9 +147,9 @@
         private Label LabelTitle;
         private Label LabelUserSelect;
         private ComboBox EmailComboBox;
-        private TextBox CardNumberField;
         private Label LabelCardNumber;
         private Label LabelCCV;
-        private TextBox CCVField;
+        private MaskedTextBox MaskedCardNumField;
+        private MaskedTextBox MaskedCCVField;
     }
 }

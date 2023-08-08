@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SubjectField = new TextBox();
             LabelSubject = new Label();
             LabelTitle = new Label();
             DescriptionField = new TextBox();
@@ -37,14 +36,8 @@
             ButtonBack = new Button();
             LabelResponse = new Label();
             ResponseReadOnlyField = new TextBox();
+            MaskedSubjectField = new MaskedTextBox();
             SuspendLayout();
-            // 
-            // SubjectField
-            // 
-            SubjectField.Location = new Point(112, 66);
-            SubjectField.Name = "SubjectField";
-            SubjectField.Size = new Size(311, 27);
-            SubjectField.TabIndex = 0;
             // 
             // LabelSubject
             // 
@@ -120,11 +113,20 @@
             ResponseReadOnlyField.Size = new Size(278, 237);
             ResponseReadOnlyField.TabIndex = 8;
             // 
+            // MaskedSubjectField
+            // 
+            MaskedSubjectField.Location = new Point(112, 66);
+            MaskedSubjectField.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            MaskedSubjectField.Name = "MaskedSubjectField";
+            MaskedSubjectField.Size = new Size(470, 27);
+            MaskedSubjectField.TabIndex = 9;
+            // 
             // FileComplaint
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(MaskedSubjectField);
             Controls.Add(ResponseReadOnlyField);
             Controls.Add(LabelResponse);
             Controls.Add(ButtonBack);
@@ -133,7 +135,6 @@
             Controls.Add(DescriptionField);
             Controls.Add(LabelTitle);
             Controls.Add(LabelSubject);
-            Controls.Add(SubjectField);
             Name = "FileComplaint";
             Text = "FileComplaint";
             ResumeLayout(false);
@@ -141,8 +142,6 @@
         }
 
         #endregion
-
-        private TextBox SubjectField;
         private Label LabelSubject;
         private Label LabelTitle;
         private TextBox DescriptionField;
@@ -151,5 +150,6 @@
         private Button ButtonBack;
         private Label LabelResponse;
         private TextBox ResponseReadOnlyField;
+        private MaskedTextBox MaskedSubjectField;
     }
 }
