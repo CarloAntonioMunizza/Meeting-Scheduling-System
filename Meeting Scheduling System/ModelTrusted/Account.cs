@@ -15,6 +15,9 @@ namespace Meeting_Scheduling_System.ModelTrusted
         private int balance = 0;
         private bool isAdmin = false;
 
+        
+
+
         //basic constructor for a new account
         public Account(string firstName, string lastName, string email, string password, string securityA)
         {
@@ -32,6 +35,7 @@ namespace Meeting_Scheduling_System.ModelTrusted
         public string Password { get => password; set => password = value; }
         public string SecurityA { get => securityA; set => securityA = value; }
         public int Balance { get => balance; set => balance = value; }
+        public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
         internal List<Meeting> Meetings { get => meetings; set => meetings = value; }
         internal BillingInfo PaymentMethod { get => paymentMethod; set => paymentMethod = value; }
     }

@@ -12,9 +12,30 @@ namespace Meeting_Scheduling_System.ControllerTrusted
         private static Account currentAccount;
         private static List<Account> accounts = new List<Account>();
 
+        internal static Account CurrentAccount { get => currentAccount; set => currentAccount = value; }
+        internal static List<Account> Accounts { get => accounts; set => accounts = value; }
+
+
+        public static bool isAdmin()
+        {
+            return currentAccount.IsAdmin;
+        }
+
+        public static void fill()
+        {
+            Accounts.Add(new Account("Admin", "Admin", "adm1234@pss.com", "iAmAdmin1", "Blue"));
+            Accounts[0].IsAdmin = true;
+            Accounts.Add(new Account("John", "Doe", "jfd1234@pss.com", "Password1", "Blue"));
+            Accounts.Add(new Account("Alex", "Smith", "ads1234@pss.com", "Password2", "Red"));
+            Accounts.Add(new Account("Jane", "Large", "jkl1234@pss.com", "Password3", "Green"));
+
+
+
+        }
+
         public static bool login(String email, string password, string sq)
         {
-            foreach (var account in accounts)
+            foreach (var account in Accounts)
             {
                 if (account.Email == email)
                 {
@@ -22,8 +43,9 @@ namespace Meeting_Scheduling_System.ControllerTrusted
                     {
                         if (account.SecurityA.Equals(sq))
                         {
-                            return true;
                             currentAccount = account;
+                            return true;
+                            
                         } else { return false; }
                     } else { return false; }
                 }
@@ -50,8 +72,8 @@ namespace Meeting_Scheduling_System.ControllerTrusted
         {
             //creates a user from form, assume pulling data from untrusted controller(view) then using the Account constructor
             Account account = new Account(firstname, lastname, email, password, sq);
-            accounts.Add(account);
-            currentAccount = account;
+            Accounts.Add(account);
+            CurrentAccount = account;
 
         }
 

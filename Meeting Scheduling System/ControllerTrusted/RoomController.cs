@@ -22,8 +22,6 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             rooms.Add(new Room(104, false));
             rooms.Add(new Room(105, true));
 
-
-
         }
 
         public static void addRoom(Room room)

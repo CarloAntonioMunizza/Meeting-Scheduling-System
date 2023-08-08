@@ -51,7 +51,7 @@
             // ButtonMeeting
             // 
             this.ButtonMeeting.Location = new System.Drawing.Point(255, 303);
-            this.ButtonMeeting.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonMeeting.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonMeeting.Name = "ButtonMeeting";
             this.ButtonMeeting.Size = new System.Drawing.Size(268, 109);
             this.ButtonMeeting.TabIndex = 1;
@@ -62,7 +62,7 @@
             // ButtonFileComplaint
             // 
             this.ButtonFileComplaint.Location = new System.Drawing.Point(716, 303);
-            this.ButtonFileComplaint.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonFileComplaint.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonFileComplaint.Name = "ButtonFileComplaint";
             this.ButtonFileComplaint.Size = new System.Drawing.Size(268, 109);
             this.ButtonFileComplaint.TabIndex = 2;
@@ -73,7 +73,7 @@
             // ButtonAccount
             // 
             this.ButtonAccount.Location = new System.Drawing.Point(1154, 303);
-            this.ButtonAccount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonAccount.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonAccount.Name = "ButtonAccount";
             this.ButtonAccount.Size = new System.Drawing.Size(268, 109);
             this.ButtonAccount.TabIndex = 3;
@@ -83,41 +83,37 @@
             // 
             // ButtonLogout
             // 
-            ButtonLogout.Location = new Point(352, 409);
-            ButtonLogout.Name = "ButtonLogout";
-            ButtonLogout.Size = new Size(94, 29);
-            ButtonLogout.TabIndex = 4;
-            ButtonLogout.Text = "Log Out";
-            ButtonLogout.UseVisualStyleBackColor = true;
-            ButtonLogout.Click += ButtonLogout_Click;
             this.ButtonLogout.Location = new System.Drawing.Point(748, 838);
-            this.ButtonLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonLogout.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonLogout.Name = "ButtonLogout";
             this.ButtonLogout.Size = new System.Drawing.Size(200, 59);
             this.ButtonLogout.TabIndex = 4;
             this.ButtonLogout.Text = "Log Out";
             this.ButtonLogout.UseVisualStyleBackColor = true;
+            this.ButtonLogout.Click += new System.EventHandler(this.ButtonLogout_Click_1);
             // 
             // ButtonAdminViewComplaint
             // 
             this.ButtonAdminViewComplaint.Location = new System.Drawing.Point(931, 537);
-            this.ButtonAdminViewComplaint.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonAdminViewComplaint.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonAdminViewComplaint.Name = "ButtonAdminViewComplaint";
             this.ButtonAdminViewComplaint.Size = new System.Drawing.Size(312, 133);
             this.ButtonAdminViewComplaint.TabIndex = 5;
             this.ButtonAdminViewComplaint.Text = "Admin View Complaint";
             this.ButtonAdminViewComplaint.UseVisualStyleBackColor = true;
+            this.ButtonAdminViewComplaint.Visible = false;
             this.ButtonAdminViewComplaint.Click += new System.EventHandler(this.ButtonAdminViewComplaint_Click);
             // 
             // ButtonAdminOptions
             // 
             this.ButtonAdminOptions.Location = new System.Drawing.Point(440, 537);
-            this.ButtonAdminOptions.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonAdminOptions.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonAdminOptions.Name = "ButtonAdminOptions";
             this.ButtonAdminOptions.Size = new System.Drawing.Size(312, 133);
             this.ButtonAdminOptions.TabIndex = 6;
             this.ButtonAdminOptions.Text = "Admin Options";
             this.ButtonAdminOptions.UseVisualStyleBackColor = true;
+            this.ButtonAdminOptions.Visible = false;
             this.ButtonAdminOptions.Click += new System.EventHandler(this.ButtonAdminOptions_Click);
             // 
             // MainMenu
@@ -132,7 +128,7 @@
             this.Controls.Add(this.ButtonFileComplaint);
             this.Controls.Add(this.ButtonMeeting);
             this.Controls.Add(this.LabelTitle);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "MainMenu";
             this.Text = "MainMenu";
             this.ResumeLayout(false);
