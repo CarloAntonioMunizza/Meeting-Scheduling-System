@@ -24,5 +24,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             accountForm.ShowDialog();
             this.Dispose();
         }
+
+        private void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

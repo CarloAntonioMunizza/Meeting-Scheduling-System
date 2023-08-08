@@ -28,121 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonBack = new Button();
-            ButtonSubmit = new Button();
-            LabelFirstName = new Label();
-            LabelLastName = new Label();
-            LabelPassword = new Label();
-            LabelSQ = new Label();
-            FirstNameField = new TextBox();
-            LastNameField = new TextBox();
-            PasswordField = new TextBox();
-            SQField = new TextBox();
-            SuspendLayout();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.LabelFirstName = new System.Windows.Forms.Label();
+            this.LabelLastName = new System.Windows.Forms.Label();
+            this.LabelPassword = new System.Windows.Forms.Label();
+            this.LabelSQ = new System.Windows.Forms.Label();
+            this.FirstNameField = new System.Windows.Forms.TextBox();
+            this.LastNameField = new System.Windows.Forms.TextBox();
+            this.PasswordField = new System.Windows.Forms.TextBox();
+            this.SQField = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 0;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 0;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(657, 409);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 1;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
-            ButtonSubmit.Click += ButtonSubmit_Click;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1396, 838);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
+            this.ButtonSubmit.TabIndex = 1;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click_1);
             // 
             // LabelFirstName
             // 
-            LabelFirstName.AutoSize = true;
-            LabelFirstName.Location = new Point(233, 100);
-            LabelFirstName.Name = "LabelFirstName";
-            LabelFirstName.Size = new Size(83, 20);
-            LabelFirstName.TabIndex = 2;
-            LabelFirstName.Text = "First Name:";
+            this.LabelFirstName.AutoSize = true;
+            this.LabelFirstName.Location = new System.Drawing.Point(495, 205);
+            this.LabelFirstName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelFirstName.Name = "LabelFirstName";
+            this.LabelFirstName.Size = new System.Drawing.Size(167, 41);
+            this.LabelFirstName.TabIndex = 2;
+            this.LabelFirstName.Text = "First Name:";
             // 
             // LabelLastName
             // 
-            LabelLastName.AutoSize = true;
-            LabelLastName.Location = new Point(234, 140);
-            LabelLastName.Name = "LabelLastName";
-            LabelLastName.Size = new Size(82, 20);
-            LabelLastName.TabIndex = 3;
-            LabelLastName.Text = "Last Name:";
+            this.LabelLastName.AutoSize = true;
+            this.LabelLastName.Location = new System.Drawing.Point(497, 287);
+            this.LabelLastName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelLastName.Name = "LabelLastName";
+            this.LabelLastName.Size = new System.Drawing.Size(164, 41);
+            this.LabelLastName.TabIndex = 3;
+            this.LabelLastName.Text = "Last Name:";
             // 
             // LabelPassword
             // 
-            LabelPassword.AutoSize = true;
-            LabelPassword.Location = new Point(243, 185);
-            LabelPassword.Name = "LabelPassword";
-            LabelPassword.Size = new Size(73, 20);
-            LabelPassword.TabIndex = 4;
-            LabelPassword.Text = "Password:";
+            this.LabelPassword.AutoSize = true;
+            this.LabelPassword.Location = new System.Drawing.Point(516, 379);
+            this.LabelPassword.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelPassword.Name = "LabelPassword";
+            this.LabelPassword.Size = new System.Drawing.Size(150, 41);
+            this.LabelPassword.TabIndex = 4;
+            this.LabelPassword.Text = "Password:";
             // 
             // LabelSQ
             // 
-            LabelSQ.AutoSize = true;
-            LabelSQ.Location = new Point(12, 241);
-            LabelSQ.Name = "LabelSQ";
-            LabelSQ.Size = new Size(304, 20);
-            LabelSQ.TabIndex = 5;
-            LabelSQ.Text = "Security Question, Whats your favouite color:";
+            this.LabelSQ.AutoSize = true;
+            this.LabelSQ.Location = new System.Drawing.Point(26, 494);
+            this.LabelSQ.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelSQ.Name = "LabelSQ";
+            this.LabelSQ.Size = new System.Drawing.Size(614, 41);
+            this.LabelSQ.TabIndex = 5;
+            this.LabelSQ.Text = "Security Question, Whats your favouite color:";
             // 
             // FirstNameField
             // 
-            FirstNameField.Location = new Point(322, 97);
-            FirstNameField.Name = "FirstNameField";
-            FirstNameField.Size = new Size(125, 27);
-            FirstNameField.TabIndex = 6;
+            this.FirstNameField.Location = new System.Drawing.Point(684, 199);
+            this.FirstNameField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.FirstNameField.Name = "FirstNameField";
+            this.FirstNameField.Size = new System.Drawing.Size(261, 47);
+            this.FirstNameField.TabIndex = 6;
             // 
             // LastNameField
             // 
-            LastNameField.Location = new Point(321, 137);
-            LastNameField.Name = "LastNameField";
-            LastNameField.Size = new Size(125, 27);
-            LastNameField.TabIndex = 7;
+            this.LastNameField.Location = new System.Drawing.Point(682, 281);
+            this.LastNameField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.LastNameField.Name = "LastNameField";
+            this.LastNameField.Size = new System.Drawing.Size(261, 47);
+            this.LastNameField.TabIndex = 7;
             // 
             // PasswordField
             // 
-            PasswordField.Location = new Point(322, 178);
-            PasswordField.Name = "PasswordField";
-            PasswordField.Size = new Size(125, 27);
-            PasswordField.TabIndex = 8;
+            this.PasswordField.Location = new System.Drawing.Point(684, 365);
+            this.PasswordField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PasswordField.Name = "PasswordField";
+            this.PasswordField.Size = new System.Drawing.Size(261, 47);
+            this.PasswordField.TabIndex = 8;
             // 
             // SQField
             // 
-            SQField.Location = new Point(322, 238);
-            SQField.Name = "SQField";
-            SQField.Size = new Size(125, 27);
-            SQField.TabIndex = 9;
+            this.SQField.Location = new System.Drawing.Point(684, 488);
+            this.SQField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SQField.Name = "SQField";
+            this.SQField.Size = new System.Drawing.Size(261, 47);
+            this.SQField.TabIndex = 9;
             // 
             // EditAccountInfo
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(763, 450);
-            Controls.Add(SQField);
-            Controls.Add(PasswordField);
-            Controls.Add(LastNameField);
-            Controls.Add(FirstNameField);
-            Controls.Add(LabelSQ);
-            Controls.Add(LabelPassword);
-            Controls.Add(LabelLastName);
-            Controls.Add(LabelFirstName);
-            Controls.Add(ButtonSubmit);
-            Controls.Add(ButtonBack);
-            Name = "EditAccountInfo";
-            Text = "EditAccountInfo";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1621, 922);
+            this.Controls.Add(this.SQField);
+            this.Controls.Add(this.PasswordField);
+            this.Controls.Add(this.LastNameField);
+            this.Controls.Add(this.FirstNameField);
+            this.Controls.Add(this.LabelSQ);
+            this.Controls.Add(this.LabelPassword);
+            this.Controls.Add(this.LabelLastName);
+            this.Controls.Add(this.LabelFirstName);
+            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.ButtonBack);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "EditAccountInfo";
+            this.Text = "EditAccountInfo";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
