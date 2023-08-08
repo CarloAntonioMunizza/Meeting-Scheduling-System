@@ -39,49 +39,54 @@
             // 
             // LabelCardNumber
             // 
-            LabelCardNumber.AutoSize = true;
-            LabelCardNumber.Location = new Point(79, 153);
-            LabelCardNumber.Name = "LabelCardNumber";
-            LabelCardNumber.Size = new Size(275, 20);
-            LabelCardNumber.TabIndex = 0;
-            LabelCardNumber.Text = "Enter your Card Number without dashes:";
+            this.LabelCardNumber.AutoSize = true;
+            this.LabelCardNumber.Location = new System.Drawing.Point(168, 314);
+            this.LabelCardNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelCardNumber.Name = "LabelCardNumber";
+            this.LabelCardNumber.Size = new System.Drawing.Size(557, 41);
+            this.LabelCardNumber.TabIndex = 0;
+            this.LabelCardNumber.Text = "Enter your Card Number without dashes:";
             // 
             // LabelCCV
             // 
-            LabelCCV.AutoSize = true;
-            LabelCCV.Location = new Point(186, 202);
-            LabelCCV.Name = "LabelCCV";
-            LabelCCV.Size = new Size(168, 20);
-            LabelCCV.TabIndex = 2;
-            LabelCCV.Text = "Enter your CCV Number:";
+            this.LabelCCV.AutoSize = true;
+            this.LabelCCV.Location = new System.Drawing.Point(395, 414);
+            this.LabelCCV.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelCCV.Name = "LabelCCV";
+            this.LabelCCV.Size = new System.Drawing.Size(342, 41);
+            this.LabelCCV.TabIndex = 2;
+            this.LabelCCV.Text = "Enter your CCV Number:";
             // 
             // LabelTitle
             // 
-            LabelTitle.AutoSize = true;
-            LabelTitle.Location = new Point(311, 41);
-            LabelTitle.Name = "LabelTitle";
-            LabelTitle.Size = new Size(205, 20);
-            LabelTitle.TabIndex = 4;
-            LabelTitle.Text = "Enter Card Information Below";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Location = new System.Drawing.Point(661, 84);
+            this.LabelTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(407, 41);
+            this.LabelTitle.TabIndex = 4;
+            this.LabelTitle.Text = "Enter Card Information Below";
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 5;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 5;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(694, 409);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 6;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1475, 838);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
+            this.ButtonSubmit.TabIndex = 6;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
             // 
             // MaskedCardInfoField
             // 
