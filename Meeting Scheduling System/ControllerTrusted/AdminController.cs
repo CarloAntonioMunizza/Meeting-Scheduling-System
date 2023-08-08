@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Meeting_Scheduling_System.ControllerTrusted
 {
-    internal class AdminController : AccountController
+    internal static class AdminController 
     {
-        private Admin currentAdmin;
+        private static Admin currentAdmin;
 
-        public void createAdmin()
+        public static void createAdmin()
         {
             //pulls data from untrusted controller and populates an account constructor as an admin
         }
 
-        public void updateOtherBilling(Account a)
+        public static void updateOtherBilling(Account a)
         {
             //updates another user's billingInfo entered from untrusted controller and pushes to account
         }

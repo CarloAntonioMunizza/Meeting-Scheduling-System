@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Meeting_Scheduling_System.ControllerTrusted
 {
-    internal class BillingController
+    internal static class BillingController
     {
-        public void updateBillingInfo(Account account, BillingInfo billing)
+        public static void updateBillingInfo(Account account, BillingInfo billing)
         {
             //update billinginfo for account, data pushed from untrusted and then updated in model
         }
 
-        public void payBill(Account account, Meeting meeting)
+        public static void payBill(Account account, Meeting meeting)
         {
             if (!meeting.Paid)
             {

@@ -7,28 +7,28 @@ using System.Threading.Tasks;
 
 namespace Meeting_Scheduling_System.ControllerTrusted
 {
-    internal class ComplaintController
+    internal static class ComplaintController
     {
-        private Complaint currentComplaint;
-        private List<Complaint> complaintList;
+        private static Complaint currentComplaint;
+        private static List<Complaint> complaintList;
 
-        public void addComplaint(Complaint complaint)
+        public static void addComplaint(Complaint complaint)
         {
             //pulls data from untrusted controller and runs complaint constructor and adds to list
         }
 
-        public void removeComplaint(Complaint complaint)
+        public static void removeComplaint(Complaint complaint)
         {
             complaintList.Remove(complaint);
         }
 
-        public void respondToComplaint()
+        public static void respondToComplaint()
         {
             //do something with current complaint
             currentComplaint.IsReviewed = true;
         }
 
-        public void showComplaints()
+        public static void showComplaints()
         {
             //show in ui
         }

@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 
 namespace Meeting_Scheduling_System.ControllerTrusted
 {
-    internal class MeetingController
+    internal static class MeetingController
     {
-        private Meeting currentMeeting;
-        private List<Meeting> meetingList = new List<Meeting>();
+        private static Meeting currentMeeting;
+        private static List<Meeting> meetingList = new List<Meeting>();
 
-        public void addUser(Account a)
+        public static void addUser(Account a)
         {
             //if participant is not in another meeting
             currentMeeting.Participants.Add(a);
             //else yell at them
         }
 
-        public void removeUser(Account a)
+        public static void removeUser(Account a)
         {
             currentMeeting.Participants.Remove(a);
         }
 
-        public void changeTime(DateTime time) 
+        public static void changeTime(DateTime time) 
         {
             if (checkAvailability(currentMeeting.Room, time))
             {
@@ -34,7 +34,7 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             
         }
 
-        public void changeRoom (Room room)
+        public static void changeRoom (Room room)
         {
             if (checkAvailability(room, currentMeeting.Time )) {
                 currentMeeting.Room = room;
@@ -42,12 +42,12 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             //else yell
         }
 
-        public void getMeetingInfo(Meeting meeting) 
+        public static void getMeetingInfo(Meeting meeting) 
         { 
             //push data of meeting to form group window
         }
 
-        public bool checkAvailability(Room room, DateTime time)
+        public static bool checkAvailability(Room room, DateTime time)
         {
             foreach (Meeting meeting in meetingList)
             {
