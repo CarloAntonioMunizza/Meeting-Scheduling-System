@@ -1,6 +1,6 @@
 ﻿namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    partial class ConfirmInfo
+    partial class ViewMeetings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,55 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            MaskedConfirmPasswordField = new TextBox();
-            LabelEnterPassword = new Label();
+            ButtonBack = new Button();
             ButtonSubmit = new Button();
             SuspendLayout();
             // 
-            // MaskedConfirmPasswordField
+            // ButtonBack
             // 
-            MaskedConfirmPasswordField.Location = new Point(335, 141);
-            MaskedConfirmPasswordField.Name = "MaskedConfirmPasswordField";
-            MaskedConfirmPasswordField.Size = new Size(125, 27);
-            MaskedConfirmPasswordField.TabIndex = 0;
-            // 
-            // LabelEnterPassword
-            // 
-            LabelEnterPassword.AutoSize = true;
-            LabelEnterPassword.Location = new Point(186, 144);
-            LabelEnterPassword.Name = "LabelEnterPassword";
-            LabelEnterPassword.Size = new Size(146, 20);
-            LabelEnterPassword.TabIndex = 1;
-            LabelEnterPassword.Text = "Enter your password:";
+            ButtonBack.Location = new Point(12, 409);
+            ButtonBack.Name = "ButtonBack";
+            ButtonBack.Size = new Size(94, 29);
+            ButtonBack.TabIndex = 0;
+            ButtonBack.Text = "Back";
+            ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(356, 364);
+            ButtonSubmit.Location = new Point(663, 409);
             ButtonSubmit.Name = "ButtonSubmit";
             ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 2;
+            ButtonSubmit.TabIndex = 1;
             ButtonSubmit.Text = "Submit";
             ButtonSubmit.UseVisualStyleBackColor = true;
-            ButtonSubmit.Click += ButtonSubmit_Click;
             // 
-            // ConfirmInfo
+            // ViewMeetings
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(769, 450);
             Controls.Add(ButtonSubmit);
-            Controls.Add(LabelEnterPassword);
-            Controls.Add(MaskedConfirmPasswordField);
-            Name = "ConfirmInfo";
-            Text = "AddPayment";
+            Controls.Add(ButtonBack);
+            Name = "ViewMeetings";
+            Text = "ViewMeetings";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private TextBox MaskedConfirmPasswordField;
-        private Label LabelEnterPassword;
+        private Button ButtonBack;
         private Button ButtonSubmit;
     }
 }

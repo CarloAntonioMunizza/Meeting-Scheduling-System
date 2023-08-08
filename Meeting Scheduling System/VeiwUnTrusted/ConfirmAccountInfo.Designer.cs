@@ -35,7 +35,7 @@
             // 
             // MaskedConfirmPasswordField
             // 
-            MaskedConfirmPasswordField.Location = new Point(344, 141);
+            MaskedConfirmPasswordField.Location = new Point(334, 141);
             MaskedConfirmPasswordField.Name = "MaskedConfirmPasswordField";
             MaskedConfirmPasswordField.Size = new Size(125, 27);
             MaskedConfirmPasswordField.TabIndex = 0;
@@ -43,7 +43,7 @@
             // LabelEnterPassword
             // 
             LabelEnterPassword.AutoSize = true;
-            LabelEnterPassword.Location = new Point(195, 144);
+            LabelEnterPassword.Location = new Point(182, 144);
             LabelEnterPassword.Name = "LabelEnterPassword";
             LabelEnterPassword.Size = new Size(146, 20);
             LabelEnterPassword.TabIndex = 1;
@@ -51,14 +51,15 @@
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(344, 388);
+            ButtonSubmit.Location = new Point(354, 356);
             ButtonSubmit.Name = "ButtonSubmit";
             ButtonSubmit.Size = new Size(94, 29);
             ButtonSubmit.TabIndex = 2;
             ButtonSubmit.Text = "Submit";
             ButtonSubmit.UseVisualStyleBackColor = true;
+            ButtonSubmit.Click += ButtonSubmit_Click;
             // 
-            // ConfirmInfo
+            // ConfirmAccountInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -66,7 +67,7 @@
             Controls.Add(ButtonSubmit);
             Controls.Add(LabelEnterPassword);
             Controls.Add(MaskedConfirmPasswordField);
-            Name = "ConfirmInfo";
+            Name = "ConfirmAccountInfo";
             Text = "ConfirmInfo";
             ResumeLayout(false);
             PerformLayout();

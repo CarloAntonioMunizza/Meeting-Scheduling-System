@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    public partial class EditAccountInfo : Form
+    public partial class ViewMeetings : Form
     {
-        public EditAccountInfo()
+        public ViewMeetings()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonBack_Click(object sender, EventArgs e)
         {
-            Account AccountForm = new Account();
+            Meetings MeetingsForm = new Meetings();
             this.Hide();
-            AccountForm.ShowDialog();
+            MeetingsForm.ShowDialog();
             this.Dispose();
-        }
-
-        private void ButtonSubmit_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
