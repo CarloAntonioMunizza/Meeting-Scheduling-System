@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Meeting_Scheduling_System.VeiwUnTrusted;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,14 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
         private void EmailField_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            Welcome WelcomeForm = new Welcome();
+            this.Hide();
+            WelcomeForm.ShowDialog();
+            this.Dispose();
         }
     }
 }

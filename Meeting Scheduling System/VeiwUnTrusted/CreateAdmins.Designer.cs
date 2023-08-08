@@ -60,6 +60,7 @@
             ButtonBack.TabIndex = 2;
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // ButtonSubmit
             // 

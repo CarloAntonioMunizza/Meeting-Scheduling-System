@@ -109,6 +109,7 @@
             ButtonBack.TabIndex = 8;
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // MaskedPasswordField
             // 

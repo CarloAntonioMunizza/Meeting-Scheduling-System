@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonEditInfo = new Button();
+            ButtonEditPaymentInfo = new Button();
             ButtonAddPayment = new Button();
             ButtonBack = new Button();
             LableTitle = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
-            // ButtonEditInfo
+            // ButtonEditPaymentInfo
             // 
-            ButtonEditInfo.Location = new Point(324, 106);
-            ButtonEditInfo.Name = "ButtonEditInfo";
-            ButtonEditInfo.Size = new Size(146, 72);
-            ButtonEditInfo.TabIndex = 0;
-            ButtonEditInfo.Text = "Edit Info";
-            ButtonEditInfo.UseVisualStyleBackColor = true;
+            ButtonEditPaymentInfo.Location = new Point(447, 108);
+            ButtonEditPaymentInfo.Name = "ButtonEditPaymentInfo";
+            ButtonEditPaymentInfo.Size = new Size(146, 72);
+            ButtonEditPaymentInfo.TabIndex = 0;
+            ButtonEditPaymentInfo.Text = "Edit Payment Info";
+            ButtonEditPaymentInfo.UseVisualStyleBackColor = true;
             // 
             // ButtonAddPayment
             // 
@@ -73,15 +74,25 @@
             LableTitle.Text = "Account Options";
             LableTitle.Click += LableTitle_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(212, 108);
+            button1.Name = "button1";
+            button1.Size = new Size(146, 72);
+            button1.TabIndex = 6;
+            button1.Text = "Edit Account Info";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Account
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(LableTitle);
             Controls.Add(ButtonBack);
             Controls.Add(ButtonAddPayment);
-            Controls.Add(ButtonEditInfo);
+            Controls.Add(ButtonEditPaymentInfo);
             Name = "Account";
             Text = "Account";
             ResumeLayout(false);
@@ -90,9 +101,10 @@
 
         #endregion
 
-        private Button ButtonEditInfo;
+        private Button ButtonEditPaymentInfo;
         private Button ButtonAddPayment;
         private Button ButtonBack;
         private Label LableTitle;
+        private Button button1;
     }
 }

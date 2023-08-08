@@ -31,7 +31,6 @@
             ButtonCreate = new Button();
             ButtonView = new Button();
             ButtonEdit = new Button();
-            ButtonAdminEditRooms = new Button();
             ButtonBack = new Button();
             LabelTitle = new Label();
             SuspendLayout();
@@ -63,15 +62,6 @@
             ButtonEdit.Text = "Edit Meeting";
             ButtonEdit.UseVisualStyleBackColor = true;
             // 
-            // ButtonAdminEditRooms
-            // 
-            ButtonAdminEditRooms.Location = new Point(327, 328);
-            ButtonAdminEditRooms.Name = "ButtonAdminEditRooms";
-            ButtonAdminEditRooms.Size = new Size(146, 65);
-            ButtonAdminEditRooms.TabIndex = 3;
-            ButtonAdminEditRooms.Text = "Admin Edit Rooms";
-            ButtonAdminEditRooms.UseVisualStyleBackColor = true;
-            // 
             // ButtonBack
             // 
             ButtonBack.Location = new Point(12, 409);
@@ -98,7 +88,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(LabelTitle);
             Controls.Add(ButtonBack);
-            Controls.Add(ButtonAdminEditRooms);
             Controls.Add(ButtonEdit);
             Controls.Add(ButtonView);
             Controls.Add(ButtonCreate);
@@ -113,7 +102,6 @@
         private Button ButtonCreate;
         private Button ButtonView;
         private Button ButtonEdit;
-        private Button ButtonAdminEditRooms;
         private Button ButtonBack;
         private Label LabelTitle;
     }

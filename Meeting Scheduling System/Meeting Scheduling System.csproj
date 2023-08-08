@@ -13,4 +13,10 @@
     <Folder Include="ControllerUnTrusted\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="VeiwUnTrusted\ConfirmPaymentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
