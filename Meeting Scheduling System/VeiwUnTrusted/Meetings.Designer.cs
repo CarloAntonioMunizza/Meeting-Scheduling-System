@@ -28,84 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonCreate = new Button();
-            ButtonView = new Button();
-            ButtonEdit = new Button();
-            ButtonAdminEditRooms = new Button();
-            ButtonBack = new Button();
-            LabelTitle = new Label();
-            SuspendLayout();
+            this.ButtonCreate = new System.Windows.Forms.Button();
+            this.ButtonView = new System.Windows.Forms.Button();
+            this.ButtonEdit = new System.Windows.Forms.Button();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // ButtonCreate
             // 
-            ButtonCreate.Location = new Point(337, 94);
-            ButtonCreate.Name = "ButtonCreate";
-            ButtonCreate.Size = new Size(127, 41);
-            ButtonCreate.TabIndex = 0;
-            ButtonCreate.Text = "Create Meeting";
-            ButtonCreate.UseVisualStyleBackColor = true;
+            this.ButtonCreate.Location = new System.Drawing.Point(716, 193);
+            this.ButtonCreate.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonCreate.Name = "ButtonCreate";
+            this.ButtonCreate.Size = new System.Drawing.Size(270, 84);
+            this.ButtonCreate.TabIndex = 0;
+            this.ButtonCreate.Text = "Create Meeting";
+            this.ButtonCreate.UseVisualStyleBackColor = true;
+            this.ButtonCreate.Click += new System.EventHandler(this.ButtonCreate_Click);
             // 
             // ButtonView
             // 
-            ButtonView.Location = new Point(337, 238);
-            ButtonView.Name = "ButtonView";
-            ButtonView.Size = new Size(127, 41);
-            ButtonView.TabIndex = 1;
-            ButtonView.Text = "View Meeting";
-            ButtonView.UseVisualStyleBackColor = true;
+            this.ButtonView.Location = new System.Drawing.Point(716, 488);
+            this.ButtonView.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonView.Name = "ButtonView";
+            this.ButtonView.Size = new System.Drawing.Size(270, 84);
+            this.ButtonView.TabIndex = 1;
+            this.ButtonView.Text = "View Meeting";
+            this.ButtonView.UseVisualStyleBackColor = true;
+            this.ButtonView.Click += new System.EventHandler(this.ButtonView_Click);
             // 
             // ButtonEdit
             // 
-            ButtonEdit.Location = new Point(337, 166);
-            ButtonEdit.Name = "ButtonEdit";
-            ButtonEdit.Size = new Size(127, 41);
-            ButtonEdit.TabIndex = 2;
-            ButtonEdit.Text = "Edit Meeting";
-            ButtonEdit.UseVisualStyleBackColor = true;
-            // 
-            // ButtonAdminEditRooms
-            // 
-            ButtonAdminEditRooms.Location = new Point(327, 328);
-            ButtonAdminEditRooms.Name = "ButtonAdminEditRooms";
-            ButtonAdminEditRooms.Size = new Size(146, 65);
-            ButtonAdminEditRooms.TabIndex = 3;
-            ButtonAdminEditRooms.Text = "Admin Edit Rooms";
-            ButtonAdminEditRooms.UseVisualStyleBackColor = true;
+            this.ButtonEdit.Location = new System.Drawing.Point(716, 340);
+            this.ButtonEdit.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonEdit.Name = "ButtonEdit";
+            this.ButtonEdit.Size = new System.Drawing.Size(270, 84);
+            this.ButtonEdit.TabIndex = 2;
+            this.ButtonEdit.Text = "Edit Meeting";
+            this.ButtonEdit.UseVisualStyleBackColor = true;
+            this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 4;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 4;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
             // 
             // LabelTitle
             // 
-            LabelTitle.AutoSize = true;
-            LabelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LabelTitle.Location = new Point(327, 29);
-            LabelTitle.Name = "LabelTitle";
-            LabelTitle.Size = new Size(151, 28);
-            LabelTitle.TabIndex = 5;
-            LabelTitle.Text = "Meeting Menu";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelTitle.Location = new System.Drawing.Point(695, 59);
+            this.LabelTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(300, 54);
+            this.LabelTitle.TabIndex = 5;
+            this.LabelTitle.Text = "Meeting Menu";
             // 
             // Meetings
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(LabelTitle);
-            Controls.Add(ButtonBack);
-            Controls.Add(ButtonAdminEditRooms);
-            Controls.Add(ButtonEdit);
-            Controls.Add(ButtonView);
-            Controls.Add(ButtonCreate);
-            Name = "Meetings";
-            Text = "Meetings";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1700, 922);
+            this.Controls.Add(this.LabelTitle);
+            this.Controls.Add(this.ButtonBack);
+            this.Controls.Add(this.ButtonEdit);
+            this.Controls.Add(this.ButtonView);
+            this.Controls.Add(this.ButtonCreate);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "Meetings";
+            this.Text = "Meetings";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -113,7 +112,6 @@
         private Button ButtonCreate;
         private Button ButtonView;
         private Button ButtonEdit;
-        private Button ButtonAdminEditRooms;
         private Button ButtonBack;
         private Label LabelTitle;
     }

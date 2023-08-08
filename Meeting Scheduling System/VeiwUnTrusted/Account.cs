@@ -29,5 +29,13 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             MainMenuForm.ShowDialog();
             this.Dispose();
         }
+
+        private void ButtonEditInfo_Click(object sender, EventArgs e)
+        {
+            MeetingCreation MeetingCreationForm = new MeetingCreation();
+            this.Hide();
+            MeetingCreationForm.ShowDialog();
+            this.Dispose();
+        }
     }
 }
