@@ -14,7 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="VeiwUnTrusted\ConfirmPaymentInfo.cs">
+    <Compile Update="VeiwUnTrusted\ConfirmAddPaymentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VeiwUnTrusted\ConfirmEditPaymentInfo.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

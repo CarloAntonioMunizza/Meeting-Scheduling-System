@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            EmailField = new TextBox();
-            SQField = new TextBox();
             labelTitle = new Label();
             LabelFirstName = new Label();
             LabelLastName = new Label();
@@ -44,27 +42,15 @@
             label1 = new Label();
             ButtonSubmit = new Button();
             ButtonBack = new Button();
-            MaskedPasswordConfirmField = new MaskedTextBox();
             InvalidPassword = new TextBox();
             FirstNameMaskedField = new MaskedTextBox();
             LastNameMaskedField = new MaskedTextBox();
             PasswordField = new TextBox();
+            ConfirmPasswordField = new TextBox();
+            MaskedSQField = new MaskedTextBox();
+            MaskedEmailField = new MaskedTextBox();
+            LabelExample = new Label();
             SuspendLayout();
-            // 
-            // EmailField
-            // 
-            EmailField.Location = new Point(366, 146);
-            EmailField.Name = "EmailField";
-            EmailField.PlaceholderText = "xyz1234@pss.com";
-            EmailField.Size = new Size(135, 27);
-            EmailField.TabIndex = 2;
-            // 
-            // SQField
-            // 
-            SQField.Location = new Point(366, 329);
-            SQField.Name = "SQField";
-            SQField.Size = new Size(125, 27);
-            SQField.TabIndex = 5;
             // 
             // labelTitle
             // 
@@ -197,13 +183,6 @@
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
             // 
-            // MaskedPasswordConfirmField
-            // 
-            MaskedPasswordConfirmField.Location = new Point(366, 281);
-            MaskedPasswordConfirmField.Name = "MaskedPasswordConfirmField";
-            MaskedPasswordConfirmField.Size = new Size(125, 27);
-            MaskedPasswordConfirmField.TabIndex = 21;
-            // 
             // InvalidPassword
             // 
             InvalidPassword.Location = new Point(545, 182);
@@ -242,16 +221,54 @@
             PasswordField.Size = new Size(125, 27);
             PasswordField.TabIndex = 26;
             // 
+            // ConfirmPasswordField
+            // 
+            ConfirmPasswordField.Location = new Point(366, 281);
+            ConfirmPasswordField.MaxLength = 15;
+            ConfirmPasswordField.Name = "ConfirmPasswordField";
+            ConfirmPasswordField.PasswordChar = '#';
+            ConfirmPasswordField.Size = new Size(125, 27);
+            ConfirmPasswordField.TabIndex = 27;
+            // 
+            // MaskedSQField
+            // 
+            MaskedSQField.Location = new Point(369, 329);
+            MaskedSQField.Mask = "LLLLLLLLLLLLLLL";
+            MaskedSQField.Name = "MaskedSQField";
+            MaskedSQField.Size = new Size(98, 27);
+            MaskedSQField.TabIndex = 28;
+            // 
+            // MaskedEmailField
+            // 
+            MaskedEmailField.Location = new Point(366, 146);
+            MaskedEmailField.Mask = "LLL0000@pss.com";
+            MaskedEmailField.Name = "MaskedEmailField";
+            MaskedEmailField.Size = new Size(125, 27);
+            MaskedEmailField.TabIndex = 29;
+            MaskedEmailField.MaskInputRejected += MaskedEmailField_MaskInputRejected;
+            // 
+            // LabelExample
+            // 
+            LabelExample.AutoSize = true;
+            LabelExample.Location = new Point(497, 149);
+            LabelExample.Name = "LabelExample";
+            LabelExample.Size = new Size(151, 20);
+            LabelExample.TabIndex = 30;
+            LabelExample.Text = "Ex: xyz1234@pss.com";
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(797, 499);
+            Controls.Add(LabelExample);
+            Controls.Add(MaskedEmailField);
+            Controls.Add(MaskedSQField);
+            Controls.Add(ConfirmPasswordField);
             Controls.Add(PasswordField);
             Controls.Add(LastNameMaskedField);
             Controls.Add(FirstNameMaskedField);
             Controls.Add(InvalidPassword);
-            Controls.Add(MaskedPasswordConfirmField);
             Controls.Add(ButtonBack);
             Controls.Add(ButtonSubmit);
             Controls.Add(label1);
@@ -266,8 +283,6 @@
             Controls.Add(LabelLastName);
             Controls.Add(LabelFirstName);
             Controls.Add(labelTitle);
-            Controls.Add(SQField);
-            Controls.Add(EmailField);
             Name = "SignUp";
             Text = "SignUp";
             ResumeLayout(false);
@@ -275,8 +290,6 @@
         }
 
         #endregion
-        private TextBox EmailField;
-        private TextBox SQField;
         private Label labelTitle;
         private Label LabelFirstName;
         private Label LabelLastName;
@@ -291,10 +304,13 @@
         private Label label1;
         private Button ButtonSubmit;
         private Button ButtonBack;
-        private MaskedTextBox MaskedPasswordConfirmField;
         private TextBox InvalidPassword;
         private MaskedTextBox FirstNameMaskedField;
         private MaskedTextBox LastNameMaskedField;
         private TextBox PasswordField;
+        private TextBox ConfirmPasswordField;
+        private MaskedTextBox MaskedSQField;
+        private MaskedTextBox MaskedEmailField;
+        private Label LabelExample;
     }
 }

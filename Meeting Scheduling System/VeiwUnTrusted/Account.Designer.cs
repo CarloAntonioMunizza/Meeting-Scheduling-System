@@ -53,6 +53,7 @@
             ButtonAddPayment.TabIndex = 1;
             ButtonAddPayment.Text = "Add Payment";
             ButtonAddPayment.UseVisualStyleBackColor = true;
+            ButtonAddPayment.Click += ButtonAddPayment_Click;
             // 
             // LableTitle
             // 

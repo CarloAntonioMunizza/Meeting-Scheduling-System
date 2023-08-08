@@ -19,17 +19,17 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonEditInfo_Click(object sender, EventArgs e)
         {
-            EditPayment EditPaymentForm = new EditPayment();
+            ConfirmEditPaymentInfo ConfirmEditPaymentInfoForm = new ConfirmEditPaymentInfo();
             this.Hide();
-            EditPaymentForm.ShowDialog();
+            ConfirmEditPaymentInfoForm.ShowDialog();
             this.Dispose();
         }
 
         private void ButtonEditAccountInfo_Click(object sender, EventArgs e)
         {
-            EditAccountInfo EditAccountInfoForm = new EditAccountInfo();
+            ConfirmEditAccountInfo ConfirmEditAccountInfoForm = new ConfirmEditAccountInfo();
             this.Hide();
-            EditAccountInfoForm.ShowDialog();
+            ConfirmEditAccountInfoForm.ShowDialog();
             this.Dispose();
         }
 
@@ -43,6 +43,14 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             MainMenu MainMenuForm = new MainMenu();
             this.Hide();
             MainMenuForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonAddPayment_Click(object sender, EventArgs e)
+        {
+            ConfirmAddPaymentInfo ConfirmAddPaymentInfoForm = new ConfirmAddPaymentInfo();
+            this.Hide();
+            ConfirmAddPaymentInfoForm.ShowDialog();
             this.Dispose();
         }
     }

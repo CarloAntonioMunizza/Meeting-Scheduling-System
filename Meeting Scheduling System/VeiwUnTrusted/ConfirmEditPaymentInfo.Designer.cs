@@ -1,6 +1,6 @@
 ﻿namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    partial class ConfirmAccountInfo
+    partial class ConfirmEditPaymentInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@
             ButtonSubmit.UseVisualStyleBackColor = true;
             ButtonSubmit.Click += ButtonSubmit_Click;
             // 
-            // ConfirmAccountInfo
+            // ConfirmEditPaymentInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -67,7 +67,7 @@
             Controls.Add(ButtonSubmit);
             Controls.Add(LabelEnterPassword);
             Controls.Add(MaskedConfirmPasswordField);
-            Name = "ConfirmAccountInfo";
+            Name = "ConfirmEditPaymentInfo";
             Text = "ConfirmInfo";
             ResumeLayout(false);
             PerformLayout();

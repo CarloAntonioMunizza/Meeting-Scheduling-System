@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    public partial class ConfirmAccountInfo : Form
+    public partial class ConfirmAddPaymentInfo : Form
     {
-        public ConfirmAccountInfo()
+        public ConfirmAddPaymentInfo()
         {
             InitializeComponent();
         }
 
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-
+            AddPayment AddPaymentForm = new AddPayment();
+            this.Hide();
+            AddPaymentForm.ShowDialog();
+            this.Dispose();
         }
     }
 }

@@ -69,6 +69,7 @@
             comboBox2.Location = new Point(65, 105);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
+            comboBox2.Sorted = true;
             comboBox2.TabIndex = 3;
             // 
             // LabelPeople

@@ -38,7 +38,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonView_Click(object sender, EventArgs e)
         {
-            //todo
+            ViewMeetings ViewMeetingsForm = new ViewMeetings();
+            this.Hide();
+            ViewMeetingsForm.ShowDialog();
+            this.Dispose();
         }
 
         private void ButtonBack_Click(object sender, EventArgs e)

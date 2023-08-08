@@ -49,10 +49,10 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
 
             string firstname = FirstNameMaskedField.Text;
             string lastname = LastNameMaskedField.Text;
-            string email = EmailField.Text;
+            string email = MaskedEmailField.Text;
             string password1 = PasswordField.Text;
-            string password2 = MaskedPasswordConfirmField.Text;
-            string sQ = SQField.Text;
+            string password2 = ConfirmPasswordField.Text;
+            string sQ = MaskedSQField.Text;
 
             bool validPass = AccountController.verifySignUpPassword(password1, password2);
             if (validPass)
@@ -74,6 +74,11 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
 
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MaskedEmailField_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
