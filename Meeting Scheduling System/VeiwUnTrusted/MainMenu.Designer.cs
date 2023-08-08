@@ -82,6 +82,7 @@
             ButtonLogout.TabIndex = 4;
             ButtonLogout.Text = "Log Out";
             ButtonLogout.UseVisualStyleBackColor = true;
+            ButtonLogout.Click += ButtonLogout_Click;
             // 
             // ButtonAdminViewComplaint
             // 

@@ -16,5 +16,13 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             InitializeComponent();
         }
+
+        private void ButtonLogout_Click(object sender, EventArgs e)
+        {
+            Welcome WelcomeForm = new Welcome();
+            this.Hide();
+            WelcomeForm.ShowDialog();
+            this.Dispose();
+        }
     }
 }

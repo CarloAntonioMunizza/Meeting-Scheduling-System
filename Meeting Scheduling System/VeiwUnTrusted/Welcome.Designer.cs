@@ -38,7 +38,7 @@
             // 
             // ButtonLogin
             // 
-            ButtonLogin.Location = new Point(353, 148);
+            ButtonLogin.Location = new Point(353, 152);
             ButtonLogin.Name = "ButtonLogin";
             ButtonLogin.Size = new Size(94, 29);
             ButtonLogin.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // ButtonSignUp
             // 
-            ButtonSignUp.Location = new Point(353, 242);
+            ButtonSignUp.Location = new Point(353, 247);
             ButtonSignUp.Name = "ButtonSignUp";
             ButtonSignUp.Size = new Size(94, 29);
             ButtonSignUp.TabIndex = 1;
@@ -90,6 +90,7 @@
             ButtonQuit.TabIndex = 5;
             ButtonQuit.Text = "Quit";
             ButtonQuit.UseVisualStyleBackColor = true;
+            ButtonQuit.Click += ButtonQuit_Click;
             // 
             // Welcome
             // 
