@@ -9,19 +9,18 @@ namespace Meeting_Scheduling_System.ModelTrusted
     internal class Account : Admin
     {
         //initialize variables
-        private string firstName, lastName, email, password, securityQ, securityA;
+        private string firstName, lastName, email, password,securityA;
         private List<Meeting> meetings = new List<Meeting>();
         private BillingInfo paymentMethod;
         private int balance = 0;
 
         //basic constructor for a new account
-        public Account(string firstName, string lastName, string email, string password, string securityQ, string securityA)
+        public Account(string firstName, string lastName, string email, string password, string securityA)
         {
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
             this.password = password;
-            this.securityQ = securityQ;
             this.securityA = securityA;
         }
 
@@ -30,7 +29,6 @@ namespace Meeting_Scheduling_System.ModelTrusted
         public string LastName { get => lastName; set => lastName = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
-        public string SecurityQ { get => securityQ; set => securityQ = value; }
         public string SecurityA { get => securityA; set => securityA = value; }
         public int Balance { get => balance; set => balance = value; }
         internal List<Meeting> Meetings { get => meetings; set => meetings = value; }

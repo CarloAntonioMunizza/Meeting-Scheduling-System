@@ -1,4 +1,5 @@
-﻿using Meeting_Scheduling_System.VeiwUnTrusted;
+﻿using Meeting_Scheduling_System.ControllerTrusted;
+using Meeting_Scheduling_System.VeiwUnTrusted;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
         public SignUp()
         {
             InitializeComponent();
+            
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -39,6 +41,41 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
             this.Hide();
             WelcomeForm.ShowDialog();
             this.Dispose();
+        }
+
+        private void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+            InvalidPassword.Visible = false;
+
+            string firstname = FirstNameField.Text;
+            string lastname = LastNameField.Text;
+            string email = EmailField.Text;
+            string password1 = MaskedPasswordField.Text;
+            string password2 = MaskedPasswordConfirmField.Text;
+            string sQ = SQField.Text;
+
+            bool validPass = AccountController.verifySignUpPassword(password1, password2);
+            if (validPass)
+            {
+                AccountController.Createuser(firstname, lastname, email, password1, sQ);
+                MainMenu MainMenuForm = new MainMenu();
+                this.Hide();
+                MainMenuForm.ShowDialog();
+                this.Dispose();
+
+            }
+            else
+            {
+                InvalidPassword.Visible = true;
+            }
+
+
+        }
+
+       
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,3 +1,4 @@
+using Meeting_Scheduling_System.ControllerTrusted;
 using Meeting_Scheduling_System.Veiw_UnTrusted;
 using System;
 using System.Windows.Forms;
@@ -14,7 +15,9 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new AdminUpdateBilling());
+            Application.Run(new Welcome());
+           
+            
         }
     }
 }
