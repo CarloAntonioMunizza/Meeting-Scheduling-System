@@ -17,19 +17,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             InitializeComponent();
         }
 
-        private void LableTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ButtonBack_Click(object sender, EventArgs e)
-        {
-            MainMenu MainMenuForm = new MainMenu();
-            this.Hide();
-            MainMenuForm.ShowDialog();
-            this.Dispose();
-        }
-
         private void ButtonEditInfo_Click(object sender, EventArgs e)
         {
             EditPayment EditPaymentForm = new EditPayment();
@@ -38,19 +25,24 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             this.Dispose();
         }
 
-        private void ButtonBack_Click_1(object sender, EventArgs e)
-        {
-            MainMenu MainMenuForm = new MainMenu();
-            this.Hide();
-            MainMenuForm.ShowDialog();
-            this.Dispose();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonEditAccountInfo_Click(object sender, EventArgs e)
         {
             EditAccountInfo EditAccountInfoForm = new EditAccountInfo();
             this.Hide();
             EditAccountInfoForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void Account_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            MainMenu MainMenuForm = new MainMenu();
+            this.Hide();
+            MainMenuForm.ShowDialog();
             this.Dispose();
         }
     }

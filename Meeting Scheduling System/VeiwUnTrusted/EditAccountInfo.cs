@@ -19,9 +19,9 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EditPayment EditPaymentForm = new EditPayment();
+            Account AccountForm = new Account();
             this.Hide();
-            EditPaymentForm.ShowDialog();
+            AccountForm.ShowDialog();
             this.Dispose();
         }
 

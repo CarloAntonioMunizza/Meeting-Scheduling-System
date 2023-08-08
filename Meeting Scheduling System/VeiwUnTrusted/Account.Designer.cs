@@ -30,9 +30,9 @@
         {
             ButtonEditPaymentInfo = new Button();
             ButtonAddPayment = new Button();
-            ButtonBack = new Button();
             LableTitle = new Label();
-            button1 = new Button();
+            ButtonEditAccountInfo = new Button();
+            BackButton = new Button();
             SuspendLayout();
             // 
             // ButtonEditPaymentInfo
@@ -54,16 +54,6 @@
             ButtonAddPayment.Text = "Add Payment";
             ButtonAddPayment.UseVisualStyleBackColor = true;
             // 
-            // ButtonBack
-            // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 3;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click_1;
-            // 
             // LableTitle
             // 
             LableTitle.AutoSize = true;
@@ -74,28 +64,39 @@
             LableTitle.TabIndex = 5;
             LableTitle.Text = "Account Options";
             // 
-            // button1
+            // ButtonEditAccountInfo
             // 
-            button1.Location = new Point(457, 117);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 72);
-            button1.TabIndex = 6;
-            button1.Text = "Edit Account Info";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            ButtonEditAccountInfo.Location = new Point(457, 117);
+            ButtonEditAccountInfo.Name = "ButtonEditAccountInfo";
+            ButtonEditAccountInfo.Size = new Size(146, 72);
+            ButtonEditAccountInfo.TabIndex = 6;
+            ButtonEditAccountInfo.Text = "Edit Account Info";
+            ButtonEditAccountInfo.UseVisualStyleBackColor = true;
+            ButtonEditAccountInfo.Click += ButtonEditAccountInfo_Click;
+            // 
+            // BackButton
+            // 
+            BackButton.Location = new Point(12, 409);
+            BackButton.Name = "BackButton";
+            BackButton.Size = new Size(94, 29);
+            BackButton.TabIndex = 7;
+            BackButton.Text = "Back";
+            BackButton.UseVisualStyleBackColor = true;
+            BackButton.Click += BackButton_Click;
             // 
             // Account
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(BackButton);
+            Controls.Add(ButtonEditAccountInfo);
             Controls.Add(LableTitle);
-            Controls.Add(ButtonBack);
             Controls.Add(ButtonAddPayment);
             Controls.Add(ButtonEditPaymentInfo);
             Name = "Account";
             Text = "Account";
+            Load += Account_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,8 +105,8 @@
 
         private Button ButtonEditPaymentInfo;
         private Button ButtonAddPayment;
-        private Button ButtonBack;
         private Label LableTitle;
-        private Button button1;
+        private Button ButtonEditAccountInfo;
+        private Button BackButton;
     }
 }
