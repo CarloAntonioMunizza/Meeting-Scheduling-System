@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Meeting_Scheduling_System.Veiw_UnTrusted;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         public Welcome()
         {
             InitializeComponent();
+        }
+        //form navigation
+        private void ButtonSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp SignUpForm = new SignUp();
+            this.Hide();
+            SignUpForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonLogin_Click(object sender, EventArgs e)
+        {
+            Login LoginForm = new Login();
+            this.Hide();
+            LoginForm.ShowDialog();
+            this.Dispose();
         }
     }
 }
