@@ -16,5 +16,29 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             InitializeComponent();
         }
+
+        private void ButtonCreate_Click(object sender, EventArgs e)
+        {
+            
+            MeetingCreation MeetingCreationForm = new MeetingCreation();
+            this.Hide();
+            MeetingCreationForm.ShowDialog();
+            this.Dispose();
+            
+        }
+
+        private void ButtonEdit_Click(object sender, EventArgs e)
+        {
+            MeetingEditor MeetingEditorForm = new MeetingEditor();
+            this.Hide();
+            MeetingEditorForm.ShowDialog();
+            this.Dispose();
+        }
+
+        
+        private void ButtonView_Click(object sender, EventArgs e)
+        {
+            //todo
+        }
     }
 }

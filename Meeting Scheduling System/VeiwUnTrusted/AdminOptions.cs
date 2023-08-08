@@ -24,5 +24,34 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             MainMenuForm.ShowDialog();
             this.Dispose();
         }
+
+        private void ButtonEditRooms_Click(object sender, EventArgs e)
+        {
+            AdminRoomEdit AdminRoomEditForm = new AdminRoomEdit();
+            this.Hide();
+            AdminRoomEditForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonBilling_Click(object sender, EventArgs e)
+        {
+            AdminUpdateBilling AdminUpdateBillingForm = new AdminUpdateBilling();
+            this.Hide();
+            AdminUpdateBillingForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonDisplay_Click(object sender, EventArgs e)
+        {
+            //todo
+        }
+
+        private void ButtonCreateAdmin_Click(object sender, EventArgs e)
+        {
+            CreateAdmins CreateAdminsForm = new CreateAdmins();
+            this.Hide();
+            CreateAdminsForm.ShowDialog();
+            this.Dispose();
+        }
     }
 }
