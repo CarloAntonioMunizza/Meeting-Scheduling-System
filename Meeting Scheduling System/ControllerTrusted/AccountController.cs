@@ -12,7 +12,24 @@ namespace Meeting_Scheduling_System.ControllerTrusted
         private static Account currentAccount;
         private static List<Account> accounts = new List<Account>();
 
-
+        public static bool login(String email, string password, string sq)
+        {
+            foreach (var account in accounts)
+            {
+                if (account.Email == email)
+                {
+                    if (account.Password.Equals(password)) 
+                    {
+                        if (account.SecurityA.Equals(sq))
+                        {
+                            return true;
+                            currentAccount = account;
+                        } else { return false; }
+                    } else { return false; }
+                }
+            }
+            return false;
+        }
 
         public static bool verifySignUpPassword(string password1, string password2)
         {

@@ -58,7 +58,7 @@
             ButtonSubmit.TabIndex = 1;
             ButtonSubmit.Text = "Submit";
             ButtonSubmit.UseVisualStyleBackColor = true;
-            ButtonSubmit.Click += button2_Click;
+            
             // 
             // LabelFirstName
             // 

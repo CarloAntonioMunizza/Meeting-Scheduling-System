@@ -13,6 +13,7 @@ namespace Meeting_Scheduling_System.ModelTrusted
         private List<Meeting> meetings = new List<Meeting>();
         private BillingInfo paymentMethod;
         private int balance = 0;
+        private bool isAdmin = false;
 
         //basic constructor for a new account
         public Account(string firstName, string lastName, string email, string password, string securityA)

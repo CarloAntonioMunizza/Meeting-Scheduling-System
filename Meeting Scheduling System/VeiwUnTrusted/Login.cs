@@ -1,4 +1,5 @@
-﻿using Meeting_Scheduling_System.VeiwUnTrusted;
+﻿using Meeting_Scheduling_System.ControllerTrusted;
+using Meeting_Scheduling_System.VeiwUnTrusted;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,28 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
             this.Hide();
             WelcomeForm.ShowDialog();
             this.Dispose();
+        }
+
+        private void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+            InvalidCredentials.Visible = false;
+
+            string email = EmailField.Text;
+            string password = MaskedPasswordField.Text;
+            string sQ = SQField.Text;
+
+            bool validLogin = AccountController.login(email, password, sQ);
+            if (validLogin)
+            {
+                MainMenu MainMenuForm = new MainMenu();
+                this.Hide();
+                MainMenuForm.ShowDialog();
+                this.Dispose();
+            }
+            else
+            {
+                InvalidCredentials.Visible = true;
+            }
         }
     }
 }

@@ -12,6 +12,20 @@ namespace Meeting_Scheduling_System.ControllerTrusted
         private static Room currentRoom;
         private static List<Room> rooms = new List<Room>();
 
+        //prefill rooms for demo
+
+        public static void fill()
+        {
+            rooms.Add(new Room(101, false));
+            rooms.Add(new Room(102, false));
+            rooms.Add(new Room(103, false));
+            rooms.Add(new Room(104, false));
+            rooms.Add(new Room(105, true));
+
+
+
+        }
+
         public static void addRoom(Room room)
         {
             //room is supplied from untrusted controller when admin is entering data for new room
