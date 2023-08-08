@@ -17,7 +17,7 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
         public SignUp()
         {
             InitializeComponent();
-            
+
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -47,10 +47,10 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
         {
             InvalidPassword.Visible = false;
 
-            string firstname = FirstNameField.Text;
-            string lastname = LastNameField.Text;
+            string firstname = FirstNameMaskedField.Text;
+            string lastname = LastNameMaskedField.Text;
             string email = EmailField.Text;
-            string password1 = MaskedPasswordField.Text;
+            string password1 = PasswordField.Text;
             string password2 = MaskedPasswordConfirmField.Text;
             string sQ = SQField.Text;
 
@@ -72,7 +72,7 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
 
         }
 
-       
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

@@ -48,7 +48,7 @@
             ButtonBack.TabIndex = 0;
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += button1_Click;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // ButtonSubmit
             // 
@@ -58,7 +58,7 @@
             ButtonSubmit.TabIndex = 1;
             ButtonSubmit.Text = "Submit";
             ButtonSubmit.UseVisualStyleBackColor = true;
-            ButtonSubmit.Click += button2_Click;
+            ButtonSubmit.Click += ButtonSubmit_Click;
             // 
             // LabelFirstName
             // 
