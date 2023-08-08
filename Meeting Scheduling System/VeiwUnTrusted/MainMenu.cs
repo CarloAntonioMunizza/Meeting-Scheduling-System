@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Meeting_Scheduling_System.ControllerTrusted;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         public MainMenu()
         {
             InitializeComponent();
+            if (AccountController.isAdmin()) 
+            { 
+                ButtonAdminOptions.Visible = true;
+                ButtonAdminViewComplaint.Visible = true;
+            }
         }
 
         private void ButtonLogout_Click(object sender, EventArgs e)
@@ -62,6 +68,14 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             AdminViewComplaint AdminViewComplaintForm = new AdminViewComplaint();
             this.Hide();
             AdminViewComplaintForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonLogout_Click_1(object sender, EventArgs e)
+        {
+            Welcome WelcomeForm = new Welcome();
+            this.Hide();
+            WelcomeForm.ShowDialog();
             this.Dispose();
         }
     }
