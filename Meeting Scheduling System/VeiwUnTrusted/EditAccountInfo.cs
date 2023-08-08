@@ -17,7 +17,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonBack_Click(object sender, EventArgs e)
         {
             Account AccountForm = new Account();
             this.Hide();
