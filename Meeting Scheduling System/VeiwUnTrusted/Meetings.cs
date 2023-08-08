@@ -19,12 +19,12 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonCreate_Click(object sender, EventArgs e)
         {
-            
+
             MeetingCreation MeetingCreationForm = new MeetingCreation();
             this.Hide();
             MeetingCreationForm.ShowDialog();
             this.Dispose();
-            
+
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
@@ -35,10 +35,18 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             this.Dispose();
         }
 
-        
+
         private void ButtonView_Click(object sender, EventArgs e)
         {
             //todo
+        }
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            MainMenu MainMenuForm = new MainMenu();
+            this.Hide();
+            MainMenuForm.ShowDialog();
+            this.Dispose();
         }
     }
 }

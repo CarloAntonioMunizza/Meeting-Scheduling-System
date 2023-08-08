@@ -30,11 +30,12 @@
         {
             MaskedConfirmPasswordField = new TextBox();
             LabelEnterPassword = new Label();
+            ButtonSubmit = new Button();
             SuspendLayout();
             // 
             // MaskedConfirmPasswordField
             // 
-            MaskedConfirmPasswordField.Location = new Point(230, 137);
+            MaskedConfirmPasswordField.Location = new Point(335, 141);
             MaskedConfirmPasswordField.Name = "MaskedConfirmPasswordField";
             MaskedConfirmPasswordField.Size = new Size(125, 27);
             MaskedConfirmPasswordField.TabIndex = 0;
@@ -42,20 +43,30 @@
             // LabelEnterPassword
             // 
             LabelEnterPassword.AutoSize = true;
-            LabelEnterPassword.Location = new Point(69, 144);
+            LabelEnterPassword.Location = new Point(186, 144);
             LabelEnterPassword.Name = "LabelEnterPassword";
-            LabelEnterPassword.Size = new Size(143, 20);
+            LabelEnterPassword.Size = new Size(146, 20);
             LabelEnterPassword.TabIndex = 1;
-            LabelEnterPassword.Text = "Enter your password";
+            LabelEnterPassword.Text = "Enter your password:";
             // 
-            // AddPayment
+            // ButtonSubmit
+            // 
+            ButtonSubmit.Location = new Point(347, 374);
+            ButtonSubmit.Name = "ButtonSubmit";
+            ButtonSubmit.Size = new Size(94, 29);
+            ButtonSubmit.TabIndex = 2;
+            ButtonSubmit.Text = "Submit";
+            ButtonSubmit.UseVisualStyleBackColor = true;
+            // 
+            // ConfirmInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ButtonSubmit);
             Controls.Add(LabelEnterPassword);
             Controls.Add(MaskedConfirmPasswordField);
-            Name = "AddPayment";
+            Name = "ConfirmInfo";
             Text = "AddPayment";
             ResumeLayout(false);
             PerformLayout();
@@ -65,5 +76,6 @@
 
         private TextBox MaskedConfirmPasswordField;
         private Label LabelEnterPassword;
+        private Button ButtonSubmit;
     }
 }

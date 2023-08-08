@@ -28,82 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ButtonBack = new System.Windows.Forms.Button();
-            this.ButtonEditRooms = new System.Windows.Forms.Button();
-            this.ButtonBilling = new System.Windows.Forms.Button();
-            this.ButtonDisplay = new System.Windows.Forms.Button();
-            this.ButtonCreateAdmin = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            ButtonBack = new Button();
+            ButtonEditRooms = new Button();
+            ButtonBilling = new Button();
+            ButtonDisplay = new Button();
+            ButtonCreateAdmin = new Button();
+            SuspendLayout();
             // 
             // ButtonBack
             // 
-            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
-            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
-            this.ButtonBack.TabIndex = 0;
-            this.ButtonBack.Text = "Back";
-            this.ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Location = new Point(12, 409);
+            ButtonBack.Name = "ButtonBack";
+            ButtonBack.Size = new Size(94, 29);
+            ButtonBack.TabIndex = 0;
+            ButtonBack.Text = "Back";
+            ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Click += ButtonBack_Click_1;
             // 
             // ButtonEditRooms
             // 
-            this.ButtonEditRooms.Location = new System.Drawing.Point(159, 254);
-            this.ButtonEditRooms.Margin = new System.Windows.Forms.Padding(6);
-            this.ButtonEditRooms.Name = "ButtonEditRooms";
-            this.ButtonEditRooms.Size = new System.Drawing.Size(249, 111);
-            this.ButtonEditRooms.TabIndex = 1;
-            this.ButtonEditRooms.Text = "Edit Rooms";
-            this.ButtonEditRooms.UseVisualStyleBackColor = true;
-            this.ButtonEditRooms.Click += new System.EventHandler(this.ButtonEditRooms_Click);
+            ButtonEditRooms.Location = new Point(75, 124);
+            ButtonEditRooms.Name = "ButtonEditRooms";
+            ButtonEditRooms.Size = new Size(117, 54);
+            ButtonEditRooms.TabIndex = 1;
+            ButtonEditRooms.Text = "Edit Rooms";
+            ButtonEditRooms.UseVisualStyleBackColor = true;
+            ButtonEditRooms.Click += ButtonEditRooms_Click;
             // 
             // ButtonBilling
             // 
-            this.ButtonBilling.Location = new System.Drawing.Point(510, 254);
-            this.ButtonBilling.Margin = new System.Windows.Forms.Padding(6);
-            this.ButtonBilling.Name = "ButtonBilling";
-            this.ButtonBilling.Size = new System.Drawing.Size(249, 111);
-            this.ButtonBilling.TabIndex = 2;
-            this.ButtonBilling.Text = "Update Billing Info";
-            this.ButtonBilling.UseVisualStyleBackColor = true;
-            this.ButtonBilling.Click += new System.EventHandler(this.ButtonBilling_Click);
+            ButtonBilling.Location = new Point(240, 124);
+            ButtonBilling.Name = "ButtonBilling";
+            ButtonBilling.Size = new Size(117, 54);
+            ButtonBilling.TabIndex = 2;
+            ButtonBilling.Text = "Update Billing Info";
+            ButtonBilling.UseVisualStyleBackColor = true;
+            ButtonBilling.Click += ButtonBilling_Click;
             // 
             // ButtonDisplay
             // 
-            this.ButtonDisplay.Location = new System.Drawing.Point(871, 254);
-            this.ButtonDisplay.Margin = new System.Windows.Forms.Padding(6);
-            this.ButtonDisplay.Name = "ButtonDisplay";
-            this.ButtonDisplay.Size = new System.Drawing.Size(249, 111);
-            this.ButtonDisplay.TabIndex = 3;
-            this.ButtonDisplay.Text = "Display Meetings";
-            this.ButtonDisplay.UseVisualStyleBackColor = true;
-            this.ButtonDisplay.Click += new System.EventHandler(this.ButtonDisplay_Click);
+            ButtonDisplay.Location = new Point(410, 124);
+            ButtonDisplay.Name = "ButtonDisplay";
+            ButtonDisplay.Size = new Size(117, 54);
+            ButtonDisplay.TabIndex = 3;
+            ButtonDisplay.Text = "Display Meetings";
+            ButtonDisplay.UseVisualStyleBackColor = true;
+            ButtonDisplay.Click += ButtonDisplay_Click;
             // 
             // ButtonCreateAdmin
             // 
-            this.ButtonCreateAdmin.Location = new System.Drawing.Point(1220, 254);
-            this.ButtonCreateAdmin.Margin = new System.Windows.Forms.Padding(6);
-            this.ButtonCreateAdmin.Name = "ButtonCreateAdmin";
-            this.ButtonCreateAdmin.Size = new System.Drawing.Size(249, 111);
-            this.ButtonCreateAdmin.TabIndex = 4;
-            this.ButtonCreateAdmin.Text = "Create Admins";
-            this.ButtonCreateAdmin.UseVisualStyleBackColor = true;
-            this.ButtonCreateAdmin.Click += new System.EventHandler(this.ButtonCreateAdmin_Click);
+            ButtonCreateAdmin.Location = new Point(574, 124);
+            ButtonCreateAdmin.Name = "ButtonCreateAdmin";
+            ButtonCreateAdmin.Size = new Size(117, 54);
+            ButtonCreateAdmin.TabIndex = 4;
+            ButtonCreateAdmin.Text = "Create Admins";
+            ButtonCreateAdmin.UseVisualStyleBackColor = true;
+            ButtonCreateAdmin.Click += ButtonCreateAdmin_Click;
             // 
             // AdminOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1700, 922);
-            this.Controls.Add(this.ButtonCreateAdmin);
-            this.Controls.Add(this.ButtonDisplay);
-            this.Controls.Add(this.ButtonBilling);
-            this.Controls.Add(this.ButtonEditRooms);
-            this.Controls.Add(this.ButtonBack);
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "AdminOptions";
-            this.Text = "AdminOptions";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(ButtonCreateAdmin);
+            Controls.Add(ButtonDisplay);
+            Controls.Add(ButtonBilling);
+            Controls.Add(ButtonEditRooms);
+            Controls.Add(ButtonBack);
+            Name = "AdminOptions";
+            Text = "AdminOptions";
+            ResumeLayout(false);
         }
 
         #endregion

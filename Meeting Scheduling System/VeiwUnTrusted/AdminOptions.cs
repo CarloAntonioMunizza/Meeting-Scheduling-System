@@ -53,5 +53,13 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             CreateAdminsForm.ShowDialog();
             this.Dispose();
         }
+
+        private void ButtonBack_Click_1(object sender, EventArgs e)
+        {
+            MainMenu MainMenuForm = new MainMenu();
+            this.Hide();
+            MainMenuForm.ShowDialog();
+            this.Dispose();
+        }
     }
 }

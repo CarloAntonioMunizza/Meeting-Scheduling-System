@@ -16,5 +16,18 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EditPayment EditPaymentForm = new EditPayment();
+            this.Hide();
+            EditPaymentForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

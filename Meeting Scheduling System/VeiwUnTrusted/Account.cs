@@ -32,9 +32,25 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonEditInfo_Click(object sender, EventArgs e)
         {
-            MeetingCreation MeetingCreationForm = new MeetingCreation();
+            EditPayment EditPaymentForm = new EditPayment();
             this.Hide();
-            MeetingCreationForm.ShowDialog();
+            EditPaymentForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonBack_Click_1(object sender, EventArgs e)
+        {
+            MainMenu MainMenuForm = new MainMenu();
+            this.Hide();
+            MainMenuForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EditAccountInfo EditAccountInfoForm = new EditAccountInfo();
+            this.Hide();
+            EditAccountInfoForm.ShowDialog();
             this.Dispose();
         }
     }
