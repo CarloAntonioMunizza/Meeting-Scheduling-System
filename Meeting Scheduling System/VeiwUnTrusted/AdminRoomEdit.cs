@@ -16,5 +16,13 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             InitializeComponent();
         }
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            AdminOptions AdminOptionsForm = new AdminOptions();
+            this.Hide();
+            AdminOptionsForm.ShowDialog();
+            this.Dispose();
+        }
     }
 }
