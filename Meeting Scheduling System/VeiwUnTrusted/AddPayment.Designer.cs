@@ -39,91 +39,88 @@
             // 
             // LabelCardNumber
             // 
-            this.LabelCardNumber.AutoSize = true;
-            this.LabelCardNumber.Location = new System.Drawing.Point(357, 644);
-            this.LabelCardNumber.Margin = new System.Windows.Forms.Padding(13, 0, 13, 0);
-            this.LabelCardNumber.Name = "LabelCardNumber";
-            this.LabelCardNumber.Size = new System.Drawing.Size(557, 41);
-            this.LabelCardNumber.TabIndex = 0;
-            this.LabelCardNumber.Text = "Enter your Card Number without dashes:";
+            LabelCardNumber.AutoSize = true;
+            LabelCardNumber.Location = new Point(103, 200);
+            LabelCardNumber.Margin = new Padding(6, 0, 6, 0);
+            LabelCardNumber.Name = "LabelCardNumber";
+            LabelCardNumber.Size = new Size(275, 20);
+            LabelCardNumber.TabIndex = 0;
+            LabelCardNumber.Text = "Enter your Card Number without dashes:";
             // 
             // LabelCCV
             // 
-            this.LabelCCV.AutoSize = true;
-            this.LabelCCV.Location = new System.Drawing.Point(839, 849);
-            this.LabelCCV.Margin = new System.Windows.Forms.Padding(13, 0, 13, 0);
-            this.LabelCCV.Name = "LabelCCV";
-            this.LabelCCV.Size = new System.Drawing.Size(342, 41);
-            this.LabelCCV.TabIndex = 2;
-            this.LabelCCV.Text = "Enter your CCV Number:";
+            LabelCCV.AutoSize = true;
+            LabelCCV.Location = new Point(210, 269);
+            LabelCCV.Margin = new Padding(6, 0, 6, 0);
+            LabelCCV.Name = "LabelCCV";
+            LabelCCV.Size = new Size(168, 20);
+            LabelCCV.TabIndex = 2;
+            LabelCCV.Text = "Enter your CCV Number:";
             // 
             // LabelTitle
             // 
-            this.LabelTitle.AutoSize = true;
-            this.LabelTitle.Location = new System.Drawing.Point(1405, 172);
-            this.LabelTitle.Margin = new System.Windows.Forms.Padding(13, 0, 13, 0);
-            this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(407, 41);
-            this.LabelTitle.TabIndex = 4;
-            this.LabelTitle.Text = "Enter Card Information Below";
+            LabelTitle.AutoSize = true;
+            LabelTitle.Location = new Point(330, 60);
+            LabelTitle.Margin = new Padding(6, 0, 6, 0);
+            LabelTitle.Name = "LabelTitle";
+            LabelTitle.Size = new Size(205, 20);
+            LabelTitle.TabIndex = 4;
+            LabelTitle.Text = "Enter Card Information Below";
             // 
             // ButtonBack
             // 
-            this.ButtonBack.Location = new System.Drawing.Point(55, 1718);
-            this.ButtonBack.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(425, 121);
-            this.ButtonBack.TabIndex = 5;
-            this.ButtonBack.Text = "Back";
-            this.ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Location = new Point(15, 472);
+            ButtonBack.Margin = new Padding(6);
+            ButtonBack.Name = "ButtonBack";
+            ButtonBack.Size = new Size(94, 29);
+            ButtonBack.TabIndex = 5;
+            ButtonBack.Text = "Back";
+            ButtonBack.UseVisualStyleBackColor = true;
             // 
             // ButtonSubmit
             // 
-            this.ButtonSubmit.Location = new System.Drawing.Point(3134, 1718);
-            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.ButtonSubmit.Name = "ButtonSubmit";
-            this.ButtonSubmit.Size = new System.Drawing.Size(425, 121);
-            this.ButtonSubmit.TabIndex = 6;
-            this.ButtonSubmit.Text = "Submit";
-            this.ButtonSubmit.UseVisualStyleBackColor = true;
-            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
+            ButtonSubmit.Location = new Point(773, 472);
+            ButtonSubmit.Margin = new Padding(6);
+            ButtonSubmit.Name = "ButtonSubmit";
+            ButtonSubmit.Size = new Size(94, 29);
+            ButtonSubmit.TabIndex = 6;
+            ButtonSubmit.Text = "Submit";
+            ButtonSubmit.UseVisualStyleBackColor = true;
+            ButtonSubmit.Click += ButtonSubmit_Click;
             // 
             // MaskedCardInfoField
             // 
-            this.MaskedCardInfoField.Location = new System.Drawing.Point(765, 314);
-            this.MaskedCardInfoField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.MaskedCardInfoField.Mask = "0000-0000-0000-0000";
-            this.MaskedCardInfoField.Name = "MaskedCardInfoField";
-            this.MaskedCardInfoField.Size = new System.Drawing.Size(261, 47);
-            this.MaskedCardInfoField.TabIndex = 7;
+            MaskedCardInfoField.Location = new Point(387, 193);
+            MaskedCardInfoField.Mask = "0000-0000-0000-0000";
+            MaskedCardInfoField.Name = "MaskedCardInfoField";
+            MaskedCardInfoField.Size = new Size(125, 27);
+            MaskedCardInfoField.TabIndex = 7;
             // 
             // MaskedCCVField
             // 
-            this.MaskedCCVField.Location = new System.Drawing.Point(765, 408);
-            this.MaskedCCVField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.MaskedCCVField.Mask = "000";
-            this.MaskedCCVField.Name = "MaskedCCVField";
-            this.MaskedCCVField.Size = new System.Drawing.Size(108, 47);
-            this.MaskedCCVField.TabIndex = 8;
+            MaskedCCVField.Location = new Point(387, 266);
+            MaskedCCVField.Mask = "000";
+            MaskedCCVField.Name = "MaskedCCVField";
+            MaskedCCVField.Size = new Size(53, 27);
+            MaskedCCVField.TabIndex = 8;
             // 
             // AddPayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2135, 1007);
-            this.Controls.Add(this.MaskedCCVField);
-            this.Controls.Add(this.MaskedCardInfoField);
-            this.Controls.Add(this.ButtonSubmit);
-            this.Controls.Add(this.ButtonBack);
-            this.Controls.Add(this.LabelTitle);
-            this.Controls.Add(this.LabelCCV);
-            this.Controls.Add(this.LabelCardNumber);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "AddPayment";
-            this.Text = "AddPayment";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(882, 516);
+            Controls.Add(MaskedCCVField);
+            Controls.Add(MaskedCardInfoField);
+            Controls.Add(ButtonSubmit);
+            Controls.Add(ButtonBack);
+            Controls.Add(LabelTitle);
+            Controls.Add(LabelCCV);
+            Controls.Add(LabelCardNumber);
+            Name = "AddPayment";
+            Text = "AddPayment";
+            Load += AddPayment_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

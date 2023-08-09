@@ -39,5 +39,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             AccountForm.ShowDialog();
             this.Dispose();
         }
+
+        private void AddPayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

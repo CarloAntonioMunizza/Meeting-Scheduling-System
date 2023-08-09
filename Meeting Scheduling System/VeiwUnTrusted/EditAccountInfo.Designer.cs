@@ -42,29 +42,29 @@
             // 
             // ButtonBack
             // 
-            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
-            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
-            this.ButtonBack.TabIndex = 0;
-            this.ButtonBack.Text = "Back";
-            this.ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Location = new Point(15, 481);
+            ButtonBack.Margin = new Padding(6);
+            ButtonBack.Name = "ButtonBack";
+            ButtonBack.Size = new Size(93, 29);
+            ButtonBack.TabIndex = 0;
+            ButtonBack.Text = "Back";
+            ButtonBack.UseVisualStyleBackColor = true;
             // 
             // ButtonSubmit
             // 
-            this.ButtonSubmit.Location = new System.Drawing.Point(1396, 838);
-            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.ButtonSubmit.Name = "ButtonSubmit";
-            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
-            this.ButtonSubmit.TabIndex = 1;
-            this.ButtonSubmit.Text = "Submit";
-            this.ButtonSubmit.UseVisualStyleBackColor = true;
-            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click_1);
+            ButtonSubmit.Location = new Point(766, 481);
+            ButtonSubmit.Margin = new Padding(6);
+            ButtonSubmit.Name = "ButtonSubmit";
+            ButtonSubmit.Size = new Size(93, 29);
+            ButtonSubmit.TabIndex = 1;
+            ButtonSubmit.Text = "Submit";
+            ButtonSubmit.UseVisualStyleBackColor = true;
+            ButtonSubmit.Click += ButtonSubmit_Click_1;
             // 
             // LabelFirstName
             // 
             LabelFirstName.AutoSize = true;
-            LabelFirstName.Location = new Point(234, 103);
+            LabelFirstName.Location = new Point(319, 151);
             LabelFirstName.Name = "LabelFirstName";
             LabelFirstName.Size = new Size(83, 20);
             LabelFirstName.TabIndex = 2;
@@ -72,18 +72,18 @@
             // 
             // LabelLastName
             // 
-            this.LabelLastName.AutoSize = true;
-            this.LabelLastName.Location = new System.Drawing.Point(497, 287);
-            this.LabelLastName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LabelLastName.Name = "LabelLastName";
-            this.LabelLastName.Size = new System.Drawing.Size(164, 41);
-            this.LabelLastName.TabIndex = 3;
-            this.LabelLastName.Text = "Last Name:";
+            LabelLastName.AutoSize = true;
+            LabelLastName.Location = new Point(317, 205);
+            LabelLastName.Margin = new Padding(6, 0, 6, 0);
+            LabelLastName.Name = "LabelLastName";
+            LabelLastName.Size = new Size(82, 20);
+            LabelLastName.TabIndex = 3;
+            LabelLastName.Text = "Last Name:";
             // 
             // LabelPassword
             // 
             LabelPassword.AutoSize = true;
-            LabelPassword.Location = new Point(243, 189);
+            LabelPassword.Location = new Point(326, 262);
             LabelPassword.Name = "LabelPassword";
             LabelPassword.Size = new Size(73, 20);
             LabelPassword.TabIndex = 4;
@@ -91,17 +91,17 @@
             // 
             // LabelSQ
             // 
-            this.LabelSQ.AutoSize = true;
-            this.LabelSQ.Location = new System.Drawing.Point(26, 494);
-            this.LabelSQ.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LabelSQ.Name = "LabelSQ";
-            this.LabelSQ.Size = new System.Drawing.Size(614, 41);
-            this.LabelSQ.TabIndex = 5;
-            this.LabelSQ.Text = "Security Question, Whats your favouite color:";
+            LabelSQ.AutoSize = true;
+            LabelSQ.Location = new Point(95, 323);
+            LabelSQ.Margin = new Padding(6, 0, 6, 0);
+            LabelSQ.Name = "LabelSQ";
+            LabelSQ.Size = new Size(304, 20);
+            LabelSQ.TabIndex = 5;
+            LabelSQ.Text = "Security Question, Whats your favouite color:";
             // 
             // MaskedFirstNameField
             // 
-            MaskedFirstNameField.Location = new Point(322, 100);
+            MaskedFirstNameField.Location = new Point(408, 144);
             MaskedFirstNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
             MaskedFirstNameField.Name = "MaskedFirstNameField";
             MaskedFirstNameField.Size = new Size(125, 27);
@@ -109,7 +109,7 @@
             // 
             // MaskedLastNameField
             // 
-            MaskedLastNameField.Location = new Point(322, 137);
+            MaskedLastNameField.Location = new Point(408, 202);
             MaskedLastNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
             MaskedLastNameField.Name = "MaskedLastNameField";
             MaskedLastNameField.Size = new Size(125, 27);
@@ -117,7 +117,7 @@
             // 
             // MaskedSQField
             // 
-            MaskedSQField.Location = new Point(322, 238);
+            MaskedSQField.Location = new Point(408, 316);
             MaskedSQField.Mask = "LLLLLLLLLLLLLLL";
             MaskedSQField.Name = "MaskedSQField";
             MaskedSQField.Size = new Size(125, 27);
@@ -125,7 +125,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(322, 186);
+            textBox1.Location = new Point(408, 259);
             textBox1.Name = "textBox1";
             textBox1.PasswordChar = '#';
             textBox1.Size = new Size(125, 27);
@@ -135,7 +135,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(763, 450);
+            ClientSize = new Size(874, 525);
             Controls.Add(textBox1);
             Controls.Add(MaskedSQField);
             Controls.Add(MaskedLastNameField);
