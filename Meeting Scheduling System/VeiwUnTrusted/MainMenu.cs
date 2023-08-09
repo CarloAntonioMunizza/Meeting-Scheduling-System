@@ -49,7 +49,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonAccount_Click(object sender, EventArgs e)
         {
-            Account AccountForm = new Account();
+            AccountPage AccountForm = new AccountPage();
             this.Hide();
             AccountForm.ShowDialog();
             this.Dispose();

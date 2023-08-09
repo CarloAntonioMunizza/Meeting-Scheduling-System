@@ -20,7 +20,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonBack_Click(object sender, EventArgs e)
         {
-            Account AccountForm = new Account();
+            AccountPage AccountForm = new AccountPage();
             this.Hide();
             AccountForm.ShowDialog();
             this.Dispose();
@@ -28,21 +28,14 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void ButtonSubmit_Click_1(object sender, EventArgs e)
-        {
-            AccountController.CurrentAccount.FirstName = FirstNameField.Text;
-            AccountController.CurrentAccount.LastName = LastNameField.Text;
-            AccountController.CurrentAccount.Password = PasswordField.Text;
-            AccountController.CurrentAccount.SecurityA = SQField.Text;
-
-            Account AccountForm = new Account();
+            AccountController.CurrentAccount.FirstName = MaskedFirstNameField.Text;
+            AccountController.CurrentAccount.LastName = MaskedLastNameField.Text;
+            AccountController.CurrentAccount.Password = MaskedPasswordField.Text;
+            AccountController.CurrentAccount.SecurityA = MaskedSQField.Text;
+            AccountPage AccountForm = new AccountPage();
             this.Hide();
             AccountForm.ShowDialog();
             this.Dispose();
-
         }
     }
 }

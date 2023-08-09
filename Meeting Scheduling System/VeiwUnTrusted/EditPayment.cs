@@ -20,7 +20,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonBack_Click(object sender, EventArgs e)
         {
-            Account AccountForm = new Account();
+            AccountPage AccountForm = new AccountPage();
             this.Hide();
             AccountForm.ShowDialog();
             this.Dispose();
@@ -34,7 +34,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             AccountController.CurrentAccount.PaymentMethod.CardNumber = cardNumber;
             AccountController.CurrentAccount.PaymentMethod.Ccv = ccv;
 
-            Account AccountForm = new Account();
+            AccountPage AccountForm = new AccountPage();
             this.Hide();
             AccountForm.ShowDialog();
             this.Dispose();

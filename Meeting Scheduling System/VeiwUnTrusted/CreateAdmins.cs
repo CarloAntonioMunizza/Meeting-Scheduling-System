@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Meeting_Scheduling_System.ControllerTrusted;
+using Meeting_Scheduling_System.ModelTrusted;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,12 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         public CreateAdmins()
         {
             InitializeComponent();
+            List<Account> accountIndex = new List<Account>();
+            foreach (var account in AccountController.Accounts)
+            {
+                EmailComboBox.Items.Add(account.Email);
+                accountIndex.Add(account);
+            }
         }
 
         private void ButtonBack_Click(object sender, EventArgs e)
@@ -23,6 +31,21 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             this.Hide();
             AdminOptionsForm.ShowDialog();
             this.Dispose();
+        }
+
+        private void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+
+            int accountindex = EmailComboBox.SelectedIndex;
+            Account account = AccountController.Accounts[accountindex];
+            account.IsAdmin = true;
+
+
+            AdminOptions AdminOptionsForm = new AdminOptions();
+            this.Hide();
+            AdminOptionsForm.ShowDialog();
+            this.Dispose();
+
         }
     }
 }

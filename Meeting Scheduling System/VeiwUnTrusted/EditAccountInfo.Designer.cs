@@ -28,128 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonBack = new Button();
-            ButtonSubmit = new Button();
-            LabelFirstName = new Label();
-            LabelLastName = new Label();
-            LabelPassword = new Label();
-            LabelSQ = new Label();
-            MaskedFirstNameField = new MaskedTextBox();
-            MaskedLastNameField = new MaskedTextBox();
-            MaskedSQField = new MaskedTextBox();
-            textBox1 = new TextBox();
-            SuspendLayout();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.LabelFirstName = new System.Windows.Forms.Label();
+            this.LabelLastName = new System.Windows.Forms.Label();
+            this.LabelPassword = new System.Windows.Forms.Label();
+            this.LabelSQ = new System.Windows.Forms.Label();
+            this.MaskedFirstNameField = new System.Windows.Forms.MaskedTextBox();
+            this.MaskedLastNameField = new System.Windows.Forms.MaskedTextBox();
+            this.MaskedSQField = new System.Windows.Forms.MaskedTextBox();
+            this.MaskedPasswordField = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(15, 481);
-            ButtonBack.Margin = new Padding(6);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(93, 29);
-            ButtonBack.TabIndex = 0;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Location = new System.Drawing.Point(32, 986);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(198, 59);
+            this.ButtonBack.TabIndex = 0;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(766, 481);
-            ButtonSubmit.Margin = new Padding(6);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(93, 29);
-            ButtonSubmit.TabIndex = 1;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
-            ButtonSubmit.Click += ButtonSubmit_Click_1;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1608, 972);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(198, 59);
+            this.ButtonSubmit.TabIndex = 1;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
             // 
             // LabelFirstName
             // 
-            LabelFirstName.AutoSize = true;
-            LabelFirstName.Location = new Point(319, 151);
-            LabelFirstName.Name = "LabelFirstName";
-            LabelFirstName.Size = new Size(83, 20);
-            LabelFirstName.TabIndex = 2;
-            LabelFirstName.Text = "First Name:";
+            this.LabelFirstName.AutoSize = true;
+            this.LabelFirstName.Location = new System.Drawing.Point(678, 310);
+            this.LabelFirstName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelFirstName.Name = "LabelFirstName";
+            this.LabelFirstName.Size = new System.Drawing.Size(167, 41);
+            this.LabelFirstName.TabIndex = 2;
+            this.LabelFirstName.Text = "First Name:";
             // 
             // LabelLastName
             // 
-            LabelLastName.AutoSize = true;
-            LabelLastName.Location = new Point(317, 205);
-            LabelLastName.Margin = new Padding(6, 0, 6, 0);
-            LabelLastName.Name = "LabelLastName";
-            LabelLastName.Size = new Size(82, 20);
-            LabelLastName.TabIndex = 3;
-            LabelLastName.Text = "Last Name:";
+            this.LabelLastName.AutoSize = true;
+            this.LabelLastName.Location = new System.Drawing.Point(674, 420);
+            this.LabelLastName.Margin = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.LabelLastName.Name = "LabelLastName";
+            this.LabelLastName.Size = new System.Drawing.Size(164, 41);
+            this.LabelLastName.TabIndex = 3;
+            this.LabelLastName.Text = "Last Name:";
             // 
             // LabelPassword
             // 
-            LabelPassword.AutoSize = true;
-            LabelPassword.Location = new Point(326, 262);
-            LabelPassword.Name = "LabelPassword";
-            LabelPassword.Size = new Size(73, 20);
-            LabelPassword.TabIndex = 4;
-            LabelPassword.Text = "Password:";
+            this.LabelPassword.AutoSize = true;
+            this.LabelPassword.Location = new System.Drawing.Point(693, 537);
+            this.LabelPassword.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelPassword.Name = "LabelPassword";
+            this.LabelPassword.Size = new System.Drawing.Size(150, 41);
+            this.LabelPassword.TabIndex = 4;
+            this.LabelPassword.Text = "Password:";
             // 
             // LabelSQ
             // 
-            LabelSQ.AutoSize = true;
-            LabelSQ.Location = new Point(95, 323);
-            LabelSQ.Margin = new Padding(6, 0, 6, 0);
-            LabelSQ.Name = "LabelSQ";
-            LabelSQ.Size = new Size(304, 20);
-            LabelSQ.TabIndex = 5;
-            LabelSQ.Text = "Security Question, Whats your favouite color:";
+            this.LabelSQ.AutoSize = true;
+            this.LabelSQ.Location = new System.Drawing.Point(202, 662);
+            this.LabelSQ.Margin = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.LabelSQ.Name = "LabelSQ";
+            this.LabelSQ.Size = new System.Drawing.Size(614, 41);
+            this.LabelSQ.TabIndex = 5;
+            this.LabelSQ.Text = "Security Question, Whats your favouite color:";
             // 
             // MaskedFirstNameField
             // 
-            MaskedFirstNameField.Location = new Point(408, 144);
-            MaskedFirstNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
-            MaskedFirstNameField.Name = "MaskedFirstNameField";
-            MaskedFirstNameField.Size = new Size(125, 27);
-            MaskedFirstNameField.TabIndex = 6;
+            this.MaskedFirstNameField.Location = new System.Drawing.Point(867, 295);
+            this.MaskedFirstNameField.Margin = new System.Windows.Forms.Padding(6);
+            this.MaskedFirstNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
+            this.MaskedFirstNameField.Name = "MaskedFirstNameField";
+            this.MaskedFirstNameField.Size = new System.Drawing.Size(261, 47);
+            this.MaskedFirstNameField.TabIndex = 6;
             // 
             // MaskedLastNameField
             // 
-            MaskedLastNameField.Location = new Point(408, 202);
-            MaskedLastNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
-            MaskedLastNameField.Name = "MaskedLastNameField";
-            MaskedLastNameField.Size = new Size(125, 27);
-            MaskedLastNameField.TabIndex = 7;
+            this.MaskedLastNameField.Location = new System.Drawing.Point(867, 414);
+            this.MaskedLastNameField.Margin = new System.Windows.Forms.Padding(6);
+            this.MaskedLastNameField.Mask = "LLLLLLLLLLLLLLLLLLLL";
+            this.MaskedLastNameField.Name = "MaskedLastNameField";
+            this.MaskedLastNameField.Size = new System.Drawing.Size(261, 47);
+            this.MaskedLastNameField.TabIndex = 7;
             // 
             // MaskedSQField
             // 
-            MaskedSQField.Location = new Point(408, 316);
-            MaskedSQField.Mask = "LLLLLLLLLLLLLLL";
-            MaskedSQField.Name = "MaskedSQField";
-            MaskedSQField.Size = new Size(125, 27);
-            MaskedSQField.TabIndex = 9;
+            this.MaskedSQField.Location = new System.Drawing.Point(867, 648);
+            this.MaskedSQField.Margin = new System.Windows.Forms.Padding(6);
+            this.MaskedSQField.Mask = "LLLLLLLLLLLLLLL";
+            this.MaskedSQField.Name = "MaskedSQField";
+            this.MaskedSQField.Size = new System.Drawing.Size(261, 47);
+            this.MaskedSQField.TabIndex = 9;
             // 
-            // textBox1
+            // MaskedPasswordField
             // 
-            textBox1.Location = new Point(408, 259);
-            textBox1.Name = "textBox1";
-            textBox1.PasswordChar = '#';
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 10;
+            this.MaskedPasswordField.Location = new System.Drawing.Point(867, 531);
+            this.MaskedPasswordField.Margin = new System.Windows.Forms.Padding(6);
+            this.MaskedPasswordField.Name = "MaskedPasswordField";
+            this.MaskedPasswordField.PasswordChar = '#';
+            this.MaskedPasswordField.Size = new System.Drawing.Size(261, 47);
+            this.MaskedPasswordField.TabIndex = 10;
             // 
             // EditAccountInfo
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(874, 525);
-            Controls.Add(textBox1);
-            Controls.Add(MaskedSQField);
-            Controls.Add(MaskedLastNameField);
-            Controls.Add(MaskedFirstNameField);
-            Controls.Add(LabelSQ);
-            Controls.Add(LabelPassword);
-            Controls.Add(LabelLastName);
-            Controls.Add(LabelFirstName);
-            Controls.Add(ButtonSubmit);
-            Controls.Add(ButtonBack);
-            Name = "EditAccountInfo";
-            Text = "EditAccountInfo";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1857, 1076);
+            this.Controls.Add(this.MaskedPasswordField);
+            this.Controls.Add(this.MaskedSQField);
+            this.Controls.Add(this.MaskedLastNameField);
+            this.Controls.Add(this.MaskedFirstNameField);
+            this.Controls.Add(this.LabelSQ);
+            this.Controls.Add(this.LabelPassword);
+            this.Controls.Add(this.LabelLastName);
+            this.Controls.Add(this.LabelFirstName);
+            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.ButtonBack);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "EditAccountInfo";
+            this.Text = "EditAccountInfo";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -163,6 +172,6 @@
         private MaskedTextBox MaskedFirstNameField;
         private MaskedTextBox MaskedLastNameField;
         private MaskedTextBox MaskedSQField;
-        private TextBox textBox1;
+        private TextBox MaskedPasswordField;
     }
 }

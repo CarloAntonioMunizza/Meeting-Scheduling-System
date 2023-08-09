@@ -41,12 +41,13 @@
             // ButtonBack
             // 
             this.ButtonBack.Location = new System.Drawing.Point(26, 838);
-            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonBack.Name = "ButtonBack";
             this.ButtonBack.Size = new System.Drawing.Size(200, 59);
             this.ButtonBack.TabIndex = 0;
             this.ButtonBack.Text = "Back";
             this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click_1);
             // 
             // LabelRoomNum
             // 
@@ -62,7 +63,7 @@
             // 
             this.CheckSpecialRoom.AutoSize = true;
             this.CheckSpecialRoom.Location = new System.Drawing.Point(325, 484);
-            this.CheckSpecialRoom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CheckSpecialRoom.Margin = new System.Windows.Forms.Padding(6);
             this.CheckSpecialRoom.Name = "CheckSpecialRoom";
             this.CheckSpecialRoom.Size = new System.Drawing.Size(236, 45);
             this.CheckSpecialRoom.TabIndex = 3;
@@ -73,7 +74,7 @@
             // 
             this.CheckedList.FormattingEnabled = true;
             this.CheckedList.Location = new System.Drawing.Point(1137, 369);
-            this.CheckedList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CheckedList.Margin = new System.Windows.Forms.Padding(6);
             this.CheckedList.Name = "CheckedList";
             this.CheckedList.Size = new System.Drawing.Size(314, 224);
             this.CheckedList.TabIndex = 4;
@@ -102,7 +103,7 @@
             // ButtonSubmit
             // 
             this.ButtonSubmit.Location = new System.Drawing.Point(1475, 838);
-            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6);
             this.ButtonSubmit.Name = "ButtonSubmit";
             this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
             this.ButtonSubmit.TabIndex = 7;
@@ -113,7 +114,7 @@
             // MaskedRoomNumField
             // 
             this.MaskedRoomNumField.Location = new System.Drawing.Point(366, 369);
-            this.MaskedRoomNumField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaskedRoomNumField.Margin = new System.Windows.Forms.Padding(6);
             this.MaskedRoomNumField.Mask = "000";
             this.MaskedRoomNumField.Name = "MaskedRoomNumField";
             this.MaskedRoomNumField.Size = new System.Drawing.Size(89, 47);
@@ -132,7 +133,7 @@
             this.Controls.Add(this.CheckSpecialRoom);
             this.Controls.Add(this.LabelRoomNum);
             this.Controls.Add(this.ButtonBack);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AdminRoomEdit";
             this.Text = "AdminRoomEdit";
             this.ResumeLayout(false);

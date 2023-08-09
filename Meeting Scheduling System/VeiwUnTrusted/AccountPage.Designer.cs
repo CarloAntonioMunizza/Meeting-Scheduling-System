@@ -1,6 +1,6 @@
 ﻿namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
-    partial class Account
+    partial class AccountPage
     {
         /// <summary>
         /// Required designer variable.

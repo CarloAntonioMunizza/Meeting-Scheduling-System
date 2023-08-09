@@ -3,10 +3,11 @@
     internal class BillingInfo
     {
         //define vars
-        private int cardNumber,ccv ;
+        private int ccv ;
+        private long cardNumber;
 
         //constructor
-        public BillingInfo(int cardNumber, int ccv)
+        public BillingInfo(long cardNumber, int ccv)
         {
             this.cardNumber = cardNumber;
             this.ccv = ccv;
@@ -15,7 +16,7 @@
 
         //setters / getters
        
-        public int CardNumber { get => cardNumber; set => cardNumber = value; }
+        public long CardNumber { get => cardNumber; set => cardNumber = value; }
         public int Ccv { get => ccv; set => ccv = value; }
       
     }

@@ -28,116 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonBack = new Button();
-            ButtonSubmit = new Button();
-            LabelTitle = new Label();
-            LabelUserSelect = new Label();
-            EmailComboBox = new ComboBox();
-            LabelCardNumber = new Label();
-            LabelCCV = new Label();
-            MaskedCardNumField = new MaskedTextBox();
-            MaskedCCVField = new MaskedTextBox();
-            SuspendLayout();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.LabelUserSelect = new System.Windows.Forms.Label();
+            this.EmailComboBox = new System.Windows.Forms.ComboBox();
+            this.LabelCardNumber = new System.Windows.Forms.Label();
+            this.LabelCCV = new System.Windows.Forms.Label();
+            this.MaskedCardNumField = new System.Windows.Forms.MaskedTextBox();
+            this.MaskedCCVField = new System.Windows.Forms.MaskedTextBox();
+            this.SuspendLayout();
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 0;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 0;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(694, 409);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 1;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
-            ButtonSubmit.Click += ButtonSubmit_Click;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1475, 838);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
+            this.ButtonSubmit.TabIndex = 1;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click_1);
             // 
             // LabelTitle
             // 
-            LabelTitle.AutoSize = true;
-            LabelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LabelTitle.Location = new Point(247, 37);
-            LabelTitle.Name = "LabelTitle";
-            LabelTitle.Size = new Size(328, 28);
-            LabelTitle.TabIndex = 3;
-            LabelTitle.Text = "Update User's Billing Information";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelTitle.Location = new System.Drawing.Point(525, 76);
+            this.LabelTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(653, 54);
+            this.LabelTitle.TabIndex = 3;
+            this.LabelTitle.Text = "Update User\'s Billing Information";
             // 
             // LabelUserSelect
             // 
-            LabelUserSelect.AutoSize = true;
-            LabelUserSelect.Location = new Point(73, 142);
-            LabelUserSelect.Name = "LabelUserSelect";
-            LabelUserSelect.Size = new Size(156, 20);
-            LabelUserSelect.TabIndex = 4;
-            LabelUserSelect.Text = "Select User to Update:";
+            this.LabelUserSelect.AutoSize = true;
+            this.LabelUserSelect.Location = new System.Drawing.Point(155, 291);
+            this.LabelUserSelect.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelUserSelect.Name = "LabelUserSelect";
+            this.LabelUserSelect.Size = new System.Drawing.Size(314, 41);
+            this.LabelUserSelect.TabIndex = 4;
+            this.LabelUserSelect.Text = "Select User to Update:";
             // 
             // EmailComboBox
             // 
-            EmailComboBox.FormattingEnabled = true;
-            EmailComboBox.Location = new Point(73, 165);
-            EmailComboBox.Name = "EmailComboBox";
-            EmailComboBox.Size = new Size(151, 28);
-            EmailComboBox.TabIndex = 5;
+            this.EmailComboBox.FormattingEnabled = true;
+            this.EmailComboBox.Location = new System.Drawing.Point(155, 338);
+            this.EmailComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.EmailComboBox.Name = "EmailComboBox";
+            this.EmailComboBox.Size = new System.Drawing.Size(316, 49);
+            this.EmailComboBox.TabIndex = 5;
             // 
             // LabelCardNumber
             // 
-            LabelCardNumber.AutoSize = true;
-            LabelCardNumber.Location = new Point(297, 142);
-            LabelCardNumber.Name = "LabelCardNumber";
-            LabelCardNumber.Size = new Size(197, 20);
-            LabelCardNumber.TabIndex = 7;
-            LabelCardNumber.Text = "Change User's Card Number:";
+            this.LabelCardNumber.AutoSize = true;
+            this.LabelCardNumber.Location = new System.Drawing.Point(631, 291);
+            this.LabelCardNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelCardNumber.Name = "LabelCardNumber";
+            this.LabelCardNumber.Size = new System.Drawing.Size(402, 41);
+            this.LabelCardNumber.TabIndex = 7;
+            this.LabelCardNumber.Text = "Change User\'s Card Number:";
             // 
             // LabelCCV
             // 
-            LabelCCV.AutoSize = true;
-            LabelCCV.Location = new Point(597, 142);
-            LabelCCV.Name = "LabelCCV";
-            LabelCCV.Size = new Size(93, 20);
-            LabelCCV.TabIndex = 8;
-            LabelCCV.Text = "Change CCV:";
+            this.LabelCCV.AutoSize = true;
+            this.LabelCCV.Location = new System.Drawing.Point(1269, 291);
+            this.LabelCCV.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelCCV.Name = "LabelCCV";
+            this.LabelCCV.Size = new System.Drawing.Size(191, 41);
+            this.LabelCCV.TabIndex = 8;
+            this.LabelCCV.Text = "Change CCV:";
             // 
             // MaskedCardNumField
             // 
-            MaskedCardNumField.Location = new Point(297, 166);
-            MaskedCardNumField.Mask = "0000-0000-0000-0000";
-            MaskedCardNumField.Name = "MaskedCardNumField";
-            MaskedCardNumField.Size = new Size(208, 27);
-            MaskedCardNumField.TabIndex = 9;
+            this.MaskedCardNumField.Location = new System.Drawing.Point(631, 340);
+            this.MaskedCardNumField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaskedCardNumField.Mask = "0000-0000-0000-0000";
+            this.MaskedCardNumField.Name = "MaskedCardNumField";
+            this.MaskedCardNumField.Size = new System.Drawing.Size(438, 47);
+            this.MaskedCardNumField.TabIndex = 9;
             // 
             // MaskedCCVField
             // 
-            MaskedCCVField.Location = new Point(613, 165);
-            MaskedCCVField.Mask = "000";
-            MaskedCCVField.Name = "MaskedCCVField";
-            MaskedCCVField.Size = new Size(66, 27);
-            MaskedCCVField.TabIndex = 10;
+            this.MaskedCCVField.Location = new System.Drawing.Point(1303, 338);
+            this.MaskedCCVField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaskedCCVField.Mask = "000";
+            this.MaskedCCVField.Name = "MaskedCCVField";
+            this.MaskedCCVField.Size = new System.Drawing.Size(136, 47);
+            this.MaskedCCVField.TabIndex = 10;
             // 
             // AdminUpdateBilling
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(MaskedCCVField);
-            Controls.Add(MaskedCardNumField);
-            Controls.Add(LabelCCV);
-            Controls.Add(LabelCardNumber);
-            Controls.Add(EmailComboBox);
-            Controls.Add(LabelUserSelect);
-            Controls.Add(LabelTitle);
-            Controls.Add(ButtonSubmit);
-            Controls.Add(ButtonBack);
-            Name = "AdminUpdateBilling";
-            Text = "AdminUpdateBilling";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1700, 922);
+            this.Controls.Add(this.MaskedCCVField);
+            this.Controls.Add(this.MaskedCardNumField);
+            this.Controls.Add(this.LabelCCV);
+            this.Controls.Add(this.LabelCardNumber);
+            this.Controls.Add(this.EmailComboBox);
+            this.Controls.Add(this.LabelUserSelect);
+            this.Controls.Add(this.LabelTitle);
+            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.ButtonBack);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "AdminUpdateBilling";
+            this.Text = "AdminUpdateBilling";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
