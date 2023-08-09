@@ -34,8 +34,8 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         private void ButtonSubmit_Click_1(object sender, EventArgs e)
         {
             AccountController.CurrentAccount.FirstName = FirstNameField.Text;
-            AccountController.CurrentAccount.LastName= LastNameField.Text;
-            AccountController.CurrentAccount.Password= PasswordField.Text;
+            AccountController.CurrentAccount.LastName = LastNameField.Text;
+            AccountController.CurrentAccount.Password = PasswordField.Text;
             AccountController.CurrentAccount.SecurityA = SQField.Text;
 
             Account AccountForm = new Account();

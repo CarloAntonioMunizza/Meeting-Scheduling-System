@@ -29,5 +29,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
 
         }
+
+        private void AddPayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
