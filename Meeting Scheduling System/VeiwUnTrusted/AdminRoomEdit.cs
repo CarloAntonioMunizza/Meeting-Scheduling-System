@@ -24,5 +24,11 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             AdminOptionsForm.ShowDialog();
             this.Dispose();
         }
+
+        private void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+            //adding room
+            if ()
+        }
     }
 }

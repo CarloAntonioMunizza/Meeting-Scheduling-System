@@ -28,94 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            LabelNewCard = new Label();
-            LabelNewCCV = new Label();
-            ButtonBack = new Button();
-            ButtonSubmit = new Button();
-            LabelTitle = new Label();
-            MaskedCardNumField = new MaskedTextBox();
-            MaskedCCVField = new MaskedTextBox();
-            SuspendLayout();
+            this.LabelNewCard = new System.Windows.Forms.Label();
+            this.LabelNewCCV = new System.Windows.Forms.Label();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.MaskedCardNumField = new System.Windows.Forms.MaskedTextBox();
+            this.MaskedCCVField = new System.Windows.Forms.MaskedTextBox();
+            this.SuspendLayout();
             // 
             // LabelNewCard
             // 
-            LabelNewCard.AutoSize = true;
-            LabelNewCard.Location = new Point(162, 165);
-            LabelNewCard.Name = "LabelNewCard";
-            LabelNewCard.Size = new Size(173, 20);
-            LabelNewCard.TabIndex = 1;
-            LabelNewCard.Text = "Enter New Card Number:";
+            this.LabelNewCard.AutoSize = true;
+            this.LabelNewCard.Location = new System.Drawing.Point(344, 338);
+            this.LabelNewCard.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelNewCard.Name = "LabelNewCard";
+            this.LabelNewCard.Size = new System.Drawing.Size(348, 41);
+            this.LabelNewCard.TabIndex = 1;
+            this.LabelNewCard.Text = "Enter New Card Number:";
             // 
             // LabelNewCCV
             // 
-            LabelNewCCV.AutoSize = true;
-            LabelNewCCV.Location = new Point(224, 245);
-            LabelNewCCV.Name = "LabelNewCCV";
-            LabelNewCCV.Size = new Size(111, 20);
-            LabelNewCCV.TabIndex = 2;
-            LabelNewCCV.Text = "Enter New CCV:";
+            this.LabelNewCCV.AutoSize = true;
+            this.LabelNewCCV.Location = new System.Drawing.Point(476, 502);
+            this.LabelNewCCV.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelNewCCV.Name = "LabelNewCCV";
+            this.LabelNewCCV.Size = new System.Drawing.Size(225, 41);
+            this.LabelNewCCV.TabIndex = 2;
+            this.LabelNewCCV.Text = "Enter New CCV:";
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 4;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 4;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(694, 409);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 5;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1475, 838);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
+            this.ButtonSubmit.TabIndex = 5;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
             // 
             // LabelTitle
             // 
-            LabelTitle.AutoSize = true;
-            LabelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LabelTitle.Location = new Point(224, 32);
-            LabelTitle.Name = "LabelTitle";
-            LabelTitle.Size = new Size(328, 28);
-            LabelTitle.TabIndex = 6;
-            LabelTitle.Text = "Enter your New Card Information";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelTitle.Location = new System.Drawing.Point(476, 66);
+            this.LabelTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(652, 54);
+            this.LabelTitle.TabIndex = 6;
+            this.LabelTitle.Text = "Enter your New Card Information";
             // 
             // MaskedCardNumField
             // 
-            MaskedCardNumField.Location = new Point(341, 162);
-            MaskedCardNumField.Mask = "0000-0000-0000-0000";
-            MaskedCardNumField.Name = "MaskedCardNumField";
-            MaskedCardNumField.Size = new Size(145, 27);
-            MaskedCardNumField.TabIndex = 7;
+            this.MaskedCardNumField.Location = new System.Drawing.Point(725, 332);
+            this.MaskedCardNumField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaskedCardNumField.Mask = "0000-0000-0000-0000";
+            this.MaskedCardNumField.Name = "MaskedCardNumField";
+            this.MaskedCardNumField.Size = new System.Drawing.Size(304, 47);
+            this.MaskedCardNumField.TabIndex = 7;
             // 
             // MaskedCCVField
             // 
-            MaskedCCVField.Location = new Point(341, 242);
-            MaskedCCVField.Mask = "000";
-            MaskedCCVField.Name = "MaskedCCVField";
-            MaskedCCVField.Size = new Size(50, 27);
-            MaskedCCVField.TabIndex = 8;
+            this.MaskedCCVField.Location = new System.Drawing.Point(725, 496);
+            this.MaskedCCVField.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaskedCCVField.Mask = "000";
+            this.MaskedCCVField.Name = "MaskedCCVField";
+            this.MaskedCCVField.Size = new System.Drawing.Size(102, 47);
+            this.MaskedCCVField.TabIndex = 8;
             // 
             // EditPayment
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(MaskedCCVField);
-            Controls.Add(MaskedCardNumField);
-            Controls.Add(LabelTitle);
-            Controls.Add(ButtonSubmit);
-            Controls.Add(ButtonBack);
-            Controls.Add(LabelNewCCV);
-            Controls.Add(LabelNewCard);
-            Name = "EditPayment";
-            Text = "EditPayment";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1700, 922);
+            this.Controls.Add(this.MaskedCCVField);
+            this.Controls.Add(this.MaskedCardNumField);
+            this.Controls.Add(this.LabelTitle);
+            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.ButtonBack);
+            this.Controls.Add(this.LabelNewCCV);
+            this.Controls.Add(this.LabelNewCard);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "EditPayment";
+            this.Text = "EditPayment";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
