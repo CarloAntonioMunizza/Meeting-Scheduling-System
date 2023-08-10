@@ -11,9 +11,9 @@ namespace Meeting_Scheduling_System.ModelTrusted
         //initialize variables
         private string firstName, lastName, email, password, securityA;
         private List<Meeting> meetings = new List<Meeting>();
-        private BillingInfo paymentMethod { get; set; }
+        private BillingInfo paymentMethod;
         private int balance;
-        private bool isAdmin = false;
+        private bool isAdmin;
 
         
 

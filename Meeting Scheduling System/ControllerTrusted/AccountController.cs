@@ -97,10 +97,14 @@ namespace Meeting_Scheduling_System.ControllerTrusted
         }
         public static bool confirmPassword(string password, string enteredPassword)
         {
-            if(password == enteredPassword)
+            if (password == enteredPassword)
+            {
                 return true;
+            }
             else
+            {
                 return false;
+            } 
         }
     }
 }
