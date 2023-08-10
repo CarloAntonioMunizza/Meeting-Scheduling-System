@@ -18,7 +18,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             InitializeComponent();
             List<Account> accountIndex = new List<Account>();
-            foreach (var account in AccountController.Accounts) 
+            foreach (var account in AccountController.Accounts)
             {
                 EmailComboBox.Items.Add(account.Email);
                 accountIndex.Add(account);
@@ -42,23 +42,9 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             int accountindex = EmailComboBox.SelectedIndex;
             Account account = AccountController.Accounts[accountindex];
-            account.PaymentMethod.CardNumber = Int32.Parse(MaskedCardNumField.Text);
-            account.PaymentMethod.Ccv = Int32.Parse(MaskedCCVField.Text);
-
-
-            AdminOptions AdminOptionsForm = new AdminOptions();
-            this.Hide();
-            AdminOptionsForm.ShowDialog();
-            this.Dispose();
-        }
-
-        private void ButtonSubmit_Click_1(object sender, EventArgs e)
-        {
-            int accountindex = EmailComboBox.SelectedIndex;
-            Account account = AccountController.Accounts[accountindex];
-            Console.WriteLine(MaskedCardNumField.Text.Replace("-",""));
+            Console.WriteLine(MaskedCardNumField.Text.Replace("-", ""));
             BillingInfo bi = new BillingInfo(Int64.Parse(MaskedCardNumField.Text.Replace("-", "")), Int32.Parse(MaskedCCVField.Text));
-            account.PaymentMethod= bi;
+            account.PaymentMethod = bi;
 
 
             AdminOptions AdminOptionsForm = new AdminOptions();

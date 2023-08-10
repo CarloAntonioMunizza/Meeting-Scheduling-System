@@ -50,7 +50,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void MaskedCCVField_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            throw new NotSupportedException();
+            
         }
     }
 }

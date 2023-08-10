@@ -43,7 +43,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonDisplay_Click(object sender, EventArgs e)
         {
-            //todo
+            AdminMeetingDisplay AdminMeetingDisplayForm = new AdminMeetingDisplay();
+            this.Hide();
+            AdminMeetingDisplayForm.ShowDialog();
+            this.Dispose();
         }
 
         private void ButtonCreateAdmin_Click(object sender, EventArgs e)
