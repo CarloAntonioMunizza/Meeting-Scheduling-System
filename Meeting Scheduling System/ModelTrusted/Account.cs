@@ -14,6 +14,7 @@ namespace Meeting_Scheduling_System.ModelTrusted
         private BillingInfo paymentMethod;
         private int balance;
         private bool isAdmin;
+        private Complaint complaint;
 
         
 
@@ -26,6 +27,7 @@ namespace Meeting_Scheduling_System.ModelTrusted
             this.email = email;
             this.password = password;
             this.securityA = securityA;
+            complaint = new Complaint("", this, false);
         }
 
         //setters / getters
@@ -38,5 +40,6 @@ namespace Meeting_Scheduling_System.ModelTrusted
         public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
         internal List<Meeting> Meetings { get => meetings; set => meetings = value; }
         internal BillingInfo PaymentMethod { get => paymentMethod; set => paymentMethod = value; }
+        internal Complaint Complaint { get => complaint; set => complaint = value; }
     }
 }

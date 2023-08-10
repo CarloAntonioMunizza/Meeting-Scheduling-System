@@ -9,9 +9,10 @@ namespace Meeting_Scheduling_System.ModelTrusted
     internal class Complaint
     {
         //define vars
-        private string message;
+        private string message, response;
         private Account sender;
         private bool isReviewed;
+        
 
         //constructor
         public Complaint(string message, Account sender, bool isReviewed)
@@ -23,6 +24,7 @@ namespace Meeting_Scheduling_System.ModelTrusted
         //setters / getters
         public string Message { get => message; set => message = value; }
         public bool IsReviewed { get => isReviewed; set => isReviewed = value; }
+        public string Response { get => response; set => response = value; }
         internal Account Sender { get => sender; set => sender = value; }
     }
 }

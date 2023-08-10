@@ -28,103 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            LabelRoomNum = new Label();
-            LabelTime = new Label();
-            comboBox2 = new ComboBox();
-            LabelPeople = new Label();
-            checkedListBox1 = new CheckedListBox();
-            ButtonBack = new Button();
-            SuspendLayout();
+            this.RoomBox = new System.Windows.Forms.ComboBox();
+            this.LabelRoomNum = new System.Windows.Forms.Label();
+            this.LabelTime = new System.Windows.Forms.Label();
+            this.TimeBox = new System.Windows.Forms.ComboBox();
+            this.LabelPeople = new System.Windows.Forms.Label();
+            this.PeopleBox = new System.Windows.Forms.CheckedListBox();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.CreateMeetingButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
-            // comboBox1
+            // RoomBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(268, 105);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 0;
+            this.RoomBox.FormattingEnabled = true;
+            this.RoomBox.Location = new System.Drawing.Point(570, 215);
+            this.RoomBox.Margin = new System.Windows.Forms.Padding(6);
+            this.RoomBox.Name = "RoomBox";
+            this.RoomBox.Size = new System.Drawing.Size(316, 49);
+            this.RoomBox.TabIndex = 0;
+            this.RoomBox.SelectedIndexChanged += new System.EventHandler(this.RoomBox_SelectedIndexChanged);
             // 
             // LabelRoomNum
             // 
-            LabelRoomNum.AutoSize = true;
-            LabelRoomNum.Location = new Point(268, 82);
-            LabelRoomNum.Name = "LabelRoomNum";
-            LabelRoomNum.Size = new Size(154, 20);
-            LabelRoomNum.TabIndex = 1;
-            LabelRoomNum.Text = "Select Room Number:";
+            this.LabelRoomNum.AutoSize = true;
+            this.LabelRoomNum.Location = new System.Drawing.Point(570, 168);
+            this.LabelRoomNum.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelRoomNum.Name = "LabelRoomNum";
+            this.LabelRoomNum.Size = new System.Drawing.Size(308, 41);
+            this.LabelRoomNum.TabIndex = 1;
+            this.LabelRoomNum.Text = "Select Room Number:";
             // 
             // LabelTime
             // 
-            LabelTime.AutoSize = true;
-            LabelTime.Location = new Point(78, 82);
-            LabelTime.Name = "LabelTime";
-            LabelTime.Size = new Size(119, 20);
-            LabelTime.TabIndex = 2;
-            LabelTime.Text = "Select Time Slot:";
+            this.LabelTime.AutoSize = true;
+            this.LabelTime.Location = new System.Drawing.Point(166, 168);
+            this.LabelTime.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelTime.Name = "LabelTime";
+            this.LabelTime.Size = new System.Drawing.Size(236, 41);
+            this.LabelTime.TabIndex = 2;
+            this.LabelTime.Text = "Select Time Slot:";
             // 
-            // comboBox2
+            // TimeBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(65, 105);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 28);
-            comboBox2.Sorted = true;
-            comboBox2.TabIndex = 3;
+            this.TimeBox.FormattingEnabled = true;
+            this.TimeBox.Location = new System.Drawing.Point(138, 215);
+            this.TimeBox.Margin = new System.Windows.Forms.Padding(6);
+            this.TimeBox.MaxDropDownItems = 10;
+            this.TimeBox.Name = "TimeBox";
+            this.TimeBox.Size = new System.Drawing.Size(316, 49);
+            this.TimeBox.TabIndex = 3;
             // 
             // LabelPeople
             // 
-            LabelPeople.AutoSize = true;
-            LabelPeople.Location = new Point(543, 82);
-            LabelPeople.Name = "LabelPeople";
-            LabelPeople.Size = new Size(89, 20);
-            LabelPeople.TabIndex = 4;
-            LabelPeople.Text = "Add People:";
+            this.LabelPeople.AutoSize = true;
+            this.LabelPeople.Location = new System.Drawing.Point(1154, 168);
+            this.LabelPeople.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelPeople.Name = "LabelPeople";
+            this.LabelPeople.Size = new System.Drawing.Size(179, 41);
+            this.LabelPeople.TabIndex = 4;
+            this.LabelPeople.Text = "Add People:";
             // 
-            // checkedListBox1
+            // PeopleBox
             // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(514, 105);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(150, 114);
-            checkedListBox1.TabIndex = 5;
+            this.PeopleBox.FormattingEnabled = true;
+            this.PeopleBox.Location = new System.Drawing.Point(1092, 215);
+            this.PeopleBox.Margin = new System.Windows.Forms.Padding(6);
+            this.PeopleBox.Name = "PeopleBox";
+            this.PeopleBox.Size = new System.Drawing.Size(314, 224);
+            this.PeopleBox.TabIndex = 5;
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 6;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 6;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
+            // 
+            // CreateMeetingButton
+            // 
+            this.CreateMeetingButton.Location = new System.Drawing.Point(1455, 799);
+            this.CreateMeetingButton.Name = "CreateMeetingButton";
+            this.CreateMeetingButton.Size = new System.Drawing.Size(188, 58);
+            this.CreateMeetingButton.TabIndex = 7;
+            this.CreateMeetingButton.Text = "Create";
+            this.CreateMeetingButton.UseVisualStyleBackColor = true;
+            this.CreateMeetingButton.Click += new System.EventHandler(this.CreateMeetingButton_Click);
             // 
             // MeetingCreation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(ButtonBack);
-            Controls.Add(checkedListBox1);
-            Controls.Add(LabelPeople);
-            Controls.Add(comboBox2);
-            Controls.Add(LabelTime);
-            Controls.Add(LabelRoomNum);
-            Controls.Add(comboBox1);
-            Name = "MeetingCreation";
-            Text = "MeetingCreation";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1700, 922);
+            this.Controls.Add(this.CreateMeetingButton);
+            this.Controls.Add(this.ButtonBack);
+            this.Controls.Add(this.PeopleBox);
+            this.Controls.Add(this.LabelPeople);
+            this.Controls.Add(this.TimeBox);
+            this.Controls.Add(this.LabelTime);
+            this.Controls.Add(this.LabelRoomNum);
+            this.Controls.Add(this.RoomBox);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "MeetingCreation";
+            this.Text = "MeetingCreation";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private ComboBox comboBox1;
+        private ComboBox RoomBox;
         private Label LabelRoomNum;
         private Label LabelTime;
-        private ComboBox comboBox2;
+        private ComboBox TimeBox;
         private Label LabelPeople;
-        private CheckedListBox checkedListBox1;
+        private CheckedListBox PeopleBox;
         private Button ButtonBack;
+        private Button CreateMeetingButton;
     }
 }

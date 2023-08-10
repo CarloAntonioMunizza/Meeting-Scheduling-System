@@ -19,15 +19,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             InitializeComponent();
             foreach (var room in RoomController.Rooms)
             {
-                if (room.IsSpecial)
-                {
-                    CheckedList.Items.Add(room.RoomNumber + " S");
-                }
-                else
-                {
-                    CheckedList.Items.Add(room.RoomNumber);
-                }
-
+                CheckedList.Items.Add(room.RoomName);
             }
         }
 

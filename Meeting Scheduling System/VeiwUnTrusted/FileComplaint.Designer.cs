@@ -28,121 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            LabelSubject = new Label();
-            LabelTitle = new Label();
-            DescriptionField = new TextBox();
-            LabelDescription = new Label();
-            ButtonSubmit = new Button();
-            ButtonBack = new Button();
-            LabelResponse = new Label();
-            ResponseReadOnlyField = new TextBox();
-            MaskedSubjectField = new MaskedTextBox();
-            SuspendLayout();
-            // 
-            // LabelSubject
-            // 
-            LabelSubject.AutoSize = true;
-            LabelSubject.Location = new Point(45, 69);
-            LabelSubject.Name = "LabelSubject";
-            LabelSubject.Size = new Size(61, 20);
-            LabelSubject.TabIndex = 1;
-            LabelSubject.Text = "Subject:";
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.DescriptionField = new System.Windows.Forms.TextBox();
+            this.LabelDescription = new System.Windows.Forms.Label();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.LabelResponse = new System.Windows.Forms.Label();
+            this.ResponseReadOnlyField = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // LabelTitle
             // 
-            LabelTitle.AutoSize = true;
-            LabelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LabelTitle.Location = new Point(303, 21);
-            LabelTitle.Name = "LabelTitle";
-            LabelTitle.Size = new Size(212, 28);
-            LabelTitle.TabIndex = 2;
-            LabelTitle.Text = "File Complaint Below";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelTitle.Location = new System.Drawing.Point(644, 43);
+            this.LabelTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(420, 54);
+            this.LabelTitle.TabIndex = 2;
+            this.LabelTitle.Text = "File Complaint Below";
             // 
             // DescriptionField
             // 
-            DescriptionField.Location = new Point(112, 147);
-            DescriptionField.Multiline = true;
-            DescriptionField.Name = "DescriptionField";
-            DescriptionField.Size = new Size(311, 237);
-            DescriptionField.TabIndex = 3;
+            this.DescriptionField.Location = new System.Drawing.Point(238, 301);
+            this.DescriptionField.Margin = new System.Windows.Forms.Padding(6);
+            this.DescriptionField.Multiline = true;
+            this.DescriptionField.Name = "DescriptionField";
+            this.DescriptionField.Size = new System.Drawing.Size(656, 482);
+            this.DescriptionField.TabIndex = 3;
             // 
             // LabelDescription
             // 
-            LabelDescription.AutoSize = true;
-            LabelDescription.Location = new Point(18, 147);
-            LabelDescription.Name = "LabelDescription";
-            LabelDescription.Size = new Size(88, 20);
-            LabelDescription.TabIndex = 4;
-            LabelDescription.Text = "Description:";
+            this.LabelDescription.AutoSize = true;
+            this.LabelDescription.Location = new System.Drawing.Point(38, 301);
+            this.LabelDescription.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelDescription.Name = "LabelDescription";
+            this.LabelDescription.Size = new System.Drawing.Size(176, 41);
+            this.LabelDescription.TabIndex = 4;
+            this.LabelDescription.Text = "Description:";
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(694, 409);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 5;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1475, 838);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
+            this.ButtonSubmit.TabIndex = 5;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 6;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 6;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
             // LabelResponse
             // 
-            LabelResponse.AutoSize = true;
-            LabelResponse.Location = new Point(429, 150);
-            LabelResponse.Name = "LabelResponse";
-            LabelResponse.Size = new Size(75, 20);
-            LabelResponse.TabIndex = 7;
-            LabelResponse.Text = "Response:";
+            this.LabelResponse.AutoSize = true;
+            this.LabelResponse.Location = new System.Drawing.Point(912, 308);
+            this.LabelResponse.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LabelResponse.Name = "LabelResponse";
+            this.LabelResponse.Size = new System.Drawing.Size(153, 41);
+            this.LabelResponse.TabIndex = 7;
+            this.LabelResponse.Text = "Response:";
             // 
             // ResponseReadOnlyField
             // 
-            ResponseReadOnlyField.BackColor = SystemColors.Window;
-            ResponseReadOnlyField.Location = new Point(510, 147);
-            ResponseReadOnlyField.Multiline = true;
-            ResponseReadOnlyField.Name = "ResponseReadOnlyField";
-            ResponseReadOnlyField.ReadOnly = true;
-            ResponseReadOnlyField.Size = new Size(278, 237);
-            ResponseReadOnlyField.TabIndex = 8;
-            // 
-            // MaskedSubjectField
-            // 
-            MaskedSubjectField.Location = new Point(112, 66);
-            MaskedSubjectField.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
-            MaskedSubjectField.Name = "MaskedSubjectField";
-            MaskedSubjectField.Size = new Size(470, 27);
-            MaskedSubjectField.TabIndex = 9;
+            this.ResponseReadOnlyField.BackColor = System.Drawing.SystemColors.Window;
+            this.ResponseReadOnlyField.Location = new System.Drawing.Point(1084, 301);
+            this.ResponseReadOnlyField.Margin = new System.Windows.Forms.Padding(6);
+            this.ResponseReadOnlyField.Multiline = true;
+            this.ResponseReadOnlyField.Name = "ResponseReadOnlyField";
+            this.ResponseReadOnlyField.ReadOnly = true;
+            this.ResponseReadOnlyField.Size = new System.Drawing.Size(586, 482);
+            this.ResponseReadOnlyField.TabIndex = 8;
             // 
             // FileComplaint
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(MaskedSubjectField);
-            Controls.Add(ResponseReadOnlyField);
-            Controls.Add(LabelResponse);
-            Controls.Add(ButtonBack);
-            Controls.Add(ButtonSubmit);
-            Controls.Add(LabelDescription);
-            Controls.Add(DescriptionField);
-            Controls.Add(LabelTitle);
-            Controls.Add(LabelSubject);
-            Name = "FileComplaint";
-            Text = "FileComplaint";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1700, 922);
+            this.Controls.Add(this.ResponseReadOnlyField);
+            this.Controls.Add(this.LabelResponse);
+            this.Controls.Add(this.ButtonBack);
+            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.LabelDescription);
+            this.Controls.Add(this.DescriptionField);
+            this.Controls.Add(this.LabelTitle);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "FileComplaint";
+            this.Text = "FileComplaint";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
-        private Label LabelSubject;
         private Label LabelTitle;
         private TextBox DescriptionField;
         private Label LabelDescription;
@@ -150,6 +138,5 @@
         private Button ButtonBack;
         private Label LabelResponse;
         private TextBox ResponseReadOnlyField;
-        private MaskedTextBox MaskedSubjectField;
     }
 }

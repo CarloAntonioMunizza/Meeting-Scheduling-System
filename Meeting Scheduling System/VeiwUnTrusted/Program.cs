@@ -15,11 +15,15 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
+            //these fill just populate the app with dummy info to simulate for the demo
             AccountController.fill();
             RoomController.fill();
+            ComplaintController.fill();
 
+            AccountController.CurrentAccount = AccountController.Accounts[0];
 
-            Application.Run(new Welcome());
+            Application.Run(new MainMenu());
            
             
         }

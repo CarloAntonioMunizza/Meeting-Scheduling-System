@@ -39,13 +39,6 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             Rooms.Remove(room);
         }
 
-        public static bool checkOccupied(Room room, DateTime time)
-        {
-            //if foreach room.MeetingList.Contains a meeting for the time 
-            //return true;
-
-            //else
-            return false;
-        }
+        
     }
 }
