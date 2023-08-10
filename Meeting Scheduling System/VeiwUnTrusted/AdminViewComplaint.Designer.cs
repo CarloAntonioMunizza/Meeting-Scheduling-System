@@ -64,7 +64,6 @@
             SubjectDetailsField.ReadOnly = true;
             SubjectDetailsField.Size = new Size(236, 218);
             SubjectDetailsField.TabIndex = 2;
-            SubjectDetailsField.TextChanged += SubjectDetailsField_TextChanged;
             // 
             // textBox2
             // 
@@ -110,6 +109,7 @@
             ButtonSubmit.TabIndex = 7;
             ButtonSubmit.Text = "Submit";
             ButtonSubmit.UseVisualStyleBackColor = true;
+            ButtonSubmit.Click += ButtonSubmit_Click;
             // 
             // AdminViewComplaint
             // 

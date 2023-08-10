@@ -17,17 +17,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         public AdminMeetingDisplay()
         {
             InitializeComponent();
-            List<Room> rooms = new List<Room>();
-            foreach (Room room in rooms) 
-            { 
-                rooms.Add(room);
-            }
-            List<Account> accountIndex = new List<Account>();
-            foreach (var account in AccountController.Accounts)
-            {
-                CBPerson.Items.Add(account.Email);
-                accountIndex.Add(account);
-            }
         }
 
         private void ButtonBack_Click(object sender, EventArgs e)

@@ -17,13 +17,17 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             InitializeComponent();
         }
 
-        private void SubjectDetailsField_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonBack_Click(object sender, EventArgs e)
         {
+            AdminOptions AdminOptionsForm = new AdminOptions();
+            this.Hide();
+            AdminOptionsForm.ShowDialog();
+            this.Dispose();
+        }
+
+        private void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+            //still need to save info
             AdminOptions AdminOptionsForm = new AdminOptions();
             this.Hide();
             AdminOptionsForm.ShowDialog();

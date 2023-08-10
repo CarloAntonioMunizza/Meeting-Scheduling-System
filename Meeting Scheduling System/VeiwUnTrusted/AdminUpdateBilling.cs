@@ -25,11 +25,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonBack_Click(object sender, EventArgs e)
         {
             AdminOptions AdminOptionsForm = new AdminOptions();

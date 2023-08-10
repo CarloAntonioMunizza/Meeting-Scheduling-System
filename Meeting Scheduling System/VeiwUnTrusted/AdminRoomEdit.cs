@@ -19,7 +19,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             InitializeComponent();
             foreach (var room in RoomController.Rooms)
             {
-                if(room.IsSpecial)
+                if (room.IsSpecial)
                 {
                     CheckedList.Items.Add(room.RoomNumber + " S");
                 }
@@ -27,7 +27,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
                 {
                     CheckedList.Items.Add(room.RoomNumber);
                 }
-                
+
             }
         }
 
@@ -61,16 +61,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
                 }
             }
 
-            AdminOptions AdminOptionsForm = new AdminOptions();
-            this.Hide();
-            AdminOptionsForm.ShowDialog();
-            this.Dispose();
-            
-
-        }
-
-        private void ButtonBack_Click_1(object sender, EventArgs e)
-        {
             AdminOptions AdminOptionsForm = new AdminOptions();
             this.Hide();
             AdminOptionsForm.ShowDialog();

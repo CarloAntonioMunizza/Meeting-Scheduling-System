@@ -43,7 +43,7 @@
             ButtonBack.TabIndex = 0;
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click_1;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // ButtonEditRooms
             // 
