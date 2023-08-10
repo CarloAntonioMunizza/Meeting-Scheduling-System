@@ -14,7 +14,7 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
 {
     public partial class Login : Form
     {
-        bool hasBeenClicked = false;
+        readonly bool hasBeenClicked;
         public Login()
         {
             InitializeComponent();
@@ -53,6 +53,11 @@ namespace Meeting_Scheduling_System.Veiw_UnTrusted
             {
                 InvalidCredentials.Visible = true;
             }
+        }
+
+        private void MaskedEmailField_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

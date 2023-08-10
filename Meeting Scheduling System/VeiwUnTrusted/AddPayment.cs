@@ -25,11 +25,14 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             accountForm.ShowDialog();
             this.Dispose();
         }
-
+        
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            int cardNumber = Int32.Parse(MaskedCardInfoField.Text);
-            int ccv = Int32.Parse(MaskedCCVField.Text);
+            string tempCardNum = MaskedCardInfoField.Text;
+            tempCardNum = tempCardNum.Replace("-", "");
+            string tempCCV = MaskedCCVField.Text;
+            long cardNumber = Int64.Parse(tempCardNum);
+            int ccv = Int32.Parse(tempCCV);
 
             AccountController.CurrentAccount.PaymentMethod.CardNumber = cardNumber;
             AccountController.CurrentAccount.PaymentMethod.Ccv = ccv;
@@ -41,6 +44,11 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         }
 
         private void AddPayment_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MaskedCCVField_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

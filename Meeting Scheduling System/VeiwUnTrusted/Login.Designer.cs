@@ -95,11 +95,12 @@
             ButtonBack.TabIndex = 8;
             ButtonBack.Text = "Back";
             ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // InvalidCredentials
             // 
             InvalidCredentials.Location = new Point(572, 228);
-            InvalidCredentials.Margin = new Padding(1, 1, 1, 1);
+            InvalidCredentials.Margin = new Padding(1);
             InvalidCredentials.Multiline = true;
             InvalidCredentials.Name = "InvalidCredentials";
             InvalidCredentials.ReadOnly = true;
@@ -115,6 +116,7 @@
             MaskedEmailField.Name = "MaskedEmailField";
             MaskedEmailField.Size = new Size(125, 27);
             MaskedEmailField.TabIndex = 11;
+            MaskedEmailField.MaskInputRejected += MaskedEmailField_MaskInputRejected;
             // 
             // PasswordField
             // 

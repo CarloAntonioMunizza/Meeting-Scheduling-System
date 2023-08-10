@@ -19,10 +19,18 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            EditAccountInfo EditAccountInfoForm = new EditAccountInfo();
-            this.Hide();
-            EditAccountInfoForm.ShowDialog();
-            this.Dispose();
+            string enteredPassword = MaskedConfirmPasswordField.Text;
+            if (ControllerTrusted.AccountController.confirmPassword(ControllerTrusted.AccountController.CurrentAccount.Password, enteredPassword))
+            {
+                EditAccountInfo EditAccountInfoForm = new EditAccountInfo();
+                this.Hide();
+                EditAccountInfoForm.ShowDialog();
+                this.Dispose();
+            }
+            else
+            {
+                LabelIncorrectPassword.Visible = true;
+            }
         }
     }
 }

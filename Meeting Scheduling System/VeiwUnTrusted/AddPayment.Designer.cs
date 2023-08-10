@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LabelCardNumber = new System.Windows.Forms.Label();
-            this.LabelCCV = new System.Windows.Forms.Label();
-            this.LabelTitle = new System.Windows.Forms.Label();
-            this.ButtonBack = new System.Windows.Forms.Button();
-            this.ButtonSubmit = new System.Windows.Forms.Button();
-            this.MaskedCardInfoField = new System.Windows.Forms.MaskedTextBox();
-            this.MaskedCCVField = new System.Windows.Forms.MaskedTextBox();
-            this.SuspendLayout();
+            LabelCardNumber = new Label();
+            LabelCCV = new Label();
+            LabelTitle = new Label();
+            ButtonBack = new Button();
+            ButtonSubmit = new Button();
+            MaskedCardInfoField = new MaskedTextBox();
+            MaskedCCVField = new MaskedTextBox();
+            SuspendLayout();
             // 
             // LabelCardNumber
             // 
@@ -103,6 +103,7 @@
             MaskedCCVField.Name = "MaskedCCVField";
             MaskedCCVField.Size = new Size(53, 27);
             MaskedCCVField.TabIndex = 8;
+            MaskedCCVField.MaskInputRejected += MaskedCCVField_MaskInputRejected;
             // 
             // AddPayment
             // 

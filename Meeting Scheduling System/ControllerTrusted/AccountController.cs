@@ -95,5 +95,12 @@ namespace Meeting_Scheduling_System.ControllerTrusted
         {
             //pulls data from the account and shows the payment info
         }
+        public static bool confirmPassword(string password, string enteredPassword)
+        {
+            if(password == enteredPassword)
+                return true;
+            else
+                return false;
+        }
     }
 }

@@ -31,12 +31,14 @@
             MaskedConfirmPasswordField = new TextBox();
             LabelEnterPassword = new Label();
             ButtonSubmit = new Button();
+            LabelIncorrectPassword = new Label();
             SuspendLayout();
             // 
             // MaskedConfirmPasswordField
             // 
             MaskedConfirmPasswordField.Location = new Point(334, 141);
             MaskedConfirmPasswordField.Name = "MaskedConfirmPasswordField";
+            MaskedConfirmPasswordField.PasswordChar = '#';
             MaskedConfirmPasswordField.Size = new Size(125, 27);
             MaskedConfirmPasswordField.TabIndex = 0;
             // 
@@ -59,15 +61,25 @@
             ButtonSubmit.UseVisualStyleBackColor = true;
             ButtonSubmit.Click += ButtonSubmit_Click;
             // 
-            // ConfirmAccountInfo
+            // LabelIncorrectPassword
+            // 
+            LabelIncorrectPassword.AutoSize = true;
+            LabelIncorrectPassword.Location = new Point(283, 188);
+            LabelIncorrectPassword.Name = "LabelIncorrectPassword";
+            LabelIncorrectPassword.Size = new Size(231, 20);
+            LabelIncorrectPassword.TabIndex = 3;
+            LabelIncorrectPassword.Text = "The password entered is incorrect";
+            // 
+            // ConfirmEditAccountInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(LabelIncorrectPassword);
             Controls.Add(ButtonSubmit);
             Controls.Add(LabelEnterPassword);
             Controls.Add(MaskedConfirmPasswordField);
-            Name = "ConfirmAccountInfo";
+            Name = "ConfirmEditAccountInfo";
             Text = "ConfirmInfo";
             ResumeLayout(false);
             PerformLayout();
@@ -78,5 +90,6 @@
         private TextBox MaskedConfirmPasswordField;
         private Label LabelEnterPassword;
         private Button ButtonSubmit;
+        private Label LabelIncorrectPassword;
     }
 }

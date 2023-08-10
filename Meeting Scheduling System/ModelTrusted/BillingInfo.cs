@@ -3,7 +3,7 @@
     internal class BillingInfo
     {
         //define vars
-        private int ccv ;
+        private int ccv;
         private long cardNumber;
 
         //constructor

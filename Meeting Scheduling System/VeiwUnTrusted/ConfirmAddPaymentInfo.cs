@@ -19,10 +19,18 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            AddPayment AddPaymentForm = new AddPayment();
-            this.Hide();
-            AddPaymentForm.ShowDialog();
-            this.Dispose();
+            string enteredPassword = MaskedConfirmPasswordField.Text;
+            if (ControllerTrusted.AccountController.confirmPassword(ControllerTrusted.AccountController.CurrentAccount.Password, enteredPassword))
+            {
+                AddPayment AddPaymentForm = new AddPayment();
+                this.Hide();
+                AddPaymentForm.ShowDialog();
+                this.Dispose();
+            }
+            else
+            {
+                LabelIncorrectPassword.Visible = true;
+            }
         }
     }
 }

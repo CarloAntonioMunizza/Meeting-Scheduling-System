@@ -9,10 +9,10 @@ namespace Meeting_Scheduling_System.ModelTrusted
     internal class Account : Admin
     {
         //initialize variables
-        private string firstName, lastName, email, password,securityA;
+        private string firstName, lastName, email, password, securityA;
         private List<Meeting> meetings = new List<Meeting>();
-        private BillingInfo paymentMethod;
-        private int balance = 0;
+        private BillingInfo paymentMethod { get; set; }
+        private int balance;
         private bool isAdmin = false;
 
         
