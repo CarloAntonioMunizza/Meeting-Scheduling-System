@@ -69,6 +69,7 @@
             LabelIncorrectPassword.Size = new Size(231, 20);
             LabelIncorrectPassword.TabIndex = 3;
             LabelIncorrectPassword.Text = "The password entered is incorrect";
+            LabelIncorrectPassword.Visible = false;
             // 
             // ConfirmEditPaymentInfo
             // 

@@ -21,11 +21,11 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             string enteredPassword = MaskedConfirmPasswordField.Text;
             if (ControllerTrusted.AccountController.confirmPassword(ControllerTrusted.AccountController.CurrentAccount.Password, enteredPassword))
-            {   
+            {
                 EditPayment EditPaymentForm = new EditPayment();
                 this.Hide();
                 EditPaymentForm.ShowDialog();
-                this.Dispose();    
+                this.Dispose();
             }
             else
             {

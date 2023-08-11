@@ -28,187 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ButtonBack = new System.Windows.Forms.Button();
-            this.RBWeek = new System.Windows.Forms.RadioButton();
-            this.RBDay = new System.Windows.Forms.RadioButton();
-            this.RBRoom = new System.Windows.Forms.RadioButton();
-            this.RBPerson = new System.Windows.Forms.RadioButton();
-            this.RBTime = new System.Windows.Forms.RadioButton();
-            this.CBWeek = new System.Windows.Forms.ComboBox();
-            this.CBDay = new System.Windows.Forms.ComboBox();
-            this.CBTime = new System.Windows.Forms.ComboBox();
-            this.CBRoom = new System.Windows.Forms.ComboBox();
-            this.CBPerson = new System.Windows.Forms.ComboBox();
-            this.ListBoxDisplay = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            ButtonBack = new Button();
+            RBWeek = new RadioButton();
+            RBDay = new RadioButton();
+            RBRoom = new RadioButton();
+            RBPerson = new RadioButton();
+            RBTime = new RadioButton();
+            CBWeek = new ComboBox();
+            CBDay = new ComboBox();
+            CBTime = new ComboBox();
+            CBRoom = new ComboBox();
+            CBPerson = new ComboBox();
+            ListBoxDisplay = new ListBox();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // ButtonBack
             // 
-            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
-            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
-            this.ButtonBack.TabIndex = 0;
-            this.ButtonBack.Text = "Back";
-            this.ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Location = new Point(12, 409);
+            ButtonBack.Name = "ButtonBack";
+            ButtonBack.Size = new Size(94, 29);
+            ButtonBack.TabIndex = 0;
+            ButtonBack.Text = "Back";
+            ButtonBack.UseVisualStyleBackColor = true;
+            ButtonBack.Click += ButtonBack_Click;
             // 
             // RBWeek
             // 
-            this.RBWeek.AutoSize = true;
-            this.RBWeek.Location = new System.Drawing.Point(26, 133);
-            this.RBWeek.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.RBWeek.Name = "RBWeek";
-            this.RBWeek.Size = new System.Drawing.Size(169, 45);
-            this.RBWeek.TabIndex = 2;
-            this.RBWeek.TabStop = true;
-            this.RBWeek.Text = "By Week";
-            this.RBWeek.UseVisualStyleBackColor = true;
+            RBWeek.AutoSize = true;
+            RBWeek.Location = new Point(12, 65);
+            RBWeek.Name = "RBWeek";
+            RBWeek.Size = new Size(86, 24);
+            RBWeek.TabIndex = 2;
+            RBWeek.TabStop = true;
+            RBWeek.Text = "By Week";
+            RBWeek.UseVisualStyleBackColor = true;
             // 
             // RBDay
             // 
-            this.RBDay.AutoSize = true;
-            this.RBDay.Location = new System.Drawing.Point(26, 252);
-            this.RBDay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.RBDay.Name = "RBDay";
-            this.RBDay.Size = new System.Drawing.Size(146, 45);
-            this.RBDay.TabIndex = 3;
-            this.RBDay.TabStop = true;
-            this.RBDay.Text = "By Day";
-            this.RBDay.UseVisualStyleBackColor = true;
+            RBDay.AutoSize = true;
+            RBDay.Location = new Point(12, 123);
+            RBDay.Name = "RBDay";
+            RBDay.Size = new Size(76, 24);
+            RBDay.TabIndex = 3;
+            RBDay.TabStop = true;
+            RBDay.Text = "By Day";
+            RBDay.UseVisualStyleBackColor = true;
             // 
             // RBRoom
             // 
-            this.RBRoom.AutoSize = true;
-            this.RBRoom.Location = new System.Drawing.Point(26, 478);
-            this.RBRoom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.RBRoom.Name = "RBRoom";
-            this.RBRoom.Size = new System.Drawing.Size(174, 45);
-            this.RBRoom.TabIndex = 4;
-            this.RBRoom.TabStop = true;
-            this.RBRoom.Text = "By Room";
-            this.RBRoom.UseVisualStyleBackColor = true;
+            RBRoom.AutoSize = true;
+            RBRoom.Location = new Point(12, 233);
+            RBRoom.Name = "RBRoom";
+            RBRoom.Size = new Size(90, 24);
+            RBRoom.TabIndex = 4;
+            RBRoom.TabStop = true;
+            RBRoom.Text = "By Room";
+            RBRoom.UseVisualStyleBackColor = true;
             // 
             // RBPerson
             // 
-            this.RBPerson.AutoSize = true;
-            this.RBPerson.Location = new System.Drawing.Point(26, 599);
-            this.RBPerson.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.RBPerson.Name = "RBPerson";
-            this.RBPerson.Size = new System.Drawing.Size(185, 45);
-            this.RBPerson.TabIndex = 5;
-            this.RBPerson.TabStop = true;
-            this.RBPerson.Text = "By Person";
-            this.RBPerson.UseVisualStyleBackColor = true;
+            RBPerson.AutoSize = true;
+            RBPerson.Location = new Point(12, 292);
+            RBPerson.Name = "RBPerson";
+            RBPerson.Size = new Size(93, 24);
+            RBPerson.TabIndex = 5;
+            RBPerson.TabStop = true;
+            RBPerson.Text = "By Person";
+            RBPerson.UseVisualStyleBackColor = true;
             // 
             // RBTime
             // 
-            this.RBTime.AutoSize = true;
-            this.RBTime.Location = new System.Drawing.Point(26, 365);
-            this.RBTime.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.RBTime.Name = "RBTime";
-            this.RBTime.Size = new System.Drawing.Size(160, 45);
-            this.RBTime.TabIndex = 6;
-            this.RBTime.TabStop = true;
-            this.RBTime.Text = "By Time";
-            this.RBTime.UseVisualStyleBackColor = true;
+            RBTime.AutoSize = true;
+            RBTime.Location = new Point(12, 178);
+            RBTime.Name = "RBTime";
+            RBTime.Size = new Size(83, 24);
+            RBTime.TabIndex = 6;
+            RBTime.TabStop = true;
+            RBTime.Text = "By Time";
+            RBTime.UseVisualStyleBackColor = true;
             // 
             // CBWeek
             // 
-            this.CBWeek.FormattingEnabled = true;
-            this.CBWeek.Location = new System.Drawing.Point(376, 184);
-            this.CBWeek.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.CBWeek.Name = "CBWeek";
-            this.CBWeek.Size = new System.Drawing.Size(316, 49);
-            this.CBWeek.TabIndex = 7;
-            this.CBWeek.Visible = false;
+            CBWeek.FormattingEnabled = true;
+            CBWeek.Location = new Point(177, 90);
+            CBWeek.Name = "CBWeek";
+            CBWeek.Size = new Size(151, 28);
+            CBWeek.TabIndex = 7;
+            CBWeek.Visible = false;
             // 
             // CBDay
             // 
-            this.CBDay.FormattingEnabled = true;
-            this.CBDay.Location = new System.Drawing.Point(376, 184);
-            this.CBDay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.CBDay.Name = "CBDay";
-            this.CBDay.Size = new System.Drawing.Size(316, 49);
-            this.CBDay.TabIndex = 8;
-            this.CBDay.Visible = false;
+            CBDay.FormattingEnabled = true;
+            CBDay.Location = new Point(177, 90);
+            CBDay.Name = "CBDay";
+            CBDay.Size = new Size(151, 28);
+            CBDay.TabIndex = 8;
+            CBDay.Visible = false;
             // 
             // CBTime
             // 
-            this.CBTime.FormattingEnabled = true;
-            this.CBTime.Location = new System.Drawing.Point(376, 184);
-            this.CBTime.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.CBTime.Name = "CBTime";
-            this.CBTime.Size = new System.Drawing.Size(316, 49);
-            this.CBTime.TabIndex = 9;
-            this.CBTime.Visible = false;
+            CBTime.FormattingEnabled = true;
+            CBTime.Location = new Point(177, 90);
+            CBTime.Name = "CBTime";
+            CBTime.Size = new Size(151, 28);
+            CBTime.TabIndex = 9;
+            CBTime.Visible = false;
             // 
             // CBRoom
             // 
-            this.CBRoom.FormattingEnabled = true;
-            this.CBRoom.Location = new System.Drawing.Point(376, 184);
-            this.CBRoom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.CBRoom.Name = "CBRoom";
-            this.CBRoom.Size = new System.Drawing.Size(316, 49);
-            this.CBRoom.TabIndex = 10;
-            this.CBRoom.Visible = false;
+            CBRoom.FormattingEnabled = true;
+            CBRoom.Location = new Point(177, 90);
+            CBRoom.Name = "CBRoom";
+            CBRoom.Size = new Size(151, 28);
+            CBRoom.TabIndex = 10;
+            CBRoom.Visible = false;
             // 
             // CBPerson
             // 
-            this.CBPerson.FormattingEnabled = true;
-            this.CBPerson.Location = new System.Drawing.Point(376, 184);
-            this.CBPerson.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.CBPerson.Name = "CBPerson";
-            this.CBPerson.Size = new System.Drawing.Size(316, 49);
-            this.CBPerson.TabIndex = 11;
-            this.CBPerson.Visible = false;
+            CBPerson.FormattingEnabled = true;
+            CBPerson.Location = new Point(177, 90);
+            CBPerson.Name = "CBPerson";
+            CBPerson.Size = new Size(151, 28);
+            CBPerson.TabIndex = 11;
+            CBPerson.Visible = false;
             // 
             // ListBoxDisplay
             // 
-            this.ListBoxDisplay.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.ListBoxDisplay.FormattingEnabled = true;
-            this.ListBoxDisplay.ItemHeight = 41;
-            this.ListBoxDisplay.Location = new System.Drawing.Point(1275, 29);
-            this.ListBoxDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.ListBoxDisplay.Name = "ListBoxDisplay";
-            this.ListBoxDisplay.Size = new System.Drawing.Size(395, 865);
-            this.ListBoxDisplay.TabIndex = 12;
+            ListBoxDisplay.AccessibleRole = AccessibleRole.None;
+            ListBoxDisplay.FormattingEnabled = true;
+            ListBoxDisplay.ItemHeight = 20;
+            ListBoxDisplay.Location = new Point(600, 14);
+            ListBoxDisplay.Name = "ListBoxDisplay";
+            ListBoxDisplay.Size = new Size(188, 424);
+            ListBoxDisplay.TabIndex = 12;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(673, 336);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 41);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Please refer to zoom.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(317, 164);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(149, 20);
+            label1.TabIndex = 13;
+            label1.Text = "Please refer to zoom.";
+            label1.Click += label1_Click;
             // 
             // AdminMeetingDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1700, 922);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ListBoxDisplay);
-            this.Controls.Add(this.CBPerson);
-            this.Controls.Add(this.CBRoom);
-            this.Controls.Add(this.CBTime);
-            this.Controls.Add(this.CBDay);
-            this.Controls.Add(this.CBWeek);
-            this.Controls.Add(this.RBTime);
-            this.Controls.Add(this.RBPerson);
-            this.Controls.Add(this.RBRoom);
-            this.Controls.Add(this.RBDay);
-            this.Controls.Add(this.RBWeek);
-            this.Controls.Add(this.ButtonBack);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "AdminMeetingDisplay";
-            this.Text = "AdminMeetingDisplay";
-            this.Load += new System.EventHandler(this.AdminMeetingDisplay_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(ListBoxDisplay);
+            Controls.Add(CBPerson);
+            Controls.Add(CBRoom);
+            Controls.Add(CBTime);
+            Controls.Add(CBDay);
+            Controls.Add(CBWeek);
+            Controls.Add(RBTime);
+            Controls.Add(RBPerson);
+            Controls.Add(RBRoom);
+            Controls.Add(RBDay);
+            Controls.Add(RBWeek);
+            Controls.Add(ButtonBack);
+            Name = "AdminMeetingDisplay";
+            Text = "AdminMeetingDisplay";
+            Load += AdminMeetingDisplay_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -18,7 +18,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         public MeetingEditor()
         {
             InitializeComponent();
-            foreach (var meeting in AccountController.CurrentAccount.Meetings) 
+            foreach (var meeting in AccountController.CurrentAccount.Meetings)
             {
                 comboBox1.Items.Add(meeting.Time + meeting.Room);
             }
@@ -48,7 +48,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             comboBox1.SelectedItem = MeetingController.CurrentMeeting;
             MeetingController.CurrentMeeting.Time = comboBox2.SelectedItem.ToString();
-            MeetingController.CurrentMeeting.Room = (Room) comboBox3.SelectedItem;
+            MeetingController.CurrentMeeting.Room = (Room)comboBox3.SelectedItem;
 
             Meetings MeetingsForm = new Meetings();
             this.Hide();
