@@ -28,44 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonBack = new Button();
-            ButtonSubmit = new Button();
-            SuspendLayout();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ButtonSubmit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // ButtonBack
             // 
-            ButtonBack.Location = new Point(12, 409);
-            ButtonBack.Name = "ButtonBack";
-            ButtonBack.Size = new Size(94, 29);
-            ButtonBack.TabIndex = 0;
-            ButtonBack.Text = "Back";
-            ButtonBack.UseVisualStyleBackColor = true;
-            ButtonBack.Click += ButtonBack_Click;
+            this.ButtonBack.Location = new System.Drawing.Point(26, 838);
+            this.ButtonBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(200, 59);
+            this.ButtonBack.TabIndex = 0;
+            this.ButtonBack.Text = "Back";
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
             // ButtonSubmit
             // 
-            ButtonSubmit.Location = new Point(663, 409);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(94, 29);
-            ButtonSubmit.TabIndex = 1;
-            ButtonSubmit.Text = "Submit";
-            ButtonSubmit.UseVisualStyleBackColor = true;
+            this.ButtonSubmit.Location = new System.Drawing.Point(1409, 838);
+            this.ButtonSubmit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.Size = new System.Drawing.Size(200, 59);
+            this.ButtonSubmit.TabIndex = 1;
+            this.ButtonSubmit.Text = "Submit";
+            this.ButtonSubmit.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(665, 267);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(299, 41);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "please refer to zoom.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ViewMeetings
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(769, 450);
-            Controls.Add(ButtonSubmit);
-            Controls.Add(ButtonBack);
-            Name = "ViewMeetings";
-            Text = "ViewMeetings";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1634, 922);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.ButtonBack);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "ViewMeetings";
+            this.Text = "ViewMeetings";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private Button ButtonBack;
         private Button ButtonSubmit;
+        private Label label1;
     }
 }

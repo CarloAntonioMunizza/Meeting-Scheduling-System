@@ -24,5 +24,10 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             MeetingsForm.ShowDialog();
             this.Dispose();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

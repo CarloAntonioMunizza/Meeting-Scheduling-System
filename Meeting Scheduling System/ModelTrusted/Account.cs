@@ -38,5 +38,10 @@ namespace Meeting_Scheduling_System.ModelTrusted
         internal List<Meeting> Meetings { get => meetings; set => meetings = value; }
         internal BillingInfo PaymentMethod { get => paymentMethod; set => paymentMethod = value; }
         internal Complaint Complaint { get => complaint; set => complaint = value; }
+
+        public static explicit operator Account(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

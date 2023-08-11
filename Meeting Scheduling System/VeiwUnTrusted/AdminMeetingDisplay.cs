@@ -76,5 +76,15 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             CBTime.Visible = false;
             CBRoom.Visible = false;
         }
+
+        private void AdminMeetingDisplay_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
