@@ -21,9 +21,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             RoomController.fill();
             ComplaintController.fill();
 
-            AccountController.CurrentAccount = AccountController.Accounts[0];
-
-            Application.Run(new MainMenu());
+            Application.Run(new Welcome());
            
             
         }
