@@ -28,7 +28,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            int cardNumber = Int32.Parse(MaskedCardNumField.Text);
+            long cardNumber = Int64.Parse(MaskedCardNumField.Text);
             int ccv = Int32.Parse(MaskedCCVField.Text);
 
             AccountController.CurrentAccount.PaymentMethod.CardNumber = cardNumber;

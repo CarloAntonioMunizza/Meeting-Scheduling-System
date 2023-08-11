@@ -33,7 +33,7 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             timeList.Add("4:00 - 5:00");
         }
 
-        public static void createMeeting(Room room, String time, List<Account> participants, Account host)
+        public static void createMeeting(Room room, string time, List<Account> participants, Account host)
         {
             Meeting meeting = new Meeting(room, time, participants, host);
             foreach (var participant in participants)
@@ -89,7 +89,5 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             }
             return true;
         }
-
-
     }
 }

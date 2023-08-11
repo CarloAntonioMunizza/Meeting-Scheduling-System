@@ -14,9 +14,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 {
     public partial class MeetingCreation : Form
     {
-        
-        
-
         public MeetingCreation()
         {
             InitializeComponent();
@@ -33,7 +30,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             {
                 PeopleBox.Items.Add(person.Email);
             }
-
         }
 
         private void ButtonBack_Click(object sender, EventArgs e)
@@ -74,8 +70,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
                         {
                             paricipants.Add(AccountController.Accounts[i]);
                         }
-                    }
-                   
+                    } 
                 }
                 MeetingController.createMeeting(RoomController.Rooms[RoomBox.SelectedIndex], TimeBox.Text, paricipants, AccountController.CurrentAccount);
                 Meetings MeetingsForm = new Meetings();
@@ -83,8 +78,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
                 MeetingsForm.ShowDialog();
                 this.Dispose();
             }
-
-            
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         {
             Application.Exit();
         }
-        //form navigation
+     
         private void ButtonSignUp_Click(object sender, EventArgs e)
         {
             SignUp SignUpForm = new SignUp();

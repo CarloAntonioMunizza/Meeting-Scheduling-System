@@ -33,9 +33,9 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
 
         private void ButtonBack_Click(object sender, EventArgs e)
         {
-            AdminOptions AdminOptionsForm = new AdminOptions();
+            MainMenu MainMenuForm = new MainMenu();
             this.Hide();
-            AdminOptionsForm.ShowDialog();
+            MainMenuForm.ShowDialog();
             this.Dispose();
         }
 

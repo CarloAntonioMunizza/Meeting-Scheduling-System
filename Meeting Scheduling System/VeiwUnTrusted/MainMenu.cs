@@ -16,8 +16,8 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
         public MainMenu()
         {
             InitializeComponent();
-            if (AccountController.isAdmin()) 
-            { 
+            if (AccountController.isAdmin())
+            {
                 ButtonAdminOptions.Visible = true;
                 ButtonAdminViewComplaint.Visible = true;
             }
@@ -68,14 +68,6 @@ namespace Meeting_Scheduling_System.VeiwUnTrusted
             AdminViewComplaint AdminViewComplaintForm = new AdminViewComplaint();
             this.Hide();
             AdminViewComplaintForm.ShowDialog();
-            this.Dispose();
-        }
-
-        private void ButtonLogout_Click_1(object sender, EventArgs e)
-        {
-            Welcome WelcomeForm = new Welcome();
-            this.Hide();
-            WelcomeForm.ShowDialog();
             this.Dispose();
         }
     }

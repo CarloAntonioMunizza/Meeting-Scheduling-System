@@ -10,10 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ControllerUnTrusted\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="VeiwUnTrusted\ConfirmAddPaymentInfo.cs">
       <SubType>Form</SubType>
     </Compile>

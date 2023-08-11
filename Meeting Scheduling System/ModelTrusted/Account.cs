@@ -16,9 +16,6 @@ namespace Meeting_Scheduling_System.ModelTrusted
         private bool isAdmin;
         private Complaint complaint;
 
-        
-
-
         //basic constructor for a new account
         public Account(string firstName, string lastName, string email, string password, string securityA)
         {

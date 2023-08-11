@@ -28,12 +28,9 @@ namespace Meeting_Scheduling_System.ControllerTrusted
             Accounts.Add(new Account("John", "Doe", "jfd1234@pss.com", "Password1", "Blue"));
             Accounts.Add(new Account("Alex", "Smith", "ads1234@pss.com", "Password2", "Red"));
             Accounts.Add(new Account("Jane", "Large", "jkl1234@pss.com", "Password3", "Green"));
-
-
-
         }
 
-        public static bool login(String email, string password, string sq)
+        public static bool login(string email, string password, string sq)
         {
             foreach (var account in Accounts)
             {
